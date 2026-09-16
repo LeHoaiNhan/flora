@@ -87,7 +87,8 @@
     "aboutTitle": "Về chúng tôi",
     "servicesTitle": "Dịch vụ",
     "blogsTitle": "Blog",
-    "companyTitle": "Công ty TNHH Flora Global",
+    "companyTitle": "Công ty TNHH Flora Global\nTổng công ty Phân bón\nDịch vụ ( F.L.Global )",
+    "addressLabel": "Trụ sở chính TP.HCM",
     "address": "692/31 Đường Đoàn Văn Bơ, Phường Xóm Chiếu, TP. Hồ Chí Minh, Việt Nam",
     "facebook": "Facebook: Flora Global – Ms. Hoa",
     "copyright": "Bản quyền {year} © Flora Global"
@@ -107,7 +108,7 @@
     "organic": "Hữu cơ",
     "wholesaleOnly": "Bán sỉ theo container",
     "wholesaleTitle": "Chỉ bán sỉ theo container",
-    "wholesaleCta": "Liên hệ mua sỉ theo container"
+    "wholesaleCta": "Liên hệ mua sỉ"
   },
   "about": {
     "eyebrow": "Người dẫn dắt “Hệ sinh thái”",

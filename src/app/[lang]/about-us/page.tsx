@@ -41,7 +41,7 @@ export default async function AboutPage({ params }: Props) {
         crumbs={[{ href: withLocale(lang, "/about-us"), label: dict.about.title }]}
       />
       <div className="container-page section-y">
-        <div className="mx-auto max-w-3xl">
+        <div className="mx-auto max-w-5xl">
           <ContentLocaleBadge article={page} uiLocale={lang} />
           <ArticleBody html={page.content} />
         </div>
