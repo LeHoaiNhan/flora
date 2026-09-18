@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     path: "/contact",
     title: dict.contact.title,
     description: dict.contact.intro2 || dict.contact.intro1,
-    image: "/images/contact-banner.jpg",
+    image: "/images/voac/voac-ho-tro-1.jpg",
   });
 }
 
@@ -53,7 +53,7 @@ export default async function ContactPage({ params, searchParams }: Props) {
       <PageHero
         eyebrow={c.eyebrow}
         title={c.title}
-        image="/images/contact-banner.jpg"
+        image="/images/voac/voac-ho-tro-1.jpg"
         homeHref={withLocale(lang, "/")}
         crumbs={[{ href: withLocale(lang, "/contact"), label: c.title }]}
       />

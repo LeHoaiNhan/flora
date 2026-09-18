@@ -52,7 +52,7 @@ export function SiteFooter({ locale, dict }: { locale: Locale; dict: Dictionary 
                   height={50}
                   className="h-12 w-12 shrink-0 rounded-full bg-white object-contain"
                 />
-                <span className="text-sm leading-snug group-hover:underline">
+                <span className="text-lg leading-snug group-hover:underline">
                   {box.lines[0]}
                   <br />
                   {box.lines[1]}
@@ -64,24 +64,6 @@ export function SiteFooter({ locale, dict }: { locale: Locale; dict: Dictionary 
       </div>
 
       <div className="relative overflow-hidden bg-[color-mix(in_srgb,var(--bg-soft)_78%,transparent)] text-[var(--ink)]">
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute -bottom-4 right-0 hidden w-64 select-none opacity-90 md:block md:w-80 lg:-bottom-6 lg:w-104 xl:w-120"
-          style={{ aspectRatio: "1350 / 1200" }}
-        >
-          <Image
-            src="/images/footer/mangofooter.png"
-            alt=""
-            fill
-            sizes="(min-width: 1280px) 30rem, (min-width: 1024px) 26rem, (min-width: 768px) 20rem, 16rem"
-            className="object-contain object-bottom"
-            style={{
-              WebkitMaskImage:
-                "radial-gradient(120% 130% at 92% 100%, black 42%, transparent 88%)",
-              maskImage: "radial-gradient(120% 130% at 92% 100%, black 42%, transparent 88%)",
-            }}
-          />
-        </div>
         <div className="container-page relative z-10 grid grid-cols-12 gap-8 py-12">
           <div className="col-span-full lg:col-span-4">
             <div className="mb-4 flex items-center gap-3">
@@ -101,7 +83,7 @@ export function SiteFooter({ locale, dict }: { locale: Locale; dict: Dictionary 
                 ))}
               </p>
             </div>
-            <address className="space-y-2 text-sm not-italic text-[var(--muted)]">
+            <address className="space-y-2 text-lg not-italic text-[var(--muted)]">
               <p>
                 <span className="font-semibold text-[var(--ink)]">{f.addressLabel}: </span>
                 {f.address}
@@ -134,7 +116,7 @@ export function SiteFooter({ locale, dict }: { locale: Locale; dict: Dictionary 
           <div className="col-span-full grid gap-8 sm:grid-cols-3 lg:col-span-8">
             <div>
               <FooterTitle>{f.aboutTitle}</FooterTitle>
-              <ul className="space-y-2 text-sm text-[var(--muted)]">
+              <ul className="space-y-2 text-lg text-[var(--muted)]">
                 <li>
                   <Link href={withLocale(locale, "/about-us")} className="hover:text-[var(--brand)]">
                     {dict.nav.about}
@@ -155,7 +137,7 @@ export function SiteFooter({ locale, dict }: { locale: Locale; dict: Dictionary 
 
             <div>
               <FooterTitle>{f.servicesTitle}</FooterTitle>
-              <ul className="space-y-2 text-sm text-[var(--muted)]">
+              <ul className="space-y-2 text-lg text-[var(--muted)]">
                 {SERVICE_ORDER.map((slug) => (
                   <li key={slug}>
                     <Link
@@ -171,7 +153,7 @@ export function SiteFooter({ locale, dict }: { locale: Locale; dict: Dictionary 
 
             <div>
               <FooterTitle>{f.blogsTitle}</FooterTitle>
-              <ul className="space-y-2 text-sm text-[var(--muted)]">
+              <ul className="space-y-2 text-lg text-[var(--muted)]">
                 {NEWS_CATEGORIES.map((c) => (
                   <li key={c.slug}>
                     <Link
@@ -187,7 +169,7 @@ export function SiteFooter({ locale, dict }: { locale: Locale; dict: Dictionary 
           </div>
         </div>
 
-        <div className="relative isolate overflow-hidden border-t border-[var(--line)] py-6 text-center text-xs text-[var(--muted)]">
+        <div className="relative isolate overflow-hidden border-t border-[var(--line)] py-6 text-center text-sm text-[var(--muted)]">
           <span
             aria-hidden="true"
             className="pointer-events-none absolute inset-0 -z-10 flex select-none items-center justify-center overflow-hidden whitespace-nowrap text-[clamp(2.5rem,9vw,6.5rem)] font-black uppercase leading-none tracking-wide text-[var(--brand)] opacity-10"
@@ -204,7 +186,7 @@ export function SiteFooter({ locale, dict }: { locale: Locale; dict: Dictionary 
 function FooterTitle({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <p className="text-sm font-semibold uppercase tracking-wide text-[var(--ink)]">{children}</p>
+      <p className="text-lg font-semibold uppercase tracking-wide text-[var(--ink)]">{children}</p>
       <div className="mb-4 mt-2 h-0.5 w-10 bg-[var(--brand)]" />
     </>
   );
