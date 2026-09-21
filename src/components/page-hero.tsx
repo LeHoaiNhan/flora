@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { HeroVideo } from "./hero-video";
 
 type Crumb = { href: string; label: string };
 
@@ -10,6 +11,8 @@ export function PageHero({
   crumbs = [],
   homeHref = "/",
   overlay = false,
+  video,
+  videoSpeed,
 }: {
   title: string;
   eyebrow?: string;
@@ -18,6 +21,10 @@ export function PageHero({
   homeHref?: string;
   /** Put eyebrow + title on top of the hero image instead of below it. */
   overlay?: boolean;
+  /** Looping muted background video; `image` stays underneath as the poster / reduced-motion fallback. */
+  video?: string;
+  /** Playback rate for `video` (1 = normal, 0.5 = half speed). */
+  videoSpeed?: number;
 }) {
   const last = crumbs.at(-1);
 
@@ -51,6 +58,7 @@ export function PageHero({
           }`}
         >
           <Image src={image} alt={overlay ? "" : title} fill priority sizes="100vw" className="object-cover" />
+          {video && <HeroVideo src={video} poster={image} speed={videoSpeed} />}
           {overlay && (
             <div className="container-page absolute inset-0 flex items-center">
               <div className="max-w-xl text-white [text-shadow:0_2px_12px_rgb(0_0_0/0.45)]">
