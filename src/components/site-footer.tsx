@@ -46,7 +46,7 @@ export function SiteFooter({
   ];
 
   return (
-    <footer className="relative mt-auto isolate overflow-hidden">
+    <footer className="relative isolate mt-auto flex min-h-[90svh] flex-col overflow-hidden">
       <Image
         src="/images/footer/HOME_0000s_0007s_0000s_0000_BG.png"
         alt=""
@@ -56,7 +56,7 @@ export function SiteFooter({
         className="pointer-events-none absolute inset-0 -z-10 select-none object-cover"
       />
       <div className="bg-[color-mix(in_srgb,var(--brand)_62%,transparent)] text-white">
-        <div className="container-page grid items-center gap-8 py-10 md:grid-cols-3">
+        <div className="container-page grid items-center gap-6 py-4 md:grid-cols-3">
           <p className="display-md">
             {f.needHelp}
             <br />
@@ -72,7 +72,7 @@ export function SiteFooter({
                   height={50}
                   className="h-12 w-12 shrink-0 rounded-full bg-white object-contain"
                 />
-                <span className="text-lg leading-snug group-hover:underline">
+                <span className="text-base leading-snug group-hover:underline">
                   {box.lines[0]}
                   <br />
                   {box.lines[1]}
@@ -83,8 +83,12 @@ export function SiteFooter({
         </div>
       </div>
 
-      <div className="relative overflow-hidden bg-[color-mix(in_srgb,var(--bg-soft)_78%,transparent)] text-[var(--ink)]">
-        <div className="container-page relative z-10 grid grid-cols-12 gap-8 py-12">
+      <div className="relative flex flex-1 flex-col overflow-hidden bg-[color-mix(in_srgb,var(--bg-soft)_78%,transparent)] text-[var(--ink)]">
+        <span
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 select-none bg-[var(--brand)] opacity-[0.12] [mask-image:url(/images/footer/ttl.svg)] [mask-position:center_bottom] [mask-repeat:no-repeat] [mask-size:100%_auto]"
+        />
+        <div className="container-page relative z-10 grid flex-1 grid-cols-12 content-start gap-8 pb-[clamp(6rem,16vw,14rem)] pt-12">
           <div className="col-span-full lg:col-span-4">
             <div className="mb-4 flex items-center gap-3">
               <Image
@@ -94,7 +98,7 @@ export function SiteFooter({
                 height={672}
                 className="h-24 w-auto shrink-0 object-contain"
               />
-              <p className="text-xl font-bold leading-snug text-[var(--ink)]">
+              <p className="text-lg font-bold leading-snug text-[var(--ink)]">
                 {f.companyTitle.split("\n").map((line, i) => (
                   <Fragment key={i}>
                     {i > 0 && <br />}
@@ -103,7 +107,7 @@ export function SiteFooter({
                 ))}
               </p>
             </div>
-            <address className="space-y-2 text-lg not-italic text-[var(--muted)]">
+            <address className="space-y-2 text-base not-italic text-[var(--muted)]">
               <p>
                 <span className="font-semibold text-[var(--ink)]">{f.addressLabel}: </span>
                 {f.address}
@@ -136,7 +140,7 @@ export function SiteFooter({
           <div className="col-span-full grid grid-cols-2 gap-8 sm:grid-cols-3 lg:col-span-8 lg:grid-cols-5">
             <div>
               <FooterTitle>{f.servicesTitle}</FooterTitle>
-              <ul className="space-y-2 text-lg text-[var(--muted)]">
+              <ul className="space-y-2 text-base text-[var(--muted)]">
                 {SOLUTION_CLUSTER_ORDER.filter((c) => c !== "ecosystem").map((cluster) => (
                   <li key={cluster}>
                     <Link
@@ -152,7 +156,7 @@ export function SiteFooter({
 
             <div>
               <FooterTitle>{f.productsTitle}</FooterTitle>
-              <ul className="space-y-2 text-lg text-[var(--muted)]">
+              <ul className="space-y-2 text-base text-[var(--muted)]">
                 <li>
                   <Link href={withLocale(locale, "/products")} className="hover:text-[var(--brand)]">
                     {dict.productsPage.all}
@@ -173,7 +177,7 @@ export function SiteFooter({
 
             <div>
               <FooterTitle>{f.ecosystemTitle}</FooterTitle>
-              <ul className="space-y-2 text-lg text-[var(--muted)]">
+              <ul className="space-y-2 text-base text-[var(--muted)]">
                 {ecosystemSlugs.map((slug) => (
                   <li key={slug}>
                     <Link
@@ -189,7 +193,7 @@ export function SiteFooter({
 
             <div>
               <FooterTitle>{f.blogsTitle}</FooterTitle>
-              <ul className="space-y-2 text-lg text-[var(--muted)]">
+              <ul className="space-y-2 text-base text-[var(--muted)]">
                 {NEWS_CATEGORIES.map((c) => (
                   <li key={c.slug}>
                     <Link
@@ -205,7 +209,7 @@ export function SiteFooter({
 
             <div>
               <FooterTitle>{f.aboutTitle}</FooterTitle>
-              <ul className="space-y-2 text-lg text-[var(--muted)]">
+              <ul className="space-y-2 text-base text-[var(--muted)]">
                 <li>
                   <Link href={withLocale(locale, "/about-us")} className="hover:text-[var(--brand)]">
                     {dict.nav.about}
@@ -238,7 +242,7 @@ export function SiteFooter({
 function FooterTitle({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <p className="text-lg font-semibold uppercase tracking-wide text-[var(--ink)]">{children}</p>
+      <p className="text-base font-semibold uppercase tracking-wide text-[var(--ink)]">{children}</p>
       <div className="mb-4 mt-2 h-0.5 w-10 bg-[var(--brand)]" />
     </>
   );
