@@ -9,12 +9,15 @@ export function PageHero({
   image,
   crumbs = [],
   homeHref = "/",
+  overlay = false,
 }: {
   title: string;
   eyebrow?: string;
   image?: string | null;
   crumbs?: Crumb[];
   homeHref?: string;
+  /** Put eyebrow + title on top of the hero image instead of below it. */
+  overlay?: boolean;
 }) {
   const last = crumbs.at(-1);
 
@@ -42,17 +45,31 @@ export function PageHero({
       </div>
 
       {image && (
-        <div className="relative aspect-[16/9] w-full overflow-hidden bg-[var(--bg-soft)] md:aspect-[1440/390]">
-          <Image src={image} alt={title} fill priority sizes="100vw" className="object-cover" />
+        <div
+          className={`relative w-full overflow-hidden bg-[var(--bg-soft)] md:aspect-[1440/390] ${
+            overlay ? "min-h-64 aspect-[4/3]" : "aspect-[16/9]"
+          }`}
+        >
+          <Image src={image} alt={overlay ? "" : title} fill priority sizes="100vw" className="object-cover" />
+          {overlay && (
+            <div className="container-page absolute inset-0 flex items-center">
+              <div className="max-w-xl text-white [text-shadow:0_2px_12px_rgb(0_0_0/0.45)]">
+                {eyebrow && <p className="eyebrow mb-3">{eyebrow}</p>}
+                <h1 className="display-lg">{title}</h1>
+              </div>
+            </div>
+          )}
         </div>
       )}
 
-      <div className="container-page pb-2 pt-[var(--section-y-sm)] text-center">
-        <div className="mx-auto max-w-4xl">
-          {eyebrow && <p className="eyebrow mb-3 text-[var(--muted)]">{eyebrow}</p>}
-          <h1 className="display-lg text-[var(--brand)]">{title}</h1>
+      {!(overlay && image) && (
+        <div className="container-page pb-2 pt-[var(--section-y-sm)] text-center">
+          <div className="mx-auto max-w-4xl">
+            {eyebrow && <p className="eyebrow mb-3 text-[var(--muted)]">{eyebrow}</p>}
+            <h1 className="display-lg text-[var(--brand)]">{title}</h1>
+          </div>
         </div>
-      </div>
+      )}
     </>
   );
 }

@@ -160,7 +160,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       <SiteHeader
         nav={nav}
         locale={lang}
-        tagline={dict.topbar.tagline}
+        topbar={dict.topbar}
         getInTouch={dict.nav.getInTouch}
       />
       <main className="flex-1">{children}</main>
