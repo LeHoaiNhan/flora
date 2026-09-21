@@ -195,3 +195,68 @@ export const VOAC_PORTFOLIO_SLUGS = SERVICE_ORDER.filter(
 export function serviceIndex(slug: string): number {
   return Math.max(0, SERVICE_ORDER.indexOf(slug as (typeof SERVICE_ORDER)[number])) + 1;
 }
+
+/**
+ * Business-capability grouping for navigation — replaces the old "Flora vs
+ * VOAC" nav split, which organised by internal brand rather than by the
+ * problem a visitor is trying to solve. See document/REEDIT.txt for the
+ * underlying IA rationale (Solutions: Precision Farming / Certification /
+ * Sourcing / Export, plus a VOAC Ecosystem cluster for consortium-operations
+ * pages that don't yet have a dedicated Ecosystem section of their own).
+ */
+export type SolutionCluster =
+  | "precision-farming"
+  | "certification"
+  | "sourcing"
+  | "export"
+  | "ecosystem";
+
+export const SOLUTION_CLUSTER_ORDER: SolutionCluster[] = [
+  "precision-farming",
+  "certification",
+  "sourcing",
+  "export",
+  "ecosystem",
+];
+
+type ServiceSlug = (typeof SERVICE_ORDER)[number];
+
+const NAV_CLUSTER: Record<ServiceSlug, SolutionCluster> = {
+  "premium-agricultural-inputs-the-japanese-foundation": "precision-farming",
+  "farming-precision-cultivation-the-honey-no-9-legacy": "precision-farming",
+  "voac-nguyen-lieu-nong-nghiep-huu-co-voac": "precision-farming",
+
+  "organic-certification-global-compliance-solutions": "certification",
+  "voac-dich-vu-chung-nhan-huu-co": "certification",
+  "voac-chung-nhan-huu-co-voac": "certification",
+  "voac-chung-nhan-voac-khong-hoa-chat-chem-free": "certification",
+
+  "strategic-sourcing-procurement-your-bridge-to-vietnam": "sourcing",
+  "voac-dich-vu-tim-nguon-san-pham": "sourcing",
+
+  "the-export-logistic-chain-precision-velocity-thermal-integrity": "export",
+
+  "voac-dich-vu-cot-loi-cua-voac": "ecosystem",
+  "voac-dich-vu-ho-tro-cua-voac": "ecosystem",
+  "voac-mo-hinh-nong-trai-khong-hoa-chat-voac": "ecosystem",
+  "voac-doi-tac-nong-trai-huu-co-voac": "ecosystem",
+};
+
+export function getSolutionCluster(slug: ServiceSlug): SolutionCluster {
+  return NAV_CLUSTER[slug];
+}
+
+/** All 14 service slugs, bucketed into the 5 nav clusters, in catalogue order. */
+export function servicesByCluster(): Record<SolutionCluster, ServiceSlug[]> {
+  const map: Record<SolutionCluster, ServiceSlug[]> = {
+    "precision-farming": [],
+    certification: [],
+    sourcing: [],
+    export: [],
+    ecosystem: [],
+  };
+  for (const slug of SERVICE_ORDER) {
+    map[getSolutionCluster(slug)].push(slug);
+  }
+  return map;
+}

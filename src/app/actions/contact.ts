@@ -13,6 +13,17 @@ const INQUIRY_TYPES = [
 
 const TIMELINES = ["Immediate", "Next Season", "Research Phase"];
 
+// "I am a…" — routes the enquiry to the right team without adding a DB
+// column; folded into the free-text message body below, same as inquiry/timeline.
+// Not exported: a "use server" file may only export async functions, so this
+// must stay in sync by hand with EN_PERSONAS in app/[lang]/contact/page.tsx.
+const PERSONA_TYPES = [
+  "Farmer / Farm Owner",
+  "Global Buyer / Importer",
+  "Strategic Partner",
+  "Other",
+];
+
 export async function submitContact(formData: FormData) {
   const field = (key: string) => String(formData.get(key) || "").trim();
 
@@ -24,6 +35,7 @@ export async function submitContact(formData: FormData) {
   const phone = field("phone");
   const company = field("company");
   const location = field("location");
+  const persona = field("persona");
   const inquiry = field("inquiry");
   const timeline = field("timeline");
   const message = field("message");
@@ -34,7 +46,11 @@ export async function submitContact(formData: FormData) {
   if (!name || !email || !company || !location) {
     redirect(`${contactPath}?error=1#contact-form`);
   }
-  if (!INQUIRY_TYPES.includes(inquiry) || !TIMELINES.includes(timeline)) {
+  if (
+    !PERSONA_TYPES.includes(persona) ||
+    !INQUIRY_TYPES.includes(inquiry) ||
+    !TIMELINES.includes(timeline)
+  ) {
     redirect(`${contactPath}?error=1#contact-form`);
   }
 
@@ -42,6 +58,7 @@ export async function submitContact(formData: FormData) {
     product && `Wholesale inquiry — product: ${product.slice(0, 200)}`,
     `Company: ${company}`,
     `Headquarters: ${location}`,
+    `I am a: ${persona}`,
     `Nature of inquiry: ${inquiry}`,
     `Timeline: ${timeline}`,
     message && `\n${message}`,

@@ -14,6 +14,8 @@ type Props = {
   lang: Locale;
   cover?: string | null;
   readMore: string;
+  /** Base path of the section this card links into — "/solutions" or "/ecosystem". */
+  sectionPath: string;
 };
 
 const nn = (n: number) => String(n).padStart(2, "0");
@@ -31,11 +33,12 @@ export function ServiceCardFeature({
   lang,
   cover,
   readMore,
+  sectionPath,
 }: Props) {
   const theme = getServiceTheme(slug);
   return (
     <Link
-      href={withLocale(lang, `/services/${slug}`)}
+      href={withLocale(lang, `${sectionPath}/${slug}`)}
       className="svc card card-interactive group grid overflow-hidden md:grid-cols-2"
       style={accent(slug)}
     >
@@ -78,11 +81,12 @@ export function ServiceCardLarge({
   lang,
   cover,
   readMore,
+  sectionPath,
 }: Props) {
   const theme = getServiceTheme(slug);
   return (
     <Link
-      href={withLocale(lang, `/services/${slug}`)}
+      href={withLocale(lang, `${sectionPath}/${slug}`)}
       className="svc card card-interactive group flex flex-col"
       style={accent(slug)}
     >
@@ -117,11 +121,20 @@ export function ServiceCardLarge({
 }
 
 /** Thẻ dựa vào biểu tượng — dùng cho dịch vụ VOAC (không có ảnh riêng). */
-export function ServiceCardTile({ slug, title, excerpt, label, index, lang, readMore }: Props) {
+export function ServiceCardTile({
+  slug,
+  title,
+  excerpt,
+  label,
+  index,
+  lang,
+  readMore,
+  sectionPath,
+}: Props) {
   const theme = getServiceTheme(slug);
   return (
     <Link
-      href={withLocale(lang, `/services/${slug}`)}
+      href={withLocale(lang, `${sectionPath}/${slug}`)}
       className="svc card card-interactive group relative flex flex-col gap-1 overflow-hidden p-7"
       style={accent(slug)}
     >
@@ -142,11 +155,20 @@ export function ServiceCardTile({ slug, title, excerpt, label, index, lang, read
 }
 
 /** Dòng ngang gọn — dùng cho chương trình & bộ chuẩn của VOAC. */
-export function ServiceRow({ slug, title, excerpt, label, index, lang, readMore }: Props) {
+export function ServiceRow({
+  slug,
+  title,
+  excerpt,
+  label,
+  index,
+  lang,
+  readMore,
+  sectionPath,
+}: Props) {
   const theme = getServiceTheme(slug);
   return (
     <Link
-      href={withLocale(lang, `/services/${slug}`)}
+      href={withLocale(lang, `${sectionPath}/${slug}`)}
       className="svc group flex items-start gap-5 py-6 transition-colors hover:bg-[var(--sv-soft)] sm:items-center sm:gap-7 sm:px-4"
       style={accent(slug)}
     >

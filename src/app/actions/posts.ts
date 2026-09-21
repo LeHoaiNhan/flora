@@ -197,9 +197,9 @@ export async function retranslatePost(
 
 function revalidateNews() {
   for (const lang of locales) {
-    revalidatePath(`/${lang}/news`);
-    revalidatePath(`/${lang}/news/[slug]`, "page");
-    revalidatePath(`/${lang}/news/category/[category]`, "page");
+    revalidatePath(`/${lang}/knowledge`);
+    revalidatePath(`/${lang}/knowledge/[slug]`, "page");
+    revalidatePath(`/${lang}/knowledge/category/[category]`, "page");
     revalidatePath(`/${lang}`);
   }
 }

@@ -1,9 +1,10 @@
 import type { MetadataRoute } from "next";
 import { locales, withLocale } from "@/lib/i18n/config";
 import { abs, languageAlternates } from "@/lib/seo";
-import { getProducts } from "@/lib/catalog";
-import { getServices, NEWS_CATEGORIES } from "@/lib/legacy";
+import { getCategories, getProducts } from "@/lib/catalog";
+import { getServices, NEWS_CATEGORIES, SERVICE_ORDER } from "@/lib/legacy";
 import { allArticles } from "@/lib/news";
+import { getSolutionCluster } from "@/lib/services/service-theme";
 
 // Rebuild hourly so freshly published posts/products enter the sitemap without a deploy.
 export const revalidate = 3600;
@@ -20,30 +21,35 @@ type Entry = {
 const STATIC: Entry[] = [
   { path: "/", changeFrequency: "weekly", priority: 1 },
   { path: "/about-us", changeFrequency: "monthly", priority: 0.7 },
-  { path: "/services", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/solutions", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/ecosystem", changeFrequency: "monthly", priority: 0.6 },
   { path: "/products", changeFrequency: "weekly", priority: 0.8 },
-  { path: "/news", changeFrequency: "daily", priority: 0.7 },
+  { path: "/knowledge", changeFrequency: "daily", priority: 0.7 },
   { path: "/contact", changeFrequency: "yearly", priority: 0.6 },
 ];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [articles, products] = await Promise.all([allArticles(), getProducts()]);
+  const [articles, products, categories] = await Promise.all([
+    allArticles(),
+    getProducts(),
+    getCategories(),
+  ]);
 
   const entries: Entry[] = [
     ...STATIC,
     ...getServices().map((s) => ({
-      path: `/services/${s.slug}`,
+      path: `${getSolutionCluster(s.slug as (typeof SERVICE_ORDER)[number]) === "ecosystem" ? "/ecosystem" : "/solutions"}/${s.slug}`,
       lastModified: s.date || undefined,
       changeFrequency: "monthly" as ChangeFreq,
       priority: 0.8,
     })),
     ...NEWS_CATEGORIES.map((c) => ({
-      path: `/news/category/${c.slug}`,
+      path: `/knowledge/category/${c.slug}`,
       changeFrequency: "weekly" as ChangeFreq,
       priority: 0.5,
     })),
     ...articles.map((a) => ({
-      path: `/news/${a.slug}`,
+      path: `/knowledge/${a.slug}`,
       lastModified: a.date || undefined,
       changeFrequency: "monthly" as ChangeFreq,
       priority: 0.6,
@@ -52,6 +58,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       path: `/products/${p.slug}`,
       changeFrequency: "monthly" as ChangeFreq,
       priority: 0.7,
+    })),
+    ...categories.map((c) => ({
+      path: `/products/${c.slug}`,
+      changeFrequency: "weekly" as ChangeFreq,
+      priority: 0.6,
     })),
   ];
 

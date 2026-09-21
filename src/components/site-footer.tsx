@@ -1,12 +1,32 @@
 import { Fragment } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import type { Category } from "@/lib/data/local";
 import type { Dictionary } from "@/lib/i18n/get-dictionary";
 import { withLocale, type Locale } from "@/lib/i18n/config";
 import { NEWS_CATEGORIES, SERVICE_ORDER } from "@/lib/legacy";
+import { SOLUTION_CLUSTER_ORDER, getSolutionCluster } from "@/lib/services/service-theme";
+import { getServiceStrings } from "@/lib/services/service-i18n";
 
-export function SiteFooter({ locale, dict }: { locale: Locale; dict: Dictionary }) {
+export function SiteFooter({
+  locale,
+  dict,
+  productCategories,
+}: {
+  locale: Locale;
+  dict: Dictionary;
+  productCategories: Category[];
+}) {
   const f = dict.footer;
+  const s = getServiceStrings(locale);
+  const ecosystemSlugs = SERVICE_ORDER.filter((slug) => getSolutionCluster(slug) === "ecosystem");
+  const clusterLabel: Record<(typeof SOLUTION_CLUSTER_ORDER)[number], string> = {
+    "precision-farming": s.clusterPrecisionFarming,
+    certification: s.clusterCertification,
+    sourcing: s.clusterSourcing,
+    export: s.clusterExport,
+    ecosystem: s.clusterEcosystem,
+  };
   const support = [
     {
       href: withLocale(locale, "/about-us"),
@@ -14,7 +34,7 @@ export function SiteFooter({ locale, dict }: { locale: Locale; dict: Dictionary 
       lines: [f.infoAbout, f.aboutUs],
     },
     {
-      href: withLocale(locale, "/news"),
+      href: withLocale(locale, "/knowledge"),
       icon: "/images/wp/2018_07_t2.jpg",
       lines: [f.newUpdates, f.fromUs],
     },
@@ -113,35 +133,51 @@ export function SiteFooter({ locale, dict }: { locale: Locale; dict: Dictionary 
             </address>
           </div>
 
-          <div className="col-span-full grid gap-8 sm:grid-cols-3 lg:col-span-8">
+          <div className="col-span-full grid grid-cols-2 gap-8 sm:grid-cols-3 lg:col-span-8 lg:grid-cols-5">
             <div>
-              <FooterTitle>{f.aboutTitle}</FooterTitle>
+              <FooterTitle>{f.servicesTitle}</FooterTitle>
               <ul className="space-y-2 text-lg text-[var(--muted)]">
-                <li>
-                  <Link href={withLocale(locale, "/about-us")} className="hover:text-[var(--brand)]">
-                    {dict.nav.about}
-                  </Link>
-                </li>
-                <li>
-                  <Link href={withLocale(locale, "/contact")} className="hover:text-[var(--brand)]">
-                    {dict.nav.contact}
-                  </Link>
-                </li>
-                <li>
-                  <Link href={withLocale(locale, "/products")} className="hover:text-[var(--brand)]">
-                    {dict.nav.products}
-                  </Link>
-                </li>
+                {SOLUTION_CLUSTER_ORDER.filter((c) => c !== "ecosystem").map((cluster) => (
+                  <li key={cluster}>
+                    <Link
+                      href={`${withLocale(locale, "/solutions")}#${cluster}`}
+                      className="hover:text-[var(--brand)]"
+                    >
+                      {clusterLabel[cluster]}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
 
             <div>
-              <FooterTitle>{f.servicesTitle}</FooterTitle>
+              <FooterTitle>{f.productsTitle}</FooterTitle>
               <ul className="space-y-2 text-lg text-[var(--muted)]">
-                {SERVICE_ORDER.map((slug) => (
+                <li>
+                  <Link href={withLocale(locale, "/products")} className="hover:text-[var(--brand)]">
+                    {dict.productsPage.all}
+                  </Link>
+                </li>
+                {productCategories.map((c) => (
+                  <li key={c.slug}>
+                    <Link
+                      href={withLocale(locale, `/products/${c.slug}`)}
+                      className="hover:text-[var(--brand)]"
+                    >
+                      {c.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <FooterTitle>{f.ecosystemTitle}</FooterTitle>
+              <ul className="space-y-2 text-lg text-[var(--muted)]">
+                {ecosystemSlugs.map((slug) => (
                   <li key={slug}>
                     <Link
-                      href={withLocale(locale, `/services/${slug}`)}
+                      href={withLocale(locale, `/ecosystem/${slug}`)}
                       className="hover:text-[var(--brand)]"
                     >
                       {dict.services[slug]}
@@ -157,13 +193,29 @@ export function SiteFooter({ locale, dict }: { locale: Locale; dict: Dictionary 
                 {NEWS_CATEGORIES.map((c) => (
                   <li key={c.slug}>
                     <Link
-                      href={withLocale(locale, `/news/category/${c.slug}`)}
+                      href={withLocale(locale, `/knowledge/category/${c.slug}`)}
                       className="hover:text-[var(--brand)]"
                     >
                       {dict.newsCategories[c.slug]}
                     </Link>
                   </li>
                 ))}
+              </ul>
+            </div>
+
+            <div>
+              <FooterTitle>{f.aboutTitle}</FooterTitle>
+              <ul className="space-y-2 text-lg text-[var(--muted)]">
+                <li>
+                  <Link href={withLocale(locale, "/about-us")} className="hover:text-[var(--brand)]">
+                    {dict.nav.about}
+                  </Link>
+                </li>
+                <li>
+                  <Link href={withLocale(locale, "/contact")} className="hover:text-[var(--brand)]">
+                    {dict.nav.contact}
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>

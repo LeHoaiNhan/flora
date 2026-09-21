@@ -11,10 +11,7 @@ import { pageSeo } from "@/lib/seo";
 
 export const revalidate = 300;
 
-type Props = {
-  params: Promise<{ lang: string }>;
-  searchParams: Promise<{ category?: string }>;
-};
+type Props = { params: Promise<{ lang: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await params;
@@ -29,15 +26,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   });
 }
 
-export default async function ProductsPage({ params, searchParams }: Props) {
+export default async function ProductsPage({ params }: Props) {
   const { lang: raw } = await params;
   const lang = resolveLocale(raw);
   const dict = getDictionary(lang);
-  const { category } = await searchParams;
-  const [rawProducts, rawCategories] = await Promise.all([
-    getProducts({ category }),
-    getCategories(),
-  ]);
+  const [rawProducts, rawCategories] = await Promise.all([getProducts(), getCategories()]);
   const products = localizeProducts(rawProducts, lang);
   const categories = localizeCategories(rawCategories, lang);
 
@@ -53,26 +46,17 @@ export default async function ProductsPage({ params, searchParams }: Props) {
       <div className="container-page section-y">
         <p className="lead max-w-2xl text-[var(--muted)]">{dict.productsPage.intro}</p>
 
+        {/* Category browsing now lives at its own path (/products/{category}) instead
+            of a query filter, so these chips navigate rather than self-filter. */}
         <div className="mt-8 flex flex-wrap gap-2">
-          <Link
-            href={withLocale(lang, "/products")}
-            className={`body-sm rounded-[var(--radius-control)] border px-4 py-2 transition ${
-              !category
-                ? "border-[var(--brand)] bg-[var(--brand)] text-white"
-                : "border-[var(--line)] text-[var(--ink)] hover:border-[var(--brand)]"
-            }`}
-          >
+          <span className="body-sm rounded-[var(--radius-control)] border border-[var(--brand)] bg-[var(--brand)] px-4 py-2 text-white">
             {dict.productsPage.all}
-          </Link>
+          </span>
           {categories.map((c) => (
             <Link
               key={c.id}
-              href={`${withLocale(lang, "/products")}?category=${c.slug}`}
-              className={`body-sm rounded-[var(--radius-control)] border px-4 py-2 transition ${
-                category === c.slug
-                  ? "border-[var(--brand)] bg-[var(--brand)] text-white"
-                  : "border-[var(--line)] text-[var(--ink)] hover:border-[var(--brand)]"
-              }`}
+              href={withLocale(lang, `/products/${c.slug}`)}
+              className="body-sm rounded-[var(--radius-control)] border border-[var(--line)] px-4 py-2 text-[var(--ink)] transition hover:border-[var(--brand)]"
             >
               {c.name}
             </Link>

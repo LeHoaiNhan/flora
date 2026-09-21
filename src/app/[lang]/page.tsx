@@ -12,22 +12,25 @@ import { getLocalizedPosts } from "@/lib/i18n/localized-content";
 import { localizeProducts } from "@/lib/i18n/localized-catalog";
 import { pageSeo } from "@/lib/seo";
 
+// Plain photography, not pre-composed WordPress banner artwork — the old
+// banners had their own baked-in headline text, which collided with the
+// HeroSlider text overlay added for the homepage rebuild (see document/REEDIT.txt).
 const SLIDES = [
   {
-    src: "/images/wp/2025_09_banner1-1.jpg",
-    alt: "Organic certification consultation — USDA, EU Organic, JAS",
+    src: "/images/voac/voac-chemical-free-model-farm.jpg",
+    alt: "Aerial view of organic farmland in Vietnam",
   },
   {
-    src: "/images/wp/2025_09_banner22.jpg",
-    alt: "Flora Global — Honey No. 9 passion fruit",
+    src: "/images/voac/voac-organic-inputs.jpg",
+    alt: "Hands holding rich soil beside a young organic crop",
   },
 ];
 
 const PILLAR_HREFS = [
-  "/services/premium-agricultural-inputs-the-japanese-foundation",
-  "/services/farming-precision-cultivation-the-honey-no-9-legacy",
-  "/services/organic-certification-global-compliance-solutions",
-  "/services/the-export-logistic-chain-precision-velocity-thermal-integrity",
+  "/solutions/premium-agricultural-inputs-the-japanese-foundation",
+  "/solutions/farming-precision-cultivation-the-honey-no-9-legacy",
+  "/solutions/organic-certification-global-compliance-solutions",
+  "/solutions/the-export-logistic-chain-precision-velocity-thermal-integrity",
 ] as const;
 
 const PILLAR_IMAGES = [
@@ -35,6 +38,14 @@ const PILLAR_IMAGES = [
   "/images/wp/2026_03_PRECISION-GROWING.jpg",
   "/images/wp/2025_09_tuvanthietke.jpg",
   "/images/wp/2025_09_quanlyduan.jpg",
+] as const;
+
+// "Who we serve" entry points — each routes to the section of the site that
+// actually answers that persona's question, not a generic contact form.
+const WHO_CARDS = [
+  { href: "/solutions#precision-farming" },
+  { href: "/solutions#sourcing" },
+  { href: "/ecosystem" },
 ] as const;
 
 type Props = { params: Promise<{ lang: string }> };
@@ -66,7 +77,27 @@ export default async function HomePage({ params }: Props) {
 
   return (
     <>
-      <HeroSlider slides={SLIDES} />
+      <HeroSlider slides={SLIDES}>
+        <div className="max-w-2xl text-white">
+          <p className="eyebrow text-white/80">{h.heroEyebrow}</p>
+          <h1 className="display-lg mt-3 text-white">{h.heroTitle}</h1>
+          <p className="lead mt-4 max-w-xl text-white/90">{h.heroSubtitle}</p>
+          <div className="mt-7 flex flex-wrap gap-4">
+            <Link
+              href={withLocale(lang, "/ecosystem")}
+              className="body-sm rounded-[var(--radius-control)] bg-white px-6 py-3 font-semibold uppercase tracking-wide text-[var(--brand)] shadow-[var(--shadow-soft)] transition hover:bg-white/90"
+            >
+              {h.heroCta1}
+            </Link>
+            <Link
+              href={withLocale(lang, "/products")}
+              className="body-sm rounded-[var(--radius-control)] border-2 border-white px-6 py-3 font-semibold uppercase tracking-wide text-white transition hover:bg-white/10"
+            >
+              {h.heroCta2}
+            </Link>
+          </div>
+        </div>
+      </HeroSlider>
 
       <section className="container-page section-y">
         <Reveal className="space-y-16 md:space-y-20">
@@ -138,6 +169,34 @@ export default async function HomePage({ params }: Props) {
         </Reveal>
       </section>
 
+      <section className="container-page section-y">
+        <div className="mx-auto max-w-2xl text-center">
+          <p className="eyebrow text-[var(--brand)]">{h.whoEyebrow}</p>
+          <h2 className="display-lg mt-3">{h.whoTitle}</h2>
+        </div>
+        <Reveal className="mt-10 grid gap-6 md:grid-cols-3">
+          {[
+            { ...WHO_CARDS[0], title: h.whoFarmerTitle, body: h.whoFarmerBody, cta: h.whoFarmerCta },
+            { ...WHO_CARDS[1], title: h.whoBuyerTitle, body: h.whoBuyerBody, cta: h.whoBuyerCta },
+            { ...WHO_CARDS[2], title: h.whoPartnerTitle, body: h.whoPartnerBody, cta: h.whoPartnerCta },
+          ].map((card) => (
+            <Link
+              key={card.href}
+              href={withLocale(lang, card.href)}
+              className="card card-interactive group flex flex-col p-8"
+            >
+              <h3 className="display-sm text-[var(--ink)] transition-colors group-hover:text-[var(--brand)]">
+                {card.title}
+              </h3>
+              <p className="body-sm mt-3 flex-1 text-[var(--muted)]">{card.body}</p>
+              <span className="body-sm mt-6 font-semibold uppercase tracking-wide text-[var(--brand)]">
+                {card.cta} →
+              </span>
+            </Link>
+          ))}
+        </Reveal>
+      </section>
+
       {products.length > 0 && (
         <section className="container-page section-y">
           <SectionHead
@@ -165,14 +224,14 @@ export default async function HomePage({ params }: Props) {
           <SectionHead
             eyebrow={h.blogEyebrow}
             title={h.newsTitle}
-            href={withLocale(lang, "/news")}
+            href={withLocale(lang, "/knowledge")}
             cta={h.allNews}
           />
           <Reveal className="grid gap-6 md:grid-cols-3">
             {posts.slice(0, 3).map((post) => (
               <Link
                 key={post.slug}
-                href={withLocale(lang, `/news/${post.slug}`)}
+                href={withLocale(lang, `/knowledge/${post.slug}`)}
                 className="card card-interactive group flex flex-col"
               >
                 <div className="relative aspect-[16/10] overflow-hidden bg-[var(--bg-soft)]">

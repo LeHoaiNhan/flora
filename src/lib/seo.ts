@@ -35,7 +35,7 @@ export function abs(path = "/"): string {
 }
 
 /**
- * hreflang map for a locale-agnostic path (e.g. "/services"). Every locale plus
+ * hreflang map for a locale-agnostic path (e.g. "/solutions"). Every locale plus
  * an `x-default` pointing at the default locale — Google needs the full set,
  * including the page's own language, on every URL in the group.
  */
@@ -48,7 +48,7 @@ export function languageAlternates(path = "/"): Record<string, string> {
 
 type PageSeoInput = {
   lang: Locale;
-  /** Locale-agnostic path, e.g. "/news/my-post". Defaults to the locale home. */
+  /** Locale-agnostic path, e.g. "/knowledge/my-post". Defaults to the locale home. */
   path?: string;
   title?: string;
   /** Skip the "%s | Flora Global" layout template for this page's <title>. */

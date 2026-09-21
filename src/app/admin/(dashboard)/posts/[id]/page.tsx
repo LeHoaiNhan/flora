@@ -42,7 +42,7 @@ export default async function EditPostPage({ params }: Props) {
           </h1>
           <div className="flex items-center gap-3 text-sm">
             <a
-              href={`/vi/news/${post.slug}`}
+              href={`/vi/knowledge/${post.slug}`}
               target="_blank"
               rel="noreferrer"
               className="text-[var(--muted)] hover:text-[var(--brand)]"

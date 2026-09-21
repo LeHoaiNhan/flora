@@ -25,11 +25,27 @@ type Props = {
   lang: Locale;
   dict: Dictionary;
   others: { slug: string; title: string; label: string }[];
+  /** Base path of the section this detail page lives under — "/solutions" or "/ecosystem". */
+  sectionPath: string;
+  /** Breadcrumb label for that section (e.g. dict.solutionsPage.title). */
+  sectionLabel: string;
 };
 
 const nn = (n: number) => String(n).padStart(2, "0");
 
-function Crumbs({ lang, dict, label, dark }: { lang: Locale; dict: Dictionary; label: string; dark?: boolean }) {
+function Crumbs({
+  lang,
+  sectionPath,
+  sectionLabel,
+  label,
+  dark,
+}: {
+  lang: Locale;
+  sectionPath: string;
+  sectionLabel: string;
+  label: string;
+  dark?: boolean;
+}) {
   const base = dark ? "text-white/70" : "text-[var(--muted)]";
   const hov = dark ? "hover:text-white" : "hover:text-[var(--sv-ink)]";
   return (
@@ -38,8 +54,8 @@ function Crumbs({ lang, dict, label, dark }: { lang: Locale; dict: Dictionary; l
         Flora Global
       </Link>
       <span aria-hidden>→</span>
-      <Link href={withLocale(lang, "/services")} className={hov}>
-        {dict.servicesPage.title}
+      <Link href={withLocale(lang, sectionPath)} className={hov}>
+        {sectionLabel}
       </Link>
       <span aria-hidden>→</span>
       <span className={dark ? "text-white" : "font-semibold text-[var(--ink)]"}>{label}</span>
@@ -85,7 +101,7 @@ function CtaButton({ lang, dict, dark }: { lang: Locale; dict: Dictionary; dark?
   );
 }
 
-function HeroSpotlight({ service, theme, label, lang, dict }: Props) {
+function HeroSpotlight({ service, theme, label, lang, dict, sectionPath, sectionLabel }: Props) {
   return (
     <header className="relative isolate overflow-hidden bg-[var(--sv-deep)] text-white">
       {service.cover && (
@@ -100,7 +116,7 @@ function HeroSpotlight({ service, theme, label, lang, dict }: Props) {
       )}
       <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black/85 via-black/45 to-black/20" />
       <div className="container-page flex min-h-[30rem] flex-col justify-between gap-12 pb-14 pt-6 md:min-h-[68vh]">
-        <Crumbs lang={lang} dict={dict} label={label} dark />
+        <Crumbs lang={lang} sectionPath={sectionPath} sectionLabel={sectionLabel} label={label} dark />
         <div className="max-w-3xl">
           <div className="flex items-center gap-3">
             <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/15 backdrop-blur">
@@ -124,7 +140,7 @@ function HeroSpotlight({ service, theme, label, lang, dict }: Props) {
   );
 }
 
-function HeroEditorial({ service, model, theme, label, lang, dict }: Props) {
+function HeroEditorial({ service, model, theme, label, lang, dict, sectionPath, sectionLabel }: Props) {
   const idx = serviceIndex(service.slug);
   const showImage = Boolean(service.cover);
   const tagline = getServiceTagline(lang, service.slug) ?? model.tagline ?? service.excerpt;
@@ -138,7 +154,7 @@ function HeroEditorial({ service, model, theme, label, lang, dict }: Props) {
         {nn(idx)}
       </span>
       <div className="container-page relative py-6">
-        <Crumbs lang={lang} dict={dict} label={label} />
+        <Crumbs lang={lang} sectionPath={sectionPath} sectionLabel={sectionLabel} label={label} />
       </div>
       <div className="container-page relative grid gap-10 pb-[var(--section-y-sm)] md:grid-cols-[1.25fr_1fr] md:items-center md:pb-[var(--section-y)]">
         <div>
@@ -557,7 +573,15 @@ function CtaPanel({ lang, dict }: { lang: Locale; dict: Dictionary }) {
   );
 }
 
-function Explore({ lang, others }: { lang: Locale; others: Props["others"] }) {
+function Explore({
+  lang,
+  others,
+  sectionPath,
+}: {
+  lang: Locale;
+  others: Props["others"];
+  sectionPath: string;
+}) {
   const s = getServiceStrings(lang);
   return (
     <section className="bg-[var(--bg-soft)]">
@@ -565,7 +589,7 @@ function Explore({ lang, others }: { lang: Locale; others: Props["others"] }) {
         <div className="mb-8 flex items-end justify-between gap-4">
           <h2 className="display-md text-[var(--ink)]">{s.explore}</h2>
           <Link
-            href={withLocale(lang, "/services")}
+            href={withLocale(lang, sectionPath)}
             className="body-sm shrink-0 font-semibold text-[var(--brand)] hover:underline"
           >
             {s.viewAll} →
@@ -577,7 +601,7 @@ function Explore({ lang, others }: { lang: Locale; others: Props["others"] }) {
             return (
               <Link
                 key={o.slug}
-                href={withLocale(lang, `/services/${o.slug}`)}
+                href={withLocale(lang, `${sectionPath}/${o.slug}`)}
                 className="card card-interactive group flex items-start gap-4 p-5"
                 style={{ ["--sv" as string]: t.accent } as CSSProperties}
               >
@@ -606,7 +630,7 @@ export function ServiceDetail(props: Props) {
       {theme.hero === "spotlight" ? <HeroSpotlight {...props} /> : <HeroEditorial {...props} />}
       <Body {...props} />
       <CtaPanel lang={props.lang} dict={props.dict} />
-      <Explore lang={props.lang} others={props.others} />
+      <Explore lang={props.lang} others={props.others} sectionPath={props.sectionPath} />
     </div>
   );
 }

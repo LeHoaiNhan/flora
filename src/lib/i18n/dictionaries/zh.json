@@ -9,8 +9,9 @@
   "nav": {
     "home": "首页",
     "about": "关于我们",
-    "services": "服务",
-    "news": "新闻",
+    "services": "解决方案",
+    "ecosystem": "生态系统",
+    "news": "知识",
     "products": "产品",
     "contact": "联系",
     "getInTouch": "联系我们"
@@ -39,13 +40,29 @@
     "goc-nhin-flora": "Flora 观点"
   },
   "home": {
+    "heroEyebrow": "一体化农业生态系统",
+    "heroTitle": "从越南土地到全球市场",
+    "heroSubtitle": "Flora Global 整合农业投入、种植、认证、采购与出口，构建透明且可追溯的农业供应链。",
+    "heroCta1": "探索我们的生态系统",
+    "heroCta2": "查找产品",
+    "whoEyebrow": "您在寻找什么？",
+    "whoTitle": "Flora 服务对象",
+    "whoFarmerTitle": "农户与农场主",
+    "whoFarmerBody": "提升种植区品质，获得国际认证，并使用日本标准投入品。",
+    "whoFarmerCta": "探索种植解决方案",
+    "whoBuyerTitle": "国际买家",
+    "whoBuyerBody": "采购符合标准、可追溯且供应稳定的越南农产品。",
+    "whoBuyerCta": "从越南采购",
+    "whoPartnerTitle": "战略合作伙伴",
+    "whoPartnerBody": "与 Flora 共建长期供应链——从投入品到全球市场。",
+    "whoPartnerCta": "与 Flora 合作",
     "learnMore": "了解更多",
     "aboutCta": "关于我们",
     "catalogEyebrow": "目录",
     "productsTitle": "产品",
     "allProducts": "全部产品",
     "blogEyebrow": "博客",
-    "newsTitle": "新闻",
+    "newsTitle": "知识",
     "allNews": "全部新闻",
     "ceoCaption": "黎氏翠花女士 – Flora Global 首席执行官",
     "ecosystemTitle": "一体化农业供应链生态系统",
@@ -85,8 +102,10 @@
     "contact": "联系",
     "withUs": "我们",
     "aboutTitle": "关于我们",
-    "servicesTitle": "服务",
-    "blogsTitle": "博客",
+    "servicesTitle": "解决方案",
+    "productsTitle": "产品",
+    "ecosystemTitle": "生态系统",
+    "blogsTitle": "知识",
     "companyTitle": "Flora Global 有限公司",
     "addressLabel": "总部 – 胡志明市",
     "address": "越南胡志明市 Xom Chieu 坊 Doan Van Bo 路 692/31 号",
@@ -116,11 +135,16 @@
   },
   "servicesPage": {
     "eyebrow": "垂直整合。垂直可信。",
-    "title": "服务"
+    "title": "解决方案"
+  },
+  "ecosystemPage": {
+    "eyebrow": "生态系统背后的运作",
+    "title": "VOAC 生态系统",
+    "intro": "VOAC 用以运营 Flora 生态系统的农场网络、自有认证项目与联盟服务。"
   },
   "newsPage": {
     "eyebrow": "博客",
-    "title": "新闻"
+    "title": "知识"
   },
   "productsPage": {
     "eyebrow": "目录",
@@ -131,7 +155,7 @@
   },
   "contact": {
     "eyebrow": "让我们超越单纯交易",
-    "title": "联系我们",
+    "title": "与 Flora 合作",
     "sent": "谢谢。您的询盘已收到 — 我们的团队将尽快回复。",
     "error": "请填写所有标有 * 的必填项。",
     "name": "姓名与职位 *",
@@ -139,7 +163,14 @@
     "company": "公司名称 *",
     "location": "总部所在地 *",
     "phone": "电话",
-    "inquiry": "询盘类型 *",
+    "personaLabel": "我是... *",
+    "personas": [
+      "农户 / 农场主",
+      "国际买家 / 进口商",
+      "战略合作伙伴",
+      "其他"
+    ],
+    "inquiry": "您在寻找什么？ *",
     "message": "项目详情 / 留言",
     "timeline": "时间安排 *",
     "submit": "开启合作",

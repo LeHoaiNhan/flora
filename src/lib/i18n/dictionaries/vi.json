@@ -9,8 +9,9 @@
   "nav": {
     "home": "Trang chủ",
     "about": "Về chúng tôi",
-    "services": "Dịch vụ",
-    "news": "Tin tức",
+    "services": "Giải pháp",
+    "ecosystem": "Hệ sinh thái",
+    "news": "Kiến thức",
     "products": "Sản phẩm",
     "contact": "Liên hệ",
     "getInTouch": "Liên hệ"
@@ -39,13 +40,29 @@
     "goc-nhin-flora": "Góc nhìn Flora"
   },
   "home": {
+    "heroEyebrow": "Hệ sinh thái nông nghiệp tích hợp",
+    "heroTitle": "Từ đất Việt Nam đến thị trường toàn cầu",
+    "heroSubtitle": "Flora Global kết nối đầu vào, canh tác, tiêu chuẩn, nguồn cung và xuất khẩu để xây dựng chuỗi giá trị nông nghiệp minh bạch và có khả năng truy xuất.",
+    "heroCta1": "Khám phá hệ sinh thái",
+    "heroCta2": "Tìm sản phẩm",
+    "whoEyebrow": "Bạn đang tìm kiếm điều gì?",
+    "whoTitle": "Flora phục vụ ai",
+    "whoFarmerTitle": "Nông dân & Chủ trang trại",
+    "whoFarmerBody": "Nâng chất lượng vùng trồng, đạt chứng nhận quốc tế và tiếp cận đầu vào chuẩn Nhật Bản.",
+    "whoFarmerCta": "Khám phá giải pháp canh tác",
+    "whoBuyerTitle": "Nhà mua hàng quốc tế",
+    "whoBuyerBody": "Tìm nguồn nông sản Việt Nam đạt chuẩn, có khả năng truy xuất và nguồn cung ổn định.",
+    "whoBuyerCta": "Tìm nguồn từ Việt Nam",
+    "whoPartnerTitle": "Đối tác chiến lược",
+    "whoPartnerBody": "Xây dựng chuỗi cung ứng dài hạn cùng Flora — từ đầu vào đến thị trường toàn cầu.",
+    "whoPartnerCta": "Hợp tác cùng Flora",
     "learnMore": "Tìm hiểu thêm",
     "aboutCta": "Về chúng tôi",
     "catalogEyebrow": "Danh mục",
     "productsTitle": "Sản phẩm",
     "allProducts": "Tất cả sản phẩm",
     "blogEyebrow": "Blog",
-    "newsTitle": "Tin tức",
+    "newsTitle": "Kiến thức",
     "allNews": "Tất cả tin tức",
     "ceoCaption": "Bà Lê Thị Thúy Hoa – CEO Flora Global",
     "ecosystemTitle": "Hệ sinh thái chuỗi cung ứng nông nghiệp tích hợp",
@@ -85,8 +102,10 @@
     "contact": "Liên hệ",
     "withUs": "với chúng tôi",
     "aboutTitle": "Về chúng tôi",
-    "servicesTitle": "Dịch vụ",
-    "blogsTitle": "Blog",
+    "servicesTitle": "Giải pháp",
+    "productsTitle": "Sản phẩm",
+    "ecosystemTitle": "Hệ sinh thái",
+    "blogsTitle": "Kiến thức",
     "companyTitle": "Công ty TNHH Flora Global\nTổng công ty Phân bón\nDịch vụ ( F.L.Global )",
     "addressLabel": "Trụ sở chính TP.HCM",
     "address": "692/31 Đường Đoàn Văn Bơ, Phường Xóm Chiếu, TP. Hồ Chí Minh, Việt Nam",
@@ -116,11 +135,16 @@
   },
   "servicesPage": {
     "eyebrow": "Tích hợp dọc. Tin cậy dọc.",
-    "title": "Dịch vụ"
+    "title": "Giải pháp"
+  },
+  "ecosystemPage": {
+    "eyebrow": "Vận hành phía sau hệ sinh thái",
+    "title": "Hệ sinh thái VOAC",
+    "intro": "Mạng lưới trang trại, chương trình chứng nhận riêng và các dịch vụ liên minh mà VOAC xây dựng để vận hành hệ sinh thái Flora."
   },
   "newsPage": {
     "eyebrow": "Blog",
-    "title": "Tin tức"
+    "title": "Kiến thức"
   },
   "productsPage": {
     "eyebrow": "Danh mục",
@@ -131,7 +155,7 @@
   },
   "contact": {
     "eyebrow": "Hãy vượt qua giao dịch đơn thuần",
-    "title": "Liên hệ",
+    "title": "Hợp tác cùng Flora",
     "sent": "Cảm ơn bạn. Yêu cầu đã được ghi nhận — đội ngũ sẽ phản hồi sớm.",
     "error": "Vui lòng điền đầy đủ các trường bắt buộc đánh dấu *.",
     "name": "Họ tên & chức danh *",
@@ -139,7 +163,14 @@
     "company": "Tên công ty *",
     "location": "Trụ sở *",
     "phone": "Điện thoại",
-    "inquiry": "Nội dung quan tâm *",
+    "personaLabel": "Tôi là... *",
+    "personas": [
+      "Nông dân / Chủ trang trại",
+      "Nhà mua hàng quốc tế",
+      "Đối tác chiến lược",
+      "Khác"
+    ],
+    "inquiry": "Bạn đang tìm kiếm điều gì? *",
     "message": "Chi tiết dự án / Tin nhắn",
     "timeline": "Thời hạn *",
     "submit": "Bắt đầu hợp tác",

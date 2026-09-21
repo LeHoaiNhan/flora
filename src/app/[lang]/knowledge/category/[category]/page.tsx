@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const label = dict.newsCategories[found.slug];
   return pageSeo({
     lang: locale,
-    path: `/news/category/${found.slug}`,
+    path: `/knowledge/category/${found.slug}`,
     title: label,
     description: `${label} — ${dict.newsPage.title} · ${dict.meta.title}`,
     image: "/images/wp/2025_09_banner22.jpg",
@@ -54,8 +54,8 @@ export default async function NewsCategoryPage({ params }: Props) {
         image="/images/wp/2025_09_banner22.jpg"
         homeHref={withLocale(lang, "/")}
         crumbs={[
-          { href: withLocale(lang, "/news"), label: dict.newsPage.title },
-          { href: withLocale(lang, `/news/category/${found.slug}`), label },
+          { href: withLocale(lang, "/knowledge"), label: dict.newsPage.title },
+          { href: withLocale(lang, `/knowledge/category/${found.slug}`), label },
         ]}
       />
       <div className="container-page section-y">
@@ -65,7 +65,7 @@ export default async function NewsCategoryPage({ params }: Props) {
             <ArticleCard
               key={post.slug}
               article={post}
-              href={withLocale(lang, `/news/${post.slug}`)}
+              href={withLocale(lang, `/knowledge/${post.slug}`)}
               readMore={dict.common.readMore}
             />
           ))}

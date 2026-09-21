@@ -9,7 +9,14 @@ export type Slide = {
 };
 
 /** Legacy banners are pre-composed artwork (1900×594), so they render untouched. */
-export function HeroSlider({ slides }: { slides: Slide[] }) {
+export function HeroSlider({
+  slides,
+  children,
+}: {
+  slides: Slide[];
+  /** Optional text/CTA overlay, rendered above the slides on a darkening scrim. */
+  children?: React.ReactNode;
+}) {
   const [index, setIndex] = useState(0);
 
   const go = useCallback(
@@ -37,6 +44,15 @@ export function HeroSlider({ slides }: { slides: Slide[] }) {
           }`}
         />
       ))}
+
+      {children && (
+        <>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/25 to-black/10" />
+          <div className="container-page relative z-10 flex h-full items-end pb-14 md:items-center md:pb-0">
+            {children}
+          </div>
+        </>
+      )}
 
       {slides.length > 1 && (
         <div className="absolute bottom-1 left-1/2 z-10 flex -translate-x-1/2 md:bottom-3">

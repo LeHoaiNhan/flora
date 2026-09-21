@@ -1,0 +1,3911 @@
+Nếu bạn hỏi về các bố cục trình bày (layout) của website, có một số kiểu phổ biến sau:
+
+1. Bố cục 1 cột
+
+Nội dung được xếp theo chiều dọc, đơn giản và dễ đọc.
+
+┌──────────────────────┐
+│       Header         │
+├──────────────────────┤
+│                      │
+│      Nội dung        │
+│                      │
+├──────────────────────┤
+│       Footer         │
+└──────────────────────┘
+
+Phù hợp: blog, trang giới thiệu, landing page, mobile.
+
+2. Bố cục 2 cột
+
+Một cột chính và một sidebar.
+
+┌─────────────────────────────┐
+│           Header            │
+├─────────────────┬───────────┤
+│                 │           │
+│   Nội dung      │ Sidebar   │
+│   chính         │           │
+│                 │           │
+├─────────────────┴───────────┤
+│           Footer            │
+└─────────────────────────────┘
+
+Phù hợp: blog, tin tức, website tài liệu.
+
+3. Bố cục 3 cột
+
+Có nội dung chính ở giữa và hai khu vực phụ hai bên.
+
+Phù hợp: cổng thông tin, trang tin nhiều nội dung.
+
+4. Bố cục dạng lưới (Grid)
+
+Nội dung được chia thành các ô/card.
+
+┌───────┬───────┬───────┐
+│ Card  │ Card  │ Card  │
+├───────┼───────┼───────┤
+│ Card  │ Card  │ Card  │
+├───────┼───────┼───────┤
+│ Card  │ Card  │ Card  │
+└───────┴───────┴───────┘
+
+Phù hợp: website bán hàng, portfolio, thư viện ảnh.
+
+5. Bố cục F-Pattern
+
+Người dùng thường quét nội dung theo hình chữ F: đọc ngang ở phần đầu, sau đó giảm dần xuống bên trái.
+
+Phù hợp: báo điện tử, blog, trang nhiều chữ.
+
+6. Bố cục Z-Pattern
+
+Mắt người dùng di chuyển gần giống chữ Z:
+
+Logo ───────────── Menu
+       ╲
+        ╲
+         ╲
+Nội dung ─────── CTA
+
+Phù hợp: landing page và trang quảng cáo.
+
+7. Bố cục Hero
+
+Đặt một hình ảnh/video lớn hoặc thông điệp nổi bật ngay đầu trang.
+
+┌──────────────────────────┐
+│ Logo       Menu          │
+├──────────────────────────┤
+│                          │
+│     TIÊU ĐỀ LỚN          │
+│     Mô tả ngắn           │
+│     [ Nút hành động ]    │
+│                          │
+└──────────────────────────┘
+
+Phù hợp: website doanh nghiệp, sản phẩm, dịch vụ.
+
+8. Bố cục bất đối xứng
+
+Các thành phần có kích thước và vị trí không đều nhau để tạo cảm giác hiện đại, sáng tạo.
+
+Phù hợp: portfolio, website thiết kế, nghệ thuật.
+
+9. Bố cục toàn màn hình
+
+Nội dung hoặc hình ảnh chiếm gần như toàn bộ màn hình.
+
+Phù hợp: website nhiếp ảnh, thời trang, sản phẩm cao cấp.
+
+10. Bố cục Card
+
+Thông tin được chia thành nhiều thẻ (card) độc lập.
+
+Ví dụ:
+
+┌─────────┐ ┌─────────┐ ┌─────────┐
+│ Hình ảnh│ │ Hình ảnh│ │ Hình ảnh│
+│ Tiêu đề │ │ Tiêu đề │ │ Tiêu đề │
+│ Mô tả   │ │ Mô tả   │ │ Mô tả   │
+└─────────┘ └─────────┘ └─────────┘
+
+Phù hợp: thương mại điện tử, dashboard, danh sách sản phẩm.
+
+Nếu bạn đang làm bài học/bài thuyết trình về thiết kế web, có thể chia thành 4 nhóm dễ nhớ: 1 cột – 2/3 cột – Grid/Card – Hero/Z/F.
+
+Mình đã xem trực tiếp Flora Global. Điểm mình thấy rõ nhất là: website hiện không chỉ là website bán phân bón. Nó đang cùng lúc nói về đầu vào nông nghiệp Nhật Bản, canh tác, chứng nhận, sourcing, xuất khẩu, logistics, VOAC, trang trại, sản phẩm và kiến thức thị trường. Menu hiện có rất nhiều nhánh và một số nhánh đang bị chồng lên nhau.
+
+Vì vậy, nếu làm lại, mình không khuyên đưa tất cả danh mục lên menu chính. Nên gom chúng thành một câu chuyện lớn:
+
+INPUT → FARM → CERTIFICATION → SOURCING → EXPORT
+
+Đây chính là lợi thế khác biệt của Flora Global: mô hình hệ sinh thái / chuỗi cung ứng nông nghiệp tích hợp, chứ không đơn thuần là nhà bán sản phẩm. Website hiện cũng đang truyền thông rất mạnh thông điệp này.
+
+1. Mình đề xuất menu mới
+
+Thay vì menu hiện tại quá dài, chuyển thành:
+
+LOGO
+
+GIẢI PHÁP      SẢN PHẨM      HỆ SINH THÁI      TRI THỨC      VỀ FLORA      LIÊN HỆ
+
+                                                     [ EN | VI ]
+
+Trong đó:
+
+GIẢI PHÁP
+
+Gom toàn bộ những thứ liên quan đến dịch vụ:
+
+Canh tác chính xác
+Tư vấn chứng nhận
+Sourcing & Procurement
+Xuất khẩu
+Logistics
+Giải pháp chuỗi cung ứng
+SẢN PHẨM
+
+Không cần chia quá nhiều ngay trên menu:
+
+Phân bón hữu cơ
+Nguyên liệu nông nghiệp
+Nông sản
+Sản phẩm chế biến
+
+Hiện danh mục sản phẩm thực tế đang gồm phân gà hữu cơ Nhật, phân hữu cơ từ tro phân gà, bột protein cá và bột hạt sen.
+
+HỆ SINH THÁI
+
+Đây là phần mình nghĩ rất nên có:
+
+HỆ SINH THÁI FLORA
+
+Đầu vào Nhật Bản
+       ↓
+Canh tác chính xác
+       ↓
+Chứng nhận
+       ↓
+Thu hoạch & sơ chế
+       ↓
+Sourcing
+       ↓
+Logistics
+       ↓
+Thị trường quốc tế
+
+Nó giúp người xem hiểu ngay Flora Global thực sự làm gì.
+
+TRI THỨC
+
+Gom toàn bộ:
+
+Nông nghiệp hữu cơ
+Chứng nhận & tiêu chuẩn
+Xuất khẩu & logistics
+Thị trường & xu hướng
+Flora Perspective
+
+Đây chính là các nhóm blog hiện tại của website.
+
+VỀ FLORA
+Câu chuyện Flora
+Tầm nhìn & sứ mệnh
+Đội ngũ
+Trang trại
+Đối tác
+Chứng nhận
+LIÊN HỆ
+
+CTA nổi bật:
+
+Tìm giải pháp →
+
+2. Trang chủ nên thay đổi hoàn toàn cách kể chuyện
+
+Mình sẽ không làm kiểu:
+
+Banner → sản phẩm → dịch vụ → chứng nhận → tin tức
+
+vì cách đó khiến Flora nhìn giống một công ty có rất nhiều dịch vụ rời rạc.
+
+Thay vào đó:
+
+HERO
+From Soil to Shelf.
+From Vietnam to the World.
+
+Một câu phụ:
+
+Hệ sinh thái nông nghiệp tích hợp từ đầu vào, canh tác, chứng nhận đến sourcing và xuất khẩu.
+
+2 nút:
+
+Khám phá hệ sinh thái
+Tìm sản phẩm
+
+Hero nên dùng hình đất/cây trồng/trái passion fruit + chuỗi logistics, thay vì chỉ một banner sản phẩm.
+
+3. Ngay dưới Hero: 5 năng lực
+
+Mình sẽ làm một section rất trực quan:
+
+             FLORA GLOBAL ECOSYSTEM
+
+  INPUT          FARM        COMPLIANCE     SOURCING       EXPORT
+    🌱             🌾             ✓             🔗             🌎
+
+ Japanese       Precision      USDA /        Vietnam        Global
+ Inputs         Farming       EU / GAP       Sourcing       Markets
+
+Đây là phần quan trọng nhất của homepage.
+
+Người dùng chỉ cần nhìn 5 ô này là hiểu Flora.
+
+Website hiện đã có đúng những năng lực tương ứng: Japanese Inputs, Precision Farming, Certification & Compliance, Sourcing/Procurement và Export.
+
+4. Sau đó mới kể câu chuyện "Integrated Supply Chain"
+
+Section này nên rất lớn.
+
+┌──────────────────────┬──────────────────────────────┐
+│                      │                              │
+│      HÌNH ẢNH        │  WE DON'T JUST SELL         │
+│      FARM / FRUIT    │  AGRICULTURAL PRODUCTS.     │
+│                      │                              │
+│                      │  We build the chain.        │
+│                      │                              │
+│                      │  [Explore our ecosystem →]  │
+└──────────────────────┴──────────────────────────────┘
+
+Sau đó là một timeline:
+
+Japanese Input
+      ↓
+Farm
+      ↓
+Quality Control
+      ↓
+Certification
+      ↓
+Processing
+      ↓
+Cold Chain
+      ↓
+Export
+
+Điều này phù hợp trực tiếp với câu chuyện hiện tại của Flora về chuỗi giá trị khép kín và khả năng truy xuất.
+
+5. Sau đó mới đưa "Solutions"
+
+Không nên gọi đơn giản là Services.
+
+Nên gọi:
+
+Solutions for Every Stage of Agriculture
+
+4–5 card:
+
+┌─────────────┐ ┌─────────────┐ ┌─────────────┐
+│ 🌱 FARMING  │ │ ✓ CERTIFY   │ │ 🔗 SOURCING │
+│             │ │             │ │             │
+│ Precision   │ │ Global      │ │ Vietnam     │
+│ Agriculture │ │ Compliance  │ │ Sourcing    │
+└─────────────┘ └─────────────┘ └─────────────┘
+
+┌─────────────┐ ┌─────────────┐
+│ 🌎 EXPORT   │ │ 🧪 INPUTS   │
+│             │ │             │
+│ Global      │ │ Japanese    │
+│ Supply      │ │ Standards   │
+└─────────────┘ └─────────────┘
+
+Như vậy Japanese Inputs không còn là một menu ngang ngang với Certification, VOAC, Model Farms... mà trở thành một năng lực trong hệ sinh thái.
+
+6. Sản phẩm: đừng để nó chiếm quá nhiều homepage
+
+Hiện website có phần sản phẩm với 4 sản phẩm, trong đó có cả sản phẩm nguyên liệu và phân bón.
+
+Mình sẽ làm:
+
+Our Agricultural Products
+[ Phân bón ] [ Nguyên liệu ] [ Nông sản ] [ Chế biến ]
+
+┌─────────┐ ┌─────────┐ ┌─────────┐
+│         │ │         │ │         │
+│  IMAGE  │ │  IMAGE  │ │  IMAGE  │
+│         │ │         │ │         │
+│ Product │ │ Product │ │ Product │
+└─────────┘ └─────────┘ └─────────┘
+
+              View all products →
+
+Quan trọng: không nên để "Phân bón" trở thành trung tâm của toàn bộ website nếu chiến lược Flora vẫn là integrated agriculture ecosystem.
+
+7. Passion Fruit nên có một "flagship story" riêng
+
+Mình thấy đây là một tài sản rất đáng khai thác.
+
+Flora đang nói rất nhiều về Honey No. 9, vùng trồng, 17–19 Brix, traceability và thị trường quốc tế.
+
+Có thể tạo section:
+
+The Honey No. 9 Story
+                     HONEY NO. 9
+
+        From Vietnamese Soil
+                ↓
+        Precision Cultivation
+                ↓
+          17–19° Brix
+                ↓
+         Global Standards
+                ↓
+            Global Table
+
+CTA:
+
+Discover Honey No. 9 →
+
+Phần này sẽ làm website có câu chuyện và cảm xúc hơn rất nhiều, thay vì chỉ toàn card dịch vụ.
+
+8. Certification không nên làm thành một menu khổng lồ
+
+Hiện Flora có USDA, EU Organic, GlobalG.A.P., HACCP và các chương trình VOAC/Chem-Free...
+
+Đừng đưa:
+
+USDA | EU Organic | GlobalGAP | HACCP | VOAC | Chem-Free | Model Farm | Farm Partner...
+
+lên navigation.
+
+Thay bằng:
+
+Global Compliance
+     USDA Organic     EU Organic
+
+     GlobalG.A.P.       HACCP
+
+              VOAC
+
+Sau đó:
+
+How we build compliance →
+
+Người dùng cần hiểu năng lực chứng nhận của Flora, không cần nhìn thấy 7–10 danh mục ngay lập tức.
+
+9. Blog cũng cần đổi cách trình bày
+
+Hiện blog có nhiều nhóm: Organic Farming, Certification & Standards, Export & Logistics, Market & Trends, Flora Perspective.
+
+Mình sẽ giữ các nhóm này ở bên trong trang Knowledge, không đưa lên menu.
+
+Homepage chỉ cần:
+
+Agriculture Intelligence
+┌─────────────────────────────┐
+│                             │
+│       FEATURED ARTICLE      │
+│       Ảnh lớn               │
+│                             │
+└─────────────────────────────┘
+
+  Organic       Certification       Export
+
+  bài viết       bài viết            bài viết
+10. Cuối trang: CTA theo 3 đối tượng
+
+Đây là chỗ rất quan trọng vì Flora có nhiều nhóm khách hàng.
+
+Thay vì chỉ:
+
+Contact Us
+
+làm:
+
+What are you looking for?
+┌──────────────────┐
+│ 🌱 FARMERS       │
+│                   │
+│ Certification &  │
+│ farming solutions│
+│                   │
+│ Learn more →     │
+└──────────────────┘
+
+┌──────────────────┐
+│ 🏢 BUYERS        │
+│                   │
+│ Source products  │
+│ from Vietnam     │
+│                   │
+│ Talk to us →     │
+└──────────────────┘
+
+┌──────────────────┐
+│ 🌎 GLOBAL PARTNER│
+│                   │
+│ Build your       │
+│ supply chain     │
+│                   │
+│ Partner with us →│
+└──────────────────┘
+
+Cách này rất hợp với mô hình Flora đang mô tả: farm muốn chứng nhận, buyer muốn sourcing, retailer/global partner muốn chuỗi cung ứng.
+
+11. Tổng thể homepage mình sẽ chốt như này
+┌──────────────────────────────────────────────┐
+│ LOGO   SOLUTIONS  PRODUCTS  ECOSYSTEM       │
+│        KNOWLEDGE  ABOUT      CONTACT         │
+├──────────────────────────────────────────────┤
+│                                              │
+│                 HERO                         │
+│                                              │
+│        FROM SOIL TO SHELF                    │
+│        FROM VIETNAM TO THE WORLD             │
+│                                              │
+├──────────────────────────────────────────────┤
+│                                              │
+│           FLORA ECOSYSTEM                    │
+│                                              │
+│ INPUT → FARM → COMPLIANCE → SOURCING → EXPORT│
+│                                              │
+├──────────────────────────────────────────────┤
+│                                              │
+│        INTEGRATED SUPPLY CHAIN               │
+│                                              │
+│        hình + câu chuyện                    │
+│                                              │
+├──────────────────────────────────────────────┤
+│                                              │
+│       AGRICULTURAL SOLUTIONS                 │
+│                                              │
+│  Farming | Certification | Sourcing | Export │
+│                                              │
+├──────────────────────────────────────────────┤
+│                                              │
+│          HONEY NO. 9                         │
+│       flagship agriculture story             │
+│                                              │
+├──────────────────────────────────────────────┤
+│                                              │
+│       AGRICULTURAL PRODUCTS                  │
+│                                              │
+│  Fertilizer | Inputs | Produce | Ingredients │
+│                                              │
+├──────────────────────────────────────────────┤
+│                                              │
+│         GLOBAL COMPLIANCE                    │
+│    USDA | EU | GAP | HACCP | VOAC            │
+│                                              │
+├──────────────────────────────────────────────┤
+│                                              │
+│       AGRICULTURE INTELLIGENCE               │
+│              Blog / News                     │
+│                                              │
+├──────────────────────────────────────────────┤
+│                                              │
+│         WHAT ARE YOU LOOKING FOR?            │
+│                                              │
+│ Farmer     Buyer     Global Partner          │
+│                                              │
+├──────────────────────────────────────────────┤
+│                    FOOTER                    │
+└──────────────────────────────────────────────┘
+Điểm mấu chốt
+
+Theo mình, vấn đề của Flora Global hiện tại không phải là có quá nhiều nội dung, mà là nhiều nội dung đang được đối xử như những danh mục ngang hàng.
+
+Ví dụ:
+
+Japanese Inputs
+Sourcing
+Export
+Precision Farming
+Certification
+VOAC
+Organic Standard
+Chem-Free
+Model Farms
+Farm Partners
+Organic Inputs...
+
+Hiện chúng xuất hiện thành rất nhiều mục điều hướng riêng.
+
+Trong khi đó có thể gom thành 4 tầng rất dễ hiểu:
+
+1. SOLUTIONS
+→ Flora giải quyết vấn đề gì?
+
+2. PRODUCTS
+→ Flora cung cấp cái gì?
+
+3. ECOSYSTEM
+→ Flora kiểm soát chuỗi giá trị như thế nào?
+
+4. KNOWLEDGE
+→ Flora có chuyên môn và thông tin gì?
+
+Như vậy website sẽ ít menu hơn nhưng không mất nội dung. Các nội dung chi tiết vẫn tồn tại, chỉ được đưa xuống đúng tầng thông tin.
+
+Nếu bạn muốn, mình có thể tiếp tục 
+phân tích toàn bộ sitemap hiện tại của flora-global.vn và vẽ lại thành sitemap mới khoảng 15–20 trang, chỉ rõ mục nào giữ, mục nào gộp, mục nào bỏ khỏi menu, rồi từ đó lên wireframe trang chủ desktop 1440px.
+
+Phân tích toàn bộ sitemap hiện tại của flora-global.vn và vẽ lại thành sitemap mới khoảng 15–20 trang
+
+Mình đã rà lại nội dung hiện có của Flora Global và đối chiếu các nhóm nội dung đang xuất hiện trên website. Điểm quan trọng là không nên đơn giản “rút menu xuống còn ít mục”; cần tái cấu trúc theo mô hình kinh doanh để người dùng hiểu Flora là gì ngay từ 5–10 giây đầu.
+
+Hiện website đã có các trục khá rõ: Japanese Inputs → Precision Farming → Compliance/Certification → Export Logistics, cùng Products, Strategic Sourcing & Procurement, About Us, Contact và Knowledge/Blog.
+
+1. Chẩn đoán sitemap hiện tại
+
+Mình tạm phân loại toàn bộ nội dung hiện có thành 7 nhóm:
+
+Nhóm hiện tại	Nội dung	Vấn đề
+Inputs	Phân gà Nhật, PK, fish protein...	Đang dễ bị hiểu Flora chỉ là nhà cung cấp vật tư
+Farming	Precision Farming, Honey No.9, farm network	Rất quan trọng nhưng chưa được biến thành một "case study" mạnh
+Certification	USDA, EU Organic, GlobalG.A.P., HACCP, MRL, Chem-Free	Nhiều khái niệm, dễ tạo menu rối
+Sourcing	Strategic Sourcing, Procurement, Farm-to-Factory	Đây thực chất là một dịch vụ B2B lớn
+Export	Cold chain, packaging, documentation, air/sea/land	Nên gom thành một năng lực Supply Chain
+Products	4 sản phẩm hiện được hiển thị	Cần tách "Agricultural Inputs" khỏi "Agricultural Ingredients/Produce"
+Knowledge/About	About, CEO, blog, market information...	Có thể gom thành Knowledge + About
+
+Hiện trang Products đang hiển thị 4 sản phẩm: bột hạt sen, phân gà hữu cơ Nhật, bột protein cá và phân hữu cơ từ tro phân gà.
+
+Trong khi đó, phần sourcing lại mô tả một năng lực rộng hơn rất nhiều: sourcing nguyên liệu, processing, packaging, export documentation, auditing, MRL và traceability. Vì vậy Sourcing không nên nằm lẫn với Product.
+
+2. Sitemap mới mình đề xuất: 18 trang
+
+Mình sẽ thiết kế thành 6 nhóm chính + 18 trang, như sau:
+
+FLORA GLOBAL
+│
+├── 01. HOME
+│
+├── 02. SOLUTIONS
+│   ├── Precision Farming
+│   ├── Global Certification & Compliance
+│   ├── Strategic Sourcing & Procurement
+│   └── Export & Supply Chain
+│
+├── 03. PRODUCTS
+│   ├── Agricultural Inputs
+│   ├── Agricultural Ingredients
+│   └── Honey No.9 Passion Fruit
+│
+├── 04. ECOSYSTEM
+│   ├── Integrated Agriculture Ecosystem
+│   ├── Our Farms & Farm Network
+│   └── Traceability & Quality
+│
+├── 05. KNOWLEDGE
+│   ├── Agriculture Insights
+│   └── Market & Export Insights
+│
+├── 06. ABOUT
+│   ├── About Flora Global
+│   └── Leadership & Partners
+│
+└── 07. CONTACT
+
+Như vậy là 18 trang cấp nội dung chính, chưa tính các trang detail tự động của từng sản phẩm/bài viết.
+
+3. Cấu trúc navigation trên desktop
+
+Mình không đưa 18 trang lên menu.
+
+Chỉ nên có:
+
+LOGO
+
+SOLUTIONS      PRODUCTS      ECOSYSTEM      KNOWLEDGE      ABOUT
+
+                                      [ CONTACT ]
+
+Hover/click:
+
+SOLUTIONS
+Solutions
+────────────────────────────
+
+Farming
+  Precision Farming
+
+Compliance
+  Global Certification
+
+Sourcing
+  Strategic Sourcing & Procurement
+
+Supply Chain
+  Export & Logistics
+PRODUCTS
+Products
+────────────────────────────
+
+Agricultural Inputs
+
+Agricultural Ingredients
+
+Honey No.9
+Passion Fruit
+ECOSYSTEM
+Our Ecosystem
+────────────────────────────
+
+Integrated Ecosystem
+
+Farms & Farm Network
+
+Traceability & Quality
+KNOWLEDGE
+Knowledge
+────────────────────────────
+
+Agriculture Insights
+
+Market & Export Insights
+ABOUT
+About Flora
+────────────────────────────
+
+About Flora Global
+
+Leadership & Partners
+
+Contact để thành một button riêng.
+
+4. Trang 01 — HOME
+
+Homepage không nên cố giải thích tất cả.
+
+Nó chỉ cần trả lời 4 câu hỏi:
+
+Flora là ai?
+Flora làm gì?
+Flora khác gì?
+Tôi nên liên hệ Flora nếu tôi là ai?
+
+Cấu trúc:
+
+HERO
+│
+├── Integrated Agriculture Ecosystem
+│
+├── 5 năng lực
+│   INPUT
+│   FARM
+│   COMPLIANCE
+│   SOURCING
+│   EXPORT
+│
+├── The Flora Ecosystem
+│
+├── Featured Solution
+│   Honey No.9 / Precision Farming
+│
+├── Products
+│
+├── Global Compliance
+│
+├── Agriculture Insights
+│
+└── CTA
+    Farmer | Buyer | Global Partner
+
+Homepage hiện đã có đủ nguyên liệu để kể câu chuyện này: Japanese inputs, khoảng 20/25 ha farming network tùy nội dung trang, certification và logistics.
+
+5. SOLUTIONS — 4 trang
+02. Precision Farming
+
+Không gọi đơn giản là Farming.
+
+Nên định vị:
+
+Precision Farming & Biological Agriculture
+
+Nội dung:
+
+Hero
+↓
+Our Farming Philosophy
+↓
+Japanese Inputs
+↓
+Biological Protocols
+↓
+Farm Management
+↓
+Honey No.9 Case Study
+↓
+Traceability
+↓
+CTA
+
+Đây là nơi kể câu chuyện 20/25 ha + Honey No.9, thay vì rải thông tin này khắp website. Website hiện mô tả vùng trồng ở Đồng Nai, Long An và Kiên Giang cùng quy trình precision biological.
+
+03. Global Certification & Compliance
+
+Đây nên là một trang lớn, không phải 5–7 menu con.
+
+GLOBAL COMPLIANCE
+
+USDA Organic
+EU Organic
+GlobalG.A.P.
+HACCP
+MRL Management
+Traceability
+
+Sau đó giải thích:
+
+Flora không chỉ giúp nông sản "có chứng nhận", mà quản lý compliance từ farm → processing → export.
+
+Điều này phù hợp với cách Flora đang mô tả đội ngũ compliance và auditing nội bộ.
+
+04. Strategic Sourcing & Procurement
+
+Đây là một trong những trang quan trọng nhất nếu Flora muốn hướng B2B quốc tế.
+
+Không nên để nó chìm trong blog.
+
+Cấu trúc:
+
+Vietnam Sourcing
+↓
+Farm Network
+↓
+Quality Audit
+↓
+Processing
+↓
+Packaging
+↓
+Documentation
+↓
+Export
+
+Trang hiện tại đã có rất nhiều nội dung cho trang này: raw commodity sourcing, value-added processing, factory alliances, on-site auditing, MRL và traceability.
+
+05. Export & Supply Chain
+
+Gom:
+
+Post-harvest
+Cooling
+Sorting
+Packaging
+Cold chain
+Phytosanitary
+Certificate of Origin
+Air freight
+Sea freight
+Land freight
+
+Trang logistics hiện tại thực tế đã mô tả một quy trình 7 bước khá hoàn chỉnh.
+
+Do đó không cần tạo 7 trang con.
+
+Một trang đủ mạnh hơn.
+
+6. PRODUCTS — 3 trang
+
+Đây là chỗ mình muốn thay đổi đáng kể.
+
+Hiện 4 sản phẩm không cùng một bản chất. Có sản phẩm là input nông nghiệp, có sản phẩm là ingredient.
+
+Vì vậy:
+
+06. Agricultural Inputs
+
+Ví dụ:
+
+Phân gà hữu cơ Nhật
+PK từ tro phân gà
+Fish protein
+Các input mới trong tương lai
+07. Agricultural Ingredients
+
+Ví dụ:
+
+Bột hạt sen
+Fish protein nếu định vị theo ingredient
+Raw agricultural materials
+Processed ingredients
+
+Trang này dành cho B2B buyer.
+
+08. Honey No.9 Passion Fruit
+
+Mình khuyên tách riêng Honey No.9.
+
+Không để nó chìm giữa 10–20 sản phẩm sau này.
+
+Vì đây không đơn thuần là "một sản phẩm".
+
+Nó là flagship case của toàn bộ hệ sinh thái Flora.
+
+Câu chuyện:
+
+SOIL
+ ↓
+JAPANESE INPUTS
+ ↓
+PRECISION FARMING
+ ↓
+CERTIFICATION
+ ↓
+17–19 BRIX
+ ↓
+COLD CHAIN
+ ↓
+GLOBAL MARKET
+
+Đây là trang có khả năng chứng minh cho toàn bộ claim "Integrated Agriculture Ecosystem".
+
+7. ECOSYSTEM — 3 trang
+
+Đây là phần mình nghĩ Flora hiện còn thiếu về mặt information architecture.
+
+09. Integrated Agriculture Ecosystem
+
+Đây là trang "xương sống":
+
+              FLORA ECOSYSTEM
+
+                   INPUT
+                     ↓
+                   FARM
+                     ↓
+              COMPLIANCE
+                     ↓
+                HARVEST
+                     ↓
+               PROCESSING
+                     ↓
+                 SOURCING
+                     ↓
+                  EXPORT
+                     ↓
+              GLOBAL MARKET
+
+Trang này giải thích Flora là một hệ thống, không phải tập hợp dịch vụ.
+
+10. Farms & Farm Network
+
+Gom tất cả:
+
+Flora farms
+Farm partners
+Growing regions
+Model farms
+Farmer network
+
+Thay vì mỗi thứ trở thành một menu riêng.
+
+11. Traceability & Quality
+
+Đây là nơi đưa:
+
+Traceability
+MRL
+Quality control
+Testing
+Batch management
+Documentation
+Farm-to-market tracking
+
+Rất hợp với positioning hiện tại của Flora về "100% traceability".
+
+8. KNOWLEDGE — 2 trang
+
+Không nên để blog trở thành một menu có 10 category.
+
+12. Agriculture Insights
+
+Các category bên trong:
+
+Organic Farming
+Precision Agriculture
+Certification
+Sustainable Agriculture
+Farm Technology
+13. Market & Export Insights
+
+Các category:
+
+Vietnam Agriculture
+Export
+Logistics
+Global Market
+Food Safety
+Market Trends
+Flora Perspective
+
+Các bài như "5 xu hướng nông nghiệp mới 2025" nên nằm trong Knowledge chứ không cần tạo thêm một section/navigation riêng.
+
+9. ABOUT — 2 trang
+14. About Flora Global
+
+Gom:
+
+Vision
+Mission
+Core Values
+History
+Flora story
+Integrated ecosystem
+
+Trang About hiện đã có Vision, Mission, Core Values và câu chuyện hình thành công ty.
+
+15. Leadership & Partners
+
+Gom:
+
+CEO
+Team
+Strategic partners
+Certification partners
+Processing partners
+Global partners
+
+Không nên tạo riêng:
+
+CEO
+Team
+Partner
+Factory Partner...
+
+trên navigation.
+
+10. CONTACT — 1 trang
+16. Contact / Start a Partnership
+
+Mình thậm chí sẽ đổi cách gọi từ Contact Us thành:
+
+Start a Partnership
+
+và form cho người dùng chọn:
+
+I am a...
+
+○ Farmer / Farm Owner
+○ Agricultural Buyer
+○ Global Importer
+○ Retailer
+○ Distributor
+○ Processing Partner
+○ Other
+
+Sau đó:
+
+What are you looking for?
+
+○ Agricultural Inputs
+○ Sourcing
+○ Certification
+○ Export
+○ Honey No.9
+○ Partnership
+
+Form hiện tại đã có các trường khá B2B như company, headquarters, nature of inquiry và timeline; chỉ cần tái cấu trúc UX tốt hơn.
+
+11. Hai trang còn lại để đủ 18
+17. Case Studies
+
+Mình rất khuyến nghị thêm.
+
+Đừng chỉ nói:
+
+"Chúng tôi có năng lực."
+
+Hãy chứng minh bằng:
+
+CASE 01
+Honey No.9
+Vietnam → Singapore
+
+CASE 02
+Organic Certification
+Farm → USDA / EU
+
+CASE 03
+Strategic Sourcing
+Vietnam → Global Buyer
+
+Mỗi case:
+
+Problem → Flora Solution → Process → Result → Evidence
+
+Đây sẽ là phần chuyển đổi B2B rất quan trọng.
+
+18. Downloads / Resources
+
+Một nơi tập trung:
+
+Product catalogue
+Company profile
+Technical specification
+Certification documents
+Brochure
+Export documentation
+Product datasheet
+
+Đặc biệt hữu ích cho buyer quốc tế.
+
+12. Sitemap hoàn chỉnh
+
+Đây là phiên bản mình sẽ đưa cho designer/developer:
+
+FLORA GLOBAL
+│
+├── HOME
+│
+├── SOLUTIONS
+│   ├── Precision Farming
+│   ├── Global Certification & Compliance
+│   ├── Strategic Sourcing & Procurement
+│   └── Export & Supply Chain
+│
+├── PRODUCTS
+│   ├── Agricultural Inputs
+│   ├── Agricultural Ingredients
+│   └── Honey No.9 Passion Fruit
+│
+├── ECOSYSTEM
+│   ├── Integrated Agriculture Ecosystem
+│   ├── Farms & Farm Network
+│   └── Traceability & Quality
+│
+├── KNOWLEDGE
+│   ├── Agriculture Insights
+│   └── Market & Export Insights
+│
+├── ABOUT
+│   ├── About Flora Global
+│   └── Leadership & Partners
+│
+├── CASE STUDIES
+│
+├── RESOURCES
+│
+└── START A PARTNERSHIP
+
+18 trang.
+
+Nhưng trên header chỉ hiện:
+
+SOLUTIONS | PRODUCTS | ECOSYSTEM | KNOWLEDGE | ABOUT
+
+                       START A PARTNERSHIP
+13. Điều quan trọng nhất: thay đổi "logic" chứ không chỉ thay menu
+
+Mình sẽ chuyển website từ logic hiện tại:
+
+"Chúng tôi có rất nhiều thứ"
+
+Inputs
+Farming
+Certification
+VOAC
+Sourcing
+Export
+Products
+News
+...
+
+sang logic:
+
+                 FLORA GLOBAL
+
+                       ↓
+
+             INTEGRATED ECOSYSTEM
+
+                       ↓
+
+        ┌──────────────┼──────────────┐
+        ↓              ↓              ↓
+     FARMERS         BUYERS         PARTNERS
+        ↓              ↓              ↓
+    SOLUTIONS       PRODUCTS       SOURCING
+        ↓              ↓              ↓
+   CERTIFICATION    QUALITY        EXPORT
+                       ↓
+                 GLOBAL MARKET
+
+Đây là thay đổi mình cho rằng quan trọng nhất.
+
+Bởi chính nội dung hiện tại của Flora đã nói rất rõ về một mô hình vertically integrated / closed-loop ecosystem, kiểm soát từ Japanese inputs, farming, certification đến sourcing và export.
+
+Vì vậy, website mới không nên cố "giới thiệu từng dịch vụ". Nó nên chứng minh một hệ sinh thái.
+
+Và mình sẽ ưu tiên 5 trang này nhất khi thiết kế lại
+
+01 Home → hiểu Flora trong 10 giây
+02 Ecosystem → hiểu mô hình
+03 Honey No.9 → bằng chứng thực tế
+04 Sourcing → thu hút buyer B2B
+05 Certification & Compliance → tạo niềm tin
+
+Nếu 5 trang này làm tốt, các trang còn lại sẽ trở thành hệ thống hỗ trợ, thay vì homepage phải gánh toàn bộ thông tin.
+
+Flora là ai?
+Flora làm gì?
+Flora khác gì?
+Tôi nên liên hệ Flora nếu tôi là ai? tôi cũng đang muón biết vì tôi là người làm web giúp họ tôi cũng cần nắm thông tin để dựng khuing web logic
+
+Đúng — và nếu bạn là người trực tiếp làm web, thì trước khi vẽ wireframe bạn cần hiểu business model của Flora, chứ không chỉ hiểu danh sách menu.
+
+Sau khi xem lại nội dung hiện tại của Flora, mình nghĩ có một cách nhìn rất hữu ích:
+
+Flora không nên được hiểu là “công ty bán phân bón + bán nông sản + làm chứng nhận + logistics”.
+Theo cách Flora tự định vị, họ muốn trở thành một hệ sinh thái nông nghiệp tích hợp, kiểm soát chuỗi từ đầu vào → trang trại → tiêu chuẩn → sourcing → xuất khẩu.
+
+Và đây chính là logic mà bạn nên dùng để dựng website.
+
+1. Trước tiên: Flora là ai?
+
+Nếu tôi phải giải thích Flora cho bạn với tư cách người làm web, tôi sẽ nói:
+
+Flora Global = một công ty xây dựng và vận hành chuỗi giá trị nông nghiệp Việt Nam cho thị trường quốc tế.
+
+Họ muốn đứng ở giữa 3 thế giới:
+
+                    FLORA GLOBAL
+
+        ┌────────────┼────────────┐
+        ↓            ↓            ↓
+     FARMERS       VIETNAM      GLOBAL BUYERS
+     / FARMS       SUPPLY       / MARKETS
+        │            │            │
+        └────────────┼────────────┘
+                     ↓
+            INTEGRATED ECOSYSTEM
+
+Một bên là nguồn lực nông nghiệp Việt Nam.
+
+Một bên là nhu cầu và tiêu chuẩn của thị trường quốc tế.
+
+Flora đứng giữa để kết nối, kiểm soát và giảm rủi ro của chuỗi cung ứng.
+
+Chính Flora mô tả mình là “Single Point of Accountability” và “Integrated Supply Chain Architect”, thay vì chỉ là một nhà cung cấp.
+
+2. Flora làm gì?
+
+Đây mới là phần quan trọng để bạn dựng Information Architecture.
+
+Đừng nhìn vào 10–20 danh mục hiện tại.
+
+Hãy nhìn theo chuỗi giá trị:
+
+              FLORA AGRICULTURE ECOSYSTEM
+
+                       INPUT
+                         ↓
+                   FARMING
+                         ↓
+                  COMPLIANCE
+                         ↓
+                     HARVEST
+                         ↓
+                  PROCESSING
+                         ↓
+                    SOURCING
+                         ↓
+                   LOGISTICS
+                         ↓
+                    EXPORT
+                         ↓
+                  GLOBAL BUYER
+
+Flora hiện mô tả khá rõ 4 năng lực ở homepage:
+
+Elite Inputs → Precision Growing → Total Compliance → Seamless Export.
+
+Nhưng ở trang Strategic Sourcing, phạm vi còn rộng hơn:
+
+sourcing nguyên liệu
+farm network
+processing
+packaging
+auditing
+MRL/residue management
+traceability
+export documentation.
+Vì vậy, bạn có thể hiểu Flora làm 5 việc lớn:
+Năng lực	Hiểu đơn giản
+Input	Cung cấp/kiểm soát đầu vào cho nông nghiệp
+Farm	Canh tác và quản lý vùng trồng
+Compliance	Đảm bảo tiêu chuẩn/chứng nhận
+Sourcing	Tìm nguồn và quản lý sản xuất tại Việt Nam
+Export	Đưa sản phẩm đạt chuẩn ra thị trường quốc tế
+
+Đây mới là 5 khối chính của website.
+
+3. Flora khác gì?
+
+Đây là câu hỏi quan trọng nhất khi bạn thiết kế Hero section.
+
+Nếu bạn đặt:
+
+"Flora Global – Agricultural Products & Solutions"
+
+thì rất dễ biến Flora thành một website bán phân bón.
+
+Nhưng positioning hiện tại của Flora khác hơn.
+
+Điểm khác biệt mà họ đang muốn truyền tải là:
+
+Flora kiểm soát nhiều mắt xích của chuỗi thay vì chỉ mua hàng từ bên thứ ba.
+
+Ví dụ với Honey No.9:
+
+Japanese Inputs
+       ↓
+Flora Farming
+       ↓
+Biological Protocol
+       ↓
+Certification
+       ↓
+Quality Control
+       ↓
+Processing
+       ↓
+Cold Chain
+       ↓
+Export
+       ↓
+Singapore / Japan / EU
+
+Flora nói rằng họ quản lý vùng trồng Honey No.9, áp dụng các protocol canh tác, quản lý certification và logistics để tạo ra sản phẩm có khả năng truy xuất.
+
+Đây chính là case study để chứng minh positioning.
+
+4. Và đây là insight cực kỳ quan trọng cho bạn
+
+Bạn đang làm web cho Flora, vì vậy đừng bắt đầu bằng câu hỏi:
+
+"Menu website gồm những gì?"
+
+Hãy bắt đầu bằng:
+
+"Flora phục vụ những ai?"
+
+Từ đó mới ra website.
+
+5. Flora có ít nhất 3 nhóm người dùng chính
+
+Trang Contact hiện tại thực tế đã nói rất rõ điều này. Flora nhắm đến global corporations cần sourcing, farms cần global certification và retailers cần nguồn Honey No.9 ổn định.
+
+Mình sẽ chia thành 3 persona chính.
+
+PERSONA 01 — FARMER / FARM OWNER
+Họ là ai?
+Chủ trang trại
+Hộ nông dân
+Farm partner
+Doanh nghiệp sở hữu vùng trồng
+Họ cần gì?
+Tôi có đất / có trang trại
+          ↓
+Muốn nâng chất lượng
+          ↓
+Muốn đạt chứng nhận
+          ↓
+Muốn có đầu ra
+          ↓
+Muốn tiếp cận thị trường tốt hơn
+Flora cung cấp gì?
+Precision Farming
+Input
+Technical guidance
+Certification
+Farm network
+Traceability
+Market access
+CTA:
+
+"Develop Your Farm"
+
+hoặc tiếng Việt:
+
+"Phát triển vùng trồng cùng Flora"
+
+6. PERSONA 02 — GLOBAL BUYER
+
+Đây có thể là persona cực kỳ quan trọng.
+
+Ví dụ:
+
+Importer
+Distributor
+Retailer
+Food manufacturer
+Ingredient buyer
+International corporation
+
+Họ không thực sự quan tâm:
+
+"Flora có bao nhiêu loại phân?"
+
+Họ quan tâm:
+
+"Tôi có thể mua được sản phẩm Việt Nam đạt đúng tiêu chuẩn của tôi không?"
+
+Ví dụ:
+
+GLOBAL BUYER
+
+I need:
+      ↓
+Specific product
+      ↓
+Specific quantity
+      ↓
+Specific quality
+      ↓
+Specific certification
+      ↓
+Traceability
+      ↓
+Reliable supply
+      ↓
+Export
+
+Flora cung cấp chính xác các lớp đó thông qua sourcing, auditing, processing, compliance và export.
+
+CTA:
+
+"Source from Vietnam"
+
+Đây có thể là một CTA cực kỳ mạnh trên website.
+
+7. PERSONA 03 — GLOBAL PARTNER / CORPORATE
+
+Nhóm này rộng hơn Buyer.
+
+Có thể là:
+
+Global agricultural company
+Japanese partner
+Processing factory
+Logistics partner
+Retail chain
+Strategic investor
+Technology partner
+
+Họ muốn:
+
+"Tôi muốn xây một chuỗi cung ứng tại Việt Nam nhưng không muốn tự quản lý toàn bộ."
+
+Flora trở thành:
+
+Local operating partner
+
+Flora tự mô tả vai trò sourcing như “strategic eyes and ears” cho các corporation quốc tế tại Việt Nam.
+
+CTA:
+
+"Build with Flora"
+
+8. Như vậy website không phải một website — mà là 3 cửa vào
+
+Đây là điều bạn có thể biến thành UI rất hay.
+
+Ngay trên homepage:
+
+How can Flora help you?
+┌────────────────────┐
+│                    │
+│      FARMER        │
+│                    │
+│ Grow & Certify     │
+│ your farm          │
+│                    │
+│ Explore →          │
+└────────────────────┘
+
+┌────────────────────┐
+│                    │
+│   GLOBAL BUYER     │
+│                    │
+│ Source from        │
+│ Vietnam            │
+│                    │
+│ Explore →          │
+└────────────────────┘
+
+┌────────────────────┐
+│                    │
+│  GLOBAL PARTNER    │
+│                    │
+│ Build your supply  │
+│ chain with us      │
+│                    │
+│ Explore →          │
+└────────────────────┘
+
+Đây là một section tôi rất khuyến nghị bạn đưa vào homepage.
+
+Nó giải quyết ngay câu hỏi:
+
+"Tôi nên liên hệ Flora nếu tôi là ai?"
+
+9. Từ đây mới suy ra sitemap
+
+Và đây là lý do sitemap mình đề xuất trước đó có Solutions / Products / Ecosystem / Knowledge / About.
+
+Nhưng giờ chúng ta có thể làm nó logic hơn.
+
+Tầng 1 — WHO
+FARMER
+BUYER
+PARTNER
+Tầng 2 — WHAT
+SOLUTIONS
+PRODUCTS
+Tầng 3 — HOW
+ECOSYSTEM
+Tầng 4 — PROOF
+CASE STUDIES
+CERTIFICATION
+TRACEABILITY
+Tầng 5 — TRUST
+ABOUT
+KNOWLEDGE
+RESOURCES
+
+Đây là Information Architecture rất hợp với Flora.
+
+10. Tôi sẽ dựng homepage theo logic này
+
+Không phải:
+
+Banner
+↓
+Products
+↓
+Services
+↓
+News
+↓
+Contact
+
+Mà:
+
+                         HERO
+                          │
+                          ↓
+                  FLORA LÀ AI?
+                          │
+                          ↓
+               INTEGRATED ECOSYSTEM
+                          │
+            ┌─────────────┼─────────────┐
+            ↓             ↓             ↓
+         FARMER         BUYER        PARTNER
+            │             │             │
+            └─────────────┼─────────────┘
+                          ↓
+                    WHAT WE DO
+                          │
+             ┌────────────┼────────────┐
+             ↓            ↓            ↓
+           FARM       COMPLIANCE     SOURCING
+             │            │            │
+             └────────────┼────────────┘
+                          ↓
+                     PRODUCTS
+                          ↓
+                    HONEY NO.9
+                          ↓
+                   PROOF / CASES
+                          ↓
+                  KNOWLEDGE / NEWS
+                          ↓
+                    CONTACT / CTA
+11. Hero nên nói gì?
+
+Đây là chỗ bạn không nên viết slogan trước.
+
+Trước tiên phải xác định thông điệp.
+
+Tôi sẽ đặt 3 tầng:
+
+Eyebrow
+
+INTEGRATED AGRICULTURE ECOSYSTEM
+
+Headline
+
+From Vietnamese Soil to Global Markets.
+
+Subheadline
+
+Flora Global integrates farming, certification, sourcing and export to build transparent and traceable agricultural supply chains.
+
+Bên dưới:
+
+[ Explore Our Ecosystem ]
+
+[ Partner With Flora ]
+
+Nó phù hợp với positioning hiện tại của Flora về “soil-to-shelf”, vertically integrated value chain và global market.
+
+12. Sau Hero phải giải thích "Flora làm gì?"
+
+Không đưa product ngay.
+
+Làm:
+
+We Build the Chain.
+
+Một visual rất lớn:
+
+        INPUT
+          ↓
+        FARM
+          ↓
+     CERTIFICATION
+          ↓
+       HARVEST
+          ↓
+      PROCESSING
+          ↓
+       SOURCING
+          ↓
+       LOGISTICS
+          ↓
+        EXPORT
+
+Sau đó:
+
+One ecosystem. One accountable partner.
+
+Đây sẽ là section định vị thương hiệu.
+
+13. Sau đó mới đến "Who we serve?"
+                    WHO WE SERVE
+
+     FARMERS          BUYERS          PARTNERS
+
+   "I want to       "I need a       "I want to
+    grow better."    reliable        build in
+                     Vietnam         Vietnam."
+                     supply."
+
+Đây là section chuyển người dùng vào đúng user journey.
+
+14. Sau đó "What we do?"
+
+4 card:
+
+PRECISION FARMING
+
+GLOBAL COMPLIANCE
+
+STRATEGIC SOURCING
+
+EXPORT & SUPPLY CHAIN
+
+Đừng gọi 4 cái này là:
+
+Services
+
+Tôi thích Capabilities hơn.
+
+Vì nó thể hiện:
+
+Đây là năng lực mà Flora sở hữu.
+
+15. Sau đó mới đến Products
+
+Và lúc này người dùng đã hiểu:
+
+"À, sản phẩm này là một phần trong hệ sinh thái."
+
+Chứ không phải:
+
+"À, Flora là shop bán phân bón."
+
+Hiện product catalogue đang có cả phân gà hữu cơ Nhật, PK từ tro phân gà, fish protein và bột hạt sen, tức là danh mục sản phẩm bản thân nó khá đa dạng.
+
+Đây càng là lý do Products không nên trở thành Hero message.
+
+16. Và Honey No.9 là "Proof"
+
+Đây là cách tôi sẽ giải thích với client:
+
+Nếu Flora nói "chúng tôi có một ecosystem", khách hàng sẽ hỏi: "Bằng chứng đâu?"
+
+Honey No.9 chính là câu trả lời.
+
+HONEY NO.9
+
+Japanese Inputs
+      ↓
+Precision Farming
+      ↓
+Certification
+      ↓
+Traceability
+      ↓
+17–19 Brix
+      ↓
+Cold Chain
+      ↓
+Export
+
+Một case study có thể chứng minh toàn bộ mô hình Flora chứ không chỉ quảng cáo một loại trái cây. Flora hiện dùng Honey No.9 chính xác theo cách này trong phần giới thiệu doanh nghiệp và logistics.
+
+17. Vậy "Flora khác gì?" nên nằm ở đâu?
+
+Không nên chỉ viết một section:
+
+Why Flora?
+
+Mà toàn bộ website phải chứng minh nó.
+
+Tuy nhiên có thể có một section:
+
+Why Flora
+
+3–4 điểm:
+
+01 — Integrated
+
+Không chỉ sourcing → kiểm soát nhiều mắt xích.
+
+02 — Traceable
+
+Từ farm → buyer.
+
+03 — Compliance-driven
+
+USDA / EU Organic / GlobalG.A.P. / HACCP là một phần của hệ thống.
+
+04 — Local Network + Global Standard
+
+Hiểu thị trường Việt Nam nhưng thiết kế chuỗi cho buyer quốc tế.
+
+18. Đây là "business model map" bạn nên có trước khi wireframe
+
+Tôi khuyên bạn lưu sơ đồ này làm tài liệu nội bộ dự án:
+
+                         FLORA GLOBAL
+                              │
+                ┌─────────────┴─────────────┐
+                │                           │
+             SUPPLY                      DEMAND
+                │                           │
+        Farmers / Farms              Global Buyers
+                │                           │
+                └─────────────┬─────────────┘
+                              │
+                              ↓
+                     FLORA ECOSYSTEM
+                              │
+        ┌──────────┬──────────┼──────────┬──────────┐
+        ↓          ↓          ↓          ↓          ↓
+      INPUT      FARM     COMPLIANCE  SOURCING   EXPORT
+        │          │          │          │          │
+        └──────────┴──────────┼──────────┴──────────┘
+                              ↓
+                       QUALITY PRODUCT
+                              ↓
+                        GLOBAL MARKET
+
+Nếu bạn hiểu được sơ đồ này thì bạn sẽ không còn bị rối bởi 20–30 danh mục hiện tại.
+
+19. Và tôi sẽ phân loại toàn bộ nội dung hiện tại thành 5 loại
+Nội dung Flora hiện có	Website mới nên xem là
+Japanese Inputs	Capability / Input
+Precision Farming	Solution
+Certification	Capability / Proof
+VOAC	Program / Certification
+Chem-Free	Quality / Compliance
+Farm Partners	Ecosystem
+Model Farms	Ecosystem / Case Study
+Honey No.9	Flagship Product + Case Study
+Fertilizer	Product
+Fish Protein	Product / Ingredient
+Lotus Powder	Product / Ingredient
+Sourcing	Solution
+Procurement	Solution
+Processing	Supply Chain
+Packaging	Supply Chain
+Logistics	Supply Chain
+Export	Solution
+Agriculture News	Knowledge
+Market Trends	Knowledge
+CEO / Vision / Mission	About
+
+Đây chính là cách dọn đống danh mục hiện tại mà không làm mất content.
+
+20. Nếu tôi là bạn, tôi sẽ làm web theo "3 cửa"
+
+Tôi thậm chí sẽ đặt một câu ngay sau Hero:
+
+What brings you to Flora?
+🌱 I want to grow
+
+For Farmers & Farm Partners
+
+Farming • Certification • Inputs • Market Access
+
+Explore Farming →
+
+🌎 I want to source
+
+For Global Buyers
+
+Sourcing • Quality • Processing • Traceability • Export
+
+Source from Vietnam →
+
+🤝 I want to partner
+
+For Strategic Partners
+
+Supply Chain • Market Access • Agriculture Ecosystem
+
+Partner with Flora →
+
+Đây là cách tôi nghĩ người làm UX/UI như bạn nên tiếp cận dự án này.
+
+Bạn không cần nhớ Flora có 20 danh mục. Bạn cần nhớ một câu chuyện:
+
+Flora kết nối nguồn lực nông nghiệp Việt Nam với nhu cầu của thị trường toàn cầu bằng cách kiểm soát một chuỗi tích hợp từ đầu vào → trang trại → tiêu chuẩn → sourcing → xuất khẩu.
+
+Sau đó mọi page đều phải trả lời một trong 4 câu:
+
+Flora là ai? → About / Ecosystem
+Flora làm gì? → Solutions / Products
+Flora chứng minh thế nào? → Certification / Traceability / Case Studies
+Flora phục vụ ai? → Farmers / Buyers / Partners
+
+Nếu giữ được 4 câu này, wireframe sẽ tự nhiên trở nên rất logic, dù phía sau Flora có 50 loại nội dung.
+
+Một lưu ý khi làm với client
+
+Có một số con số/claim trên website hiện tại chưa hoàn toàn nhất quán — ví dụ homepage nói 20 hectares, trong About/CEO có chỗ nói 25-hectare Honey No.9 farming network. Vì vậy khi bạn dựng UI, đừng hard-code những số liệu này vào concept/design final trước khi Flora xác nhận. Đây cũng là việc nên đưa vào checklist content trước khi handoff developer.
+
+Nếu muốn làm bài bản hơn, bước tiếp theo mình khuyên là không vẽ homepage ngay. Mình có thể giúp bạn làm một “UX Strategy / Content Architecture” cho Flora gồm: Business Model → 3 User Personas → User Journey → Sitemap 18 trang → mục tiêu từng trang → CTA từng trang → nội dung cần có → rồi mới chuyển sang wireframe Desktop/Mobile. Đây sẽ là tài liệu rất hữu ích để bạn mang đi trao đổi trực tiếp với Flora.
+
+
+UX Strategy / Content Architecture làm giúp tôi nhugnư ngôn ngữ chính của tôi là tiếng việt
+
+Được. Với vai trò của bạn là người làm web cho Flora Global, mình sẽ viết tài liệu này theo góc nhìn UX/UI + Content Architecture, và tiếng Việt là ngôn ngữ chính. Các thuật ngữ tiếng Anh chỉ giữ lại khi đó là thuật ngữ Flora đang dùng hoặc cần thiết cho website quốc tế.
+
+Mục tiêu của tài liệu không phải chỉ để “vẽ web đẹp”, mà để bạn có thể giải thích với Flora vì sao website được tổ chức như vậy.
+
+UX STRATEGY / CONTENT ARCHITECTURE
+Flora Global Website
+01. Bài toán của website hiện tại
+Vấn đề lớn nhất
+
+Flora đang có nhiều năng lực, sản phẩm và hoạt động khác nhau, ví dụ:
+
+Phân bón / đầu vào nông nghiệp
+Nông nghiệp chính xác
+Trang trại
+Chứng nhận
+VOAC
+Sourcing
+Procurement
+Processing
+Packaging
+Logistics
+Export
+Nông sản
+Honey No.9
+Thông tin nông nghiệp
+Thị trường
+Đối tác...
+
+Nếu đưa tất cả những thứ này lên navigation ngang hàng, người dùng sẽ khó trả lời:
+
+“Flora thực sự là công ty gì?”
+
+Vấn đề UX
+
+Người dùng có thể nhìn thấy rất nhiều thứ nhưng không biết mình nên bắt đầu từ đâu.
+
+Vì vậy mục tiêu của website mới là:
+
+Giảm sự phức tạp của mô hình kinh doanh nhưng không làm mất sự phong phú của nội dung.
+
+02. Mục tiêu UX
+
+Website mới cần giúp người dùng trả lời 4 câu hỏi theo đúng thứ tự:
+
+01 — Flora là ai?
+
+Một hệ sinh thái / đối tác tích hợp trong chuỗi giá trị nông nghiệp.
+
+02 — Flora làm gì?
+
+Cung cấp và kết nối các năng lực từ đầu vào, canh tác, tiêu chuẩn, sourcing đến xuất khẩu.
+
+03 — Flora khác gì?
+
+Flora không chỉ bán một sản phẩm hoặc cung cấp một dịch vụ riêng lẻ, mà kết nối nhiều mắt xích thành một chuỗi có khả năng kiểm soát chất lượng và truy xuất.
+
+04 — Flora có thể giúp tôi việc gì?
+
+Tùy người dùng:
+
+Nông hộ / trang trại
+→ Canh tác + chứng nhận + đầu vào + đầu ra
+
+Buyer quốc tế
+→ Tìm nguồn + kiểm soát chất lượng + processing + export
+
+Đối tác
+→ Xây dựng chuỗi cung ứng / hợp tác thị trường
+
+03. Brand Positioning cho website
+
+Mình đề xuất bạn dùng một câu định vị nội bộ:
+
+Flora Global là đối tác xây dựng chuỗi giá trị nông nghiệp từ Việt Nam đến thị trường quốc tế.
+
+Không nhất thiết đây là slogan cuối cùng.
+
+Nó là kim chỉ nam để quyết định UX.
+
+04. Mô hình kinh doanh nhìn dưới góc UX
+
+Đây là sơ đồ quan trọng nhất của dự án:
+
+                         FLORA GLOBAL
+                              │
+              ┌───────────────┴───────────────┐
+              │                               │
+           NGUỒN CUNG                       THỊ TRƯỜNG
+              │                               │
+        Nông dân / Farm                 Buyer quốc tế
+              │                               │
+              └───────────────┬───────────────┘
+                              │
+                              ▼
+                       HỆ SINH THÁI
+                            FLORA
+                              │
+       ┌────────┬────────┬────┴────┬────────┬────────┐
+       ▼        ▼        ▼         ▼        ▼
+     ĐẦU VÀO  CANH TÁC  TIÊU CHUẨN  SOURCING  XUẤT KHẨU
+       │        │        │         │        │
+       └────────┴────────┴────┬────┴────────┘
+                              ▼
+                       SẢN PHẨM ĐẠT CHUẨN
+                              │
+                              ▼
+                        THỊ TRƯỜNG QUỐC TẾ
+Đây chính là "xương sống" của website.
+05. Ba nhóm người dùng chính
+Persona 01 — Nông dân / Chủ trang trại
+Họ đang nghĩ gì?
+
+Tôi có trang trại / vùng trồng và muốn nâng cao chất lượng, đạt tiêu chuẩn và tìm đầu ra tốt hơn.
+
+Họ cần:
+Kỹ thuật canh tác
+Đầu vào
+Chứng nhận
+Quản lý vùng trồng
+Truy xuất
+Kết nối thị trường
+Họ cần nhìn thấy:
+
+Giải pháp cho vùng trồng
+
+CTA:
+
+Phát triển vùng trồng cùng Flora
+
+06. Persona 02 — Buyer / Importer
+
+Đây là nhóm người dùng B2B rất quan trọng.
+
+Họ đang nghĩ:
+
+Tôi cần tìm một nguồn hàng tại Việt Nam nhưng phải đảm bảo chất lượng, sản lượng, chứng nhận và logistics.
+
+Họ cần:
+Sản phẩm
+↓
+Nguồn cung
+↓
+Chất lượng
+↓
+Chứng nhận
+↓
+Truy xuất
+↓
+Processing
+↓
+Đóng gói
+↓
+Logistics
+↓
+Xuất khẩu
+CTA:
+
+Tìm nguồn hàng từ Việt Nam
+
+07. Persona 03 — Đối tác chiến lược
+
+Ví dụ:
+
+Doanh nghiệp nông nghiệp
+Nhà phân phối
+Nhà chế biến
+Đối tác Nhật
+Logistics
+Retailer
+Đối tác quốc tế
+Họ muốn biết:
+
+Flora có thể trở thành đối tác vận hành / sourcing / phát triển thị trường tại Việt Nam đến mức nào?
+
+CTA:
+
+Hợp tác cùng Flora
+
+08. User Journey
+
+Đây là phần bạn có thể dùng trực tiếp để giải thích với client.
+
+Journey A — Buyer
+Google / LinkedIn / Referral
+          ↓
+        HOME
+          ↓
+"Flora là ai?"
+          ↓
+"Flora làm gì?"
+          ↓
+   SOURCING
+          ↓
+   PRODUCTS
+          ↓
+QUALITY / CERTIFICATION
+          ↓
+TRACEABILITY / SUPPLY CHAIN
+          ↓
+       CASE STUDY
+          ↓
+   START A PARTNERSHIP
+Journey B — Farmer
+HOME
+ ↓
+WHO WE SERVE
+ ↓
+FARMING
+ ↓
+PRECISION FARMING
+ ↓
+CERTIFICATION
+ ↓
+INPUTS
+ ↓
+FARM NETWORK
+ ↓
+CONTACT
+Journey C — Partner
+HOME
+ ↓
+ECOSYSTEM
+ ↓
+HOW FLORA WORKS
+ ↓
+SOURCING
+ ↓
+SUPPLY CHAIN
+ ↓
+CASE STUDIES
+ ↓
+PARTNERSHIP
+09. Information Architecture
+
+Bây giờ mới tới sitemap.
+
+Mình đề xuất:
+
+FLORA GLOBAL
+│
+├── TRANG CHỦ
+│
+├── GIẢI PHÁP
+│   ├── Canh tác chính xác
+│   ├── Chứng nhận & Tiêu chuẩn
+│   ├── Tìm nguồn & Thu mua
+│   └── Xuất khẩu & Chuỗi cung ứng
+│
+├── SẢN PHẨM
+│   ├── Đầu vào nông nghiệp
+│   ├── Nguyên liệu nông nghiệp
+│   └── Honey No.9
+│
+├── HỆ SINH THÁI
+│   ├── Hệ sinh thái nông nghiệp tích hợp
+│   ├── Trang trại & Vùng trồng
+│   └── Truy xuất & Chất lượng
+│
+├── KIẾN THỨC
+│   ├── Kiến thức nông nghiệp
+│   └── Thị trường & Xuất khẩu
+│
+├── VỀ FLORA
+│   ├── Flora Global
+│   └── Đội ngũ & Đối tác
+│
+├── DỰ ÁN / CÂU CHUYỆN
+│
+├── TÀI NGUYÊN
+│
+└── HỢP TÁC CÙNG FLORA
+
+Khoảng 18 trang chính, nhưng navigation chỉ có 5–6 nhóm.
+
+10. Navigation chính
+
+Trên desktop:
+
+LOGO
+
+GIẢI PHÁP
+SẢN PHẨM
+HỆ SINH THÁI
+KIẾN THỨC
+VỀ FLORA
+
+                         [ HỢP TÁC CÙNG FLORA ]
+
+Không đưa:
+
+VOAC
+Logistics
+Model Farm
+Farm Partner
+Organic
+Export
+Procurement...
+
+lên navigation chính.
+
+Chúng là content/module bên trong các nhóm lớn.
+
+11. Content Architecture
+
+Đây là điểm quan trọng hơn Sitemap.
+
+Mỗi loại content phải có vai trò riêng.
+
+Loại nội dung	Vai trò
+Solutions	Flora giải quyết vấn đề gì
+Products	Flora cung cấp gì
+Ecosystem	Flora vận hành như thế nào
+Certification	Flora kiểm soát tiêu chuẩn ra sao
+Case Studies	Flora đã làm được gì
+Knowledge	Flora có chuyên môn gì
+About	Flora là ai
+Resources	Tài liệu chứng minh
+Contact	Chuyển đổi
+12. Homepage Content Architecture
+
+Homepage nên đi theo logic nhận thức, không phải logic tổ chức nội bộ của Flora.
+
+SECTION 01 — HERO
+Mục tiêu
+
+Trả lời:
+
+Flora là gì?
+
+Nội dung đề xuất
+
+Hệ sinh thái nông nghiệp tích hợp
+
+Headline:
+
+Từ vùng đất Việt Nam đến thị trường toàn cầu.
+
+Supporting text:
+
+Flora Global kết nối đầu vào, canh tác, tiêu chuẩn, nguồn cung và xuất khẩu để xây dựng chuỗi giá trị nông nghiệp minh bạch và có khả năng truy xuất.
+
+CTA:
+
+Khám phá hệ sinh thái
+
+Hợp tác cùng Flora
+
+13. SECTION 02 — FLORA LÀM GÌ?
+Chúng tôi xây dựng cả chuỗi giá trị
+
+Visual:
+
+ĐẦU VÀO
+   ↓
+CANH TÁC
+   ↓
+TIÊU CHUẨN
+   ↓
+THU HOẠCH
+   ↓
+CHẾ BIẾN
+   ↓
+TÌM NGUỒN
+   ↓
+LOGISTICS
+   ↓
+XUẤT KHẨU
+
+Đây là section giúp người dùng hiểu Flora trong 10 giây.
+
+14. SECTION 03 — FLORA PHỤC VỤ AI?
+Bạn đang tìm kiếm điều gì?
+
+3 card:
+
+🌱 Tôi muốn phát triển vùng trồng
+
+Canh tác • Đầu vào • Chứng nhận • Thị trường
+
+Khám phá giải pháp
+
+🌎 Tôi muốn tìm nguồn hàng
+
+Sourcing • Chất lượng • Truy xuất • Xuất khẩu
+
+Tìm nguồn từ Việt Nam
+
+🤝 Tôi muốn hợp tác
+
+Chuỗi cung ứng • Thị trường • Đối tác chiến lược
+
+Hợp tác cùng Flora
+
+15. SECTION 04 — NĂNG LỰC
+Năng lực của Flora
+
+4 card:
+
+01
+CANH TÁC CHÍNH XÁC
+
+02
+CHỨNG NHẬN & TIÊU CHUẨN
+
+03
+TÌM NGUỒN & THU MUA
+
+04
+XUẤT KHẨU & CHUỖI CUNG ỨNG
+
+Đây là nơi đưa các nội dung hiện tại vào đúng vị trí.
+
+16. SECTION 05 — SẢN PHẨM
+Sản phẩm & Nguyên liệu
+
+Phân loại:
+
+ĐẦU VÀO NÔNG NGHIỆP
+
+NGUYÊN LIỆU NÔNG NGHIỆP
+
+NÔNG SẢN
+
+Không cần show quá nhiều sản phẩm.
+
+Homepage chỉ cần:
+
+3–6 sản phẩm nổi bật → Xem tất cả
+
+17. SECTION 06 — FLAGSHIP STORY
+Honey No.9
+
+Đây nên là một section cực kỳ visual.
+
+Không chỉ nói:
+
+"Đây là một sản phẩm chanh dây."
+
+Mà kể:
+
+ĐẦU VÀO
+   ↓
+VÙNG TRỒNG
+   ↓
+CANH TÁC
+   ↓
+CHỨNG NHẬN
+   ↓
+KIỂM SOÁT CHẤT LƯỢNG
+   ↓
+TRUY XUẤT
+   ↓
+LOGISTICS
+   ↓
+THỊ TRƯỜNG QUỐC TẾ
+Vai trò UX:
+
+Honey No.9 = bằng chứng cho hệ sinh thái Flora.
+
+18. SECTION 07 — WHY FLORA
+
+Không cần quá nhiều chữ.
+
+4 điểm:
+
+Tích hợp
+
+Kiểm soát nhiều mắt xích của chuỗi.
+
+Truy xuất
+
+Từ vùng trồng đến thị trường.
+
+Tiêu chuẩn quốc tế
+
+Hệ thống chứng nhận và kiểm soát chất lượng.
+
+Kết nối Việt Nam – Thế giới
+
+Nguồn cung địa phương + yêu cầu thị trường quốc tế.
+
+19. SECTION 08 — CASE STUDIES
+
+Đây là phần nên bổ sung mạnh.
+
+Ví dụ:
+
+CASE STUDY
+
+Honey No.9
+Vietnam → Global Market
+
+Certification
+Farm → International Standard
+
+Strategic Sourcing
+Vietnam → Global Buyer
+UX principle:
+
+Claim → Evidence
+
+Đừng chỉ nói Flora:
+
+"Chúng tôi có năng lực."
+
+Hãy cho thấy:
+
+"Đây là cách chúng tôi đã thực hiện."
+
+20. SECTION 09 — KIẾN THỨC
+Góc nhìn về nông nghiệp
+
+3 nhóm:
+
+Nông nghiệp
+Tiêu chuẩn
+Thị trường & xuất khẩu
+
+Homepage chỉ hiển thị 3 bài nổi bật.
+
+21. SECTION 10 — CTA
+
+Cuối trang không nên chỉ:
+
+Contact Us
+
+Mà:
+
+Bạn đang tìm kiếm giải pháp nào?
+[ PHÁT TRIỂN VÙNG TRỒNG ]
+
+[ TÌM NGUỒN HÀNG ]
+
+[ HỢP TÁC CÙNG FLORA ]
+22. Cấu trúc một trang Solution
+
+Ví dụ Tìm nguồn & Thu mua.
+
+Không làm:
+
+Banner → đoạn text dài → hình → text.
+
+Mà:
+
+HERO
+│
+├── Vấn đề của khách hàng
+│
+├── Flora giải quyết như thế nào
+│
+├── Quy trình
+│
+│   Sourcing
+│      ↓
+│   Farm Network
+│      ↓
+│   Audit
+│      ↓
+│   Processing
+│      ↓
+│   Packaging
+│      ↓
+│   Compliance
+│      ↓
+│   Export
+│
+├── Năng lực
+│
+├── Case Study
+│
+├── FAQ
+│
+└── CTA
+23. Cấu trúc một trang Product
+
+Product page cũng phải phục vụ B2B, không chỉ đẹp.
+
+PRODUCT HERO
+│
+├── Product overview
+│
+├── Nguồn gốc
+│
+├── Thông số kỹ thuật
+│
+├── Tiêu chuẩn / Chứng nhận
+│
+├── Quy cách
+│
+├── MOQ / Supply capability*
+│
+├── Traceability
+│
+├── Documentation
+│
+├── Related products
+│
+└── REQUEST INFORMATION
+
+* Chỉ hiển thị nếu Flora xác nhận có thông tin này.
+
+24. Cấu trúc trang Certification
+
+Không nên biến thành danh sách logo.
+
+GLOBAL COMPLIANCE
+
+"Quality is built into the chain."
+
+↓
+Tiêu chuẩn nào?
+↓
+Áp dụng ở đâu?
+↓
+Quy trình kiểm soát
+↓
+Testing
+↓
+Audit
+↓
+Traceability
+↓
+Certificates / Documents
+↓
+Case Studies
+25. Cấu trúc trang Ecosystem
+
+Đây là trang giải thích Flora.
+
+HỆ SINH THÁI FLORA
+
+              INPUT
+                ↓
+              FARM
+                ↓
+          COMPLIANCE
+                ↓
+            HARVEST
+                ↓
+          PROCESSING
+                ↓
+            SOURCING
+                ↓
+            EXPORT
+                ↓
+        GLOBAL MARKET
+
+Sau đó giải thích từng tầng.
+
+Trang này nên là trang chiến lược, không phải trang giới thiệu thông thường.
+
+26. Content hierarchy
+
+Khi bạn thiết kế UI, hãy phân cấp nội dung theo:
+
+LEVEL 01 — Brand message
+
+Flora là ai?
+
+LEVEL 02 — Business proposition
+
+Flora làm gì?
+
+LEVEL 03 — Capabilities
+
+Flora làm bằng cách nào?
+
+LEVEL 04 — Proof
+
+Flora chứng minh thế nào?
+
+LEVEL 05 — Conversion
+
+Tôi có thể làm gì tiếp theo?
+
+Đây là framework rất hữu ích để bạn tránh tình trạng section nào cũng "quan trọng như nhau".
+
+27. CTA Strategy
+
+Mỗi nhóm người dùng có CTA khác nhau.
+
+Người dùng	CTA chính
+Nông dân	Phát triển vùng trồng
+Farm Partner	Trở thành đối tác vùng trồng
+Buyer	Tìm nguồn hàng
+Importer	Yêu cầu thông tin sản phẩm
+Retailer	Khám phá nguồn cung
+Global Partner	Hợp tác cùng Flora
+Không nên dùng mọi nơi:
+
+Contact Us
+
+CTA phải nói người dùng sẽ nhận được gì.
+
+28. Footer
+
+Footer có thể làm thành:
+
+FLORA GLOBAL
+
+Xây dựng chuỗi giá trị nông nghiệp
+từ Việt Nam đến thị trường toàn cầu.
+
+SOLUTIONS
+• Canh tác
+• Chứng nhận
+• Sourcing
+• Xuất khẩu
+
+PRODUCTS
+• Đầu vào
+• Nguyên liệu
+• Honey No.9
+
+ECOSYSTEM
+• Trang trại
+• Truy xuất
+• Chất lượng
+
+KNOWLEDGE
+• Nông nghiệp
+• Thị trường
+• Xuất khẩu
+
+ABOUT
+• Flora
+• Đội ngũ
+• Đối tác
+
+[ HỢP TÁC CÙNG FLORA ]
+29. Visual Direction
+
+Sau khi có Content Architecture, mới tới Visual.
+
+Mình đề xuất Flora đi theo hướng:
+
+Agriculture + Global B2B + Premium
+
+Không nên quá:
+
+❌ "Nông nghiệp Việt Nam truyền thống"
+
+và cũng không nên quá:
+
+❌ "Website bán phân bón"
+
+Mà nên là:
+
+Modern Agricultural Supply Chain
+
+Visual language:
+
+Ảnh vùng trồng thật
+Macro cây / đất / trái
+Con người trong trang trại
+Processing
+Packaging
+Container / logistics
+Global market
+Maps
+Data / traceability
+30. Một visual concept mình rất thích cho Flora
+"FROM SOIL → SHELF"
+
+Có thể dùng xuyên suốt website.
+
+SOIL
+↓
+SEED
+↓
+FARM
+↓
+QUALITY
+↓
+PROCESS
+↓
+PACK
+↓
+SHIP
+↓
+SHELF
+
+Mỗi bước tương ứng một capability.
+
+Nó giúp website có một visual language thống nhất, thay vì mỗi trang có một kiểu banner.
+
+31. Wireframe logic cấp cao
+
+Cuối cùng, nếu bạn chuẩn bị bước vào Figma, mình sẽ biến toàn bộ strategy trên thành:
+
+┌──────────────────────────────────────────┐
+│ LOGO  GIẢI PHÁP  SẢN PHẨM  HỆ SINH THÁI │
+│       KIẾN THỨC  VỀ FLORA   [HỢP TÁC]    │
+├──────────────────────────────────────────┤
+│                                          │
+│                 HERO                     │
+│                                          │
+│        TỪ ĐẤT VIỆT NAM                  │
+│        ĐẾN THỊ TRƯỜNG TOÀN CẦU          │
+│                                          │
+├──────────────────────────────────────────┤
+│                                          │
+│         CHÚNG TÔI XÂY DỰNG CHUỖI        │
+│                                          │
+│ INPUT → FARM → QUALITY → SOURCING → EXPORT│
+│                                          │
+├──────────────────────────────────────────┤
+│                                          │
+│         FLORA PHỤC VỤ AI?                │
+│                                          │
+│ FARMER     BUYER      PARTNER            │
+│                                          │
+├──────────────────────────────────────────┤
+│                                          │
+│           NĂNG LỰC CỦA FLORA             │
+│                                          │
+│ FARMING | COMPLIANCE | SOURCING | EXPORT │
+│                                          │
+├──────────────────────────────────────────┤
+│                                          │
+│              PRODUCTS                    │
+│                                          │
+├──────────────────────────────────────────┤
+│                                          │
+│              HONEY NO.9                  │
+│        FLAGSHIP CASE STUDY               │
+│                                          │
+├──────────────────────────────────────────┤
+│                                          │
+│             WHY FLORA                   │
+│                                          │
+├──────────────────────────────────────────┤
+│                                          │
+│             CASE STUDIES                 │
+│                                          │
+├──────────────────────────────────────────┤
+│                                          │
+│             KNOWLEDGE                    │
+│                                          │
+├──────────────────────────────────────────┤
+│                                          │
+│       BẠN ĐANG TÌM KIẾM ĐIỀU GÌ?         │
+│                                          │
+│  PHÁT TRIỂN FARM | TÌM NGUỒN | HỢP TÁC  │
+│                                          │
+└──────────────────────────────────────────┘
+32. Tóm lại — "kim chỉ nam" cho bạn khi làm UX
+
+Bạn chỉ cần nhớ một framework:
+
+WHO → WHAT → HOW → PROOF → ACTION
+
+WHO
+→ Flora là ai?
+→ Hệ sinh thái nông nghiệp tích hợp.
+
+WHAT
+→ Flora làm gì?
+→ Farming / Certification / Sourcing / Export / Products.
+
+HOW
+→ Flora làm như thế nào?
+→ Chuỗi giá trị tích hợp.
+
+PROOF
+→ Có gì chứng minh?
+→ Certification / Traceability / Case Studies / Honey No.9.
+
+ACTION
+→ Tôi nên làm gì?
+→ Phát triển vùng trồng / Tìm nguồn hàng / Hợp tác.
+
+Một điểm mình đặc biệt khuyên bạn làm trước khi vào Figma
+
+Đừng bắt đầu bằng Homepage.
+
+Hãy làm một file “Flora Website Content Matrix” trước:
+
+Page	Người dùng	Mục tiêu	Câu hỏi cần trả lời	Nội dung cần có	CTA
+Home	Tất cả	Hiểu Flora	Flora là ai?	Ecosystem	Khám phá
+Farming	Farmer	Hiểu giải pháp	Flora giúp farm gì?	Farming process	Phát triển farm
+Sourcing	Buyer	Đánh giá năng lực	Có sourcing được không?	Supply chain	Tìm nguồn
+Product	Buyer	Đánh giá SP	SP có phù hợp?	Specs / cert	Request info
+Compliance	Buyer/Farmer	Tạo niềm tin	Có đạt chuẩn?	Certification	Tìm hiểu
+Ecosystem	Tất cả	Hiểu mô hình	Flora khác gì?	Value chain	Khám phá
+Case Study	Buyer	Xác thực	Flora đã làm gì?	Evidence	Liên hệ
+About	Tất cả	Trust	Flora là ai?	Story / team	Liên hệ
+
+Đây mới là tài liệu bạn nên dùng để dựng wireframe.
+
+Và có một việc nữa rất đáng làm: phân tích nội dung thật của từng URL hiện tại của flora-global.vn rồi map 1-1 sang sitemap mới. Như vậy bạn sẽ biết chính xác trang nào redirect sang đâu, nội dung nào gộp, nội dung nào viết lại, nội dung nào thiếu, thay vì chỉ có sitemap trên lý thuyết. Đây sẽ là bước Content Audit → Migration Map trước khi bạn thiết kế Figma.
+
+phân tích nội dung thật của từng URL hiện tại của flora-global.vn rồi map 1-1 sang sitemap mới
+
+Được. Nhưng để làm đúng kiểu audit nội dung thật → map 1-1, mình không nên giả định danh sách URL cũ từ sitemap trước đó. Mình đã kiểm tra site live và hiện search index chỉ expose được một phần URL; ví dụ đã xác nhận được Home, About, Products, Contact, Strategic Sourcing và Export Logistics.
+
+Để mình làm full URL inventory, cần crawl trực tiếp toàn bộ site/WordPress sitemap. Hiện endpoint sitemap của www.flora-global.vn không được web reader truy cập được, nên nếu mình tự liệt kê tiếp sẽ có nguy cơ bịa URL hoặc bỏ sót URL.
+
+Những URL mình đã xác minh được
+URL hiện tại	Nội dung thực tế	Vai trò hiện tại	Map sang sitemap mới
+/	Japanese Inputs → Precision Growing → Total Compliance → Seamless Export; mô hình Integrated Supply Chain Agriculture Ecosystem; Honey No.9; About/CEO	Homepage + positioning + capability overview	HOME
+/about-us/	Vision, Mission, Core Values, CEO Message; định vị “Single Point of Accountability”, “Integrated Supply Chain Architect”, Honey No.9	Corporate / brand story	ABOUT FLORA GLOBAL
+/products/	4 sản phẩm: bột hạt sen, phân gà hữu cơ Nhật, fish protein powder, phân hữu cơ từ tro phân gà	Product catalogue	PRODUCTS
+/contact/	Form B2B; 3 nhóm nhu cầu: corporation sourcing, farm certification, retailer Honey No.9	Lead generation	START A PARTNERSHIP
+/strategic-sourcing-procurement-your-bridge-to-vietnam/	Raw commodity sourcing, farm network, processing, packaging, factory alliances, auditing, MRL, traceability, export documentation	Sourcing capability	STRATEGIC SOURCING & PROCUREMENT
+/the-export-logistic-chain-precision-velocity-thermal-integrity/	7-stage logistics: harvest → Brix/MRL → sorting → packaging → cold chain → documentation → freight	Export/logistics capability	EXPORT & SUPPLY CHAIN
+
+Đặc biệt, /strategic-sourcing... không nên giữ như một “blog article” đơn thuần. Nội dung thực tế của nó đang mô tả một năng lực kinh doanh cốt lõi của Flora: sourcing → processing → packaging → compliance → export, với “single point of accountability”.
+
+Tương tự, /the-export-logistic-chain... thực chất là một service/capability page, không phải article. Nó mô tả cả quy trình 7 bước từ harvesting, Brix/MRL testing, grading, packaging, cold chain đến phytosanitary/COO và freight.
+
+Có một điểm rất quan trọng mình sẽ xử lý trong migration
+
+Hiện nội dung Flora đang trộn 4 loại page với nhau:
+
+1. Corporate positioning
+
+Home
+About
+CEO message
+
+2. Business capabilities
+
+Japanese Inputs
+Precision Farming
+Certification
+Sourcing
+Export Logistics
+
+3. Products
+
+Fertilizer/input
+Agricultural ingredients
+Agricultural products
+
+4. Proof / knowledge
+
+Honey No.9
+Farming stories
+Organic/certification knowledge
+Market information
+
+Vì vậy migration không nên kiểu:
+
+URL cũ → URL mới có tên gần giống.
+
+Mà phải làm:
+
+Nội dung thật đang nói về điều gì → người dùng nào cần nó → nó đóng vai trò gì trong business → đưa vào page nào trong architecture mới.
+
+Sitemap mới mình sẽ dùng làm “đích” để map
+01 — HOME
+
+/
+
+02 — SOLUTIONS
+/solutions/precision-farming/
+/solutions/certification-compliance/
+/solutions/strategic-sourcing/
+/solutions/export-supply-chain/
+03 — PRODUCTS
+/products/
+/products/agricultural-inputs/
+/products/agricultural-ingredients/
+/products/honey-no-9/
+04 — ECOSYSTEM
+/ecosystem/
+/ecosystem/farms-farm-network/
+/ecosystem/traceability-quality/
+05 — KNOWLEDGE
+/knowledge/agriculture-insights/
+/knowledge/market-export-insights/
+06 — ABOUT
+/about/
+/about/leadership-partners/
+07 — CASE STUDIES
+/case-studies/
+08 — RESOURCES
+/resources/
+09 — CONVERSION
+/partnership/
+Và mapping sẽ không chỉ là “KEEP / DELETE”
+
+Mình sẽ dùng 6 trạng thái:
+
+Action	Ý nghĩa
+KEEP	Nội dung/page vẫn đúng, chỉ redesign
+MOVE	Nội dung đúng nhưng nằm sai nhóm
+MERGE	Gộp vào một page lớn hơn
+REWRITE	Giữ subject nhưng viết lại theo UX mới
+SPLIT	Một URL hiện tại chứa nhiều business topic, cần tách
+ARCHIVE	Không còn cần trong architecture mới
+
+Ví dụ:
+
+Current
+/strategic-sourcing-procurement-your-bridge-to-vietnam/
+
+→ MOVE + REWRITE
+
+Không nên giữ nguyên tên article dài này.
+
+Nội dung được phân tách thành:
+
+Strategic Sourcing
+
+Farm network
+Raw commodity sourcing
+Supplier/factory network
+Processing
+Packaging
+Audit
+MRL
+Traceability
+Export documentation
+
+và một phần proof chuyển sang:
+
+Case Studies → Honey No.9
+
+Một ví dụ khác: /about-us/
+
+Hiện page này chứa khá nhiều thứ:
+
+Vision
+Mission
+Core Values
+CEO Message
+Japanese inputs
+25-hectare Honey No.9 network
+Global certification
+17–19 Brix
+Singapore / Japan / EU
+“Single Point of Accountability”
+
+Nếu giữ nguyên toàn bộ trong About thì About sẽ lại trở thành một “mega page”.
+
+Mình sẽ tách:
+
+About
+→ Vision / Mission / Values / Flora là ai
+
+Ecosystem
+→ mô hình integrated supply chain
+
+Honey No.9
+→ 17–19 Brix / farming / market
+
+Certification & Compliance
+→ global standards
+
+Case Study
+→ bằng chứng Flora vận hành ecosystem như thế nào
+
+Leadership
+→ CEO story
+
+Đó mới là migration có giá trị UX.
+
+Có một vấn đề dữ liệu mình sẽ flag trong audit
+
+Trang Home hiện nói 20 hectares, trong khi About và Strategic Sourcing có chỗ nói 25 hectares cho Honey No.9.
+
+Vì vậy trong migration sheet mình sẽ đánh dấu:
+
+CONTENT CONFLICT — CLIENT CONFIRMATION REQUIRED
+
+chứ không tự chọn 20 hay 25.
+
+Tương tự với các con số như:
+
+diện tích vùng trồng
+số farm
+sản lượng
+số quốc gia
+chứng nhận
+17–19 Brix
+thị trường Singapore/Japan/EU
+Bước tiếp theo mình đề xuất
+
+Nếu mục tiêu của bạn là đưa thẳng sang Figma / wireframe, mình nên làm tiếp thành một bảng Content Migration Matrix hoàn chỉnh, format:
+
+Current URL → Nội dung thật → Content blocks → Business meaning → Persona → New URL → Action → Content giữ lại → Content viết mới → CTA → Redirect 
+
+https://www.flora-global.vn/sitemap.xml sitemap
+
+Đúng rồi — đây chính là thứ mình cần. Mình đã thử mở trực tiếp sitemap XML, nhưng web reader hiện không parse được application/xml, nên chưa thể lấy toàn bộ URL từ file đó tự động.
+
+Tuy nhiên, mình có thể tiếp tục audit từng URL thực tế đã được index và bắt đầu xây migration map. Hiện đã xác minh thêm cả các URL product detail và content/blog, không chỉ 6 URL ở bước trước. Ví dụ site hiện có product detail cho Bột Protein từ cá và Phân bón hữu cơ từ tro phân gà nung.
+
+Để lấy FULL sitemap 1 lần
+
+Bạn chỉ cần copy toàn bộ nội dung XML của:
+
+https://www.flora-global.vn/sitemap.xml
+
+và paste vào đây.
+
+Không cần format lại. Ví dụ:
+
+<urlset>
+  <url>
+    <loc>https://www.flora-global.vn/...</loc>
+  </url>
+  ...
+</urlset>
+
+Sau đó mình sẽ làm cho bạn full Content Migration Matrix, theo đúng format này:
+
+#	URL hiện tại	Nội dung thật	Loại content	User	Sitemap mới	Action	Nội dung giữ	Nội dung viết lại	CTA
+01	/	Ecosystem + Inputs + Farming + Compliance + Export	Homepage	All	/	REWRITE	Core positioning	UX narrative	Explore ecosystem
+02	/about-us/	Vision + Mission + CEO + Honey No.9	Corporate	All	/about/	SPLIT	Vision/Mission	Brand story	About Flora
+03	/products/	4 products	Catalogue	Buyer	/products/	RESTRUCTURE	Product data	Category architecture	Request product info
+04	/strategic-sourcing.../	Sourcing + Farm network + Processing + Audit + MRL	Capability	Buyer	/solutions/strategic-sourcing/	MOVE + REWRITE	Core capability	Service UX	Source from Vietnam
+05	/the-export-logistic-chain.../	7-stage export/logistics process	Capability	Buyer	/solutions/export-supply-chain/	MOVE + REWRITE	Process	Capability page	Build supply chain
+06	/product/bot-protein-tu-ca/	Fish protein specs/use cases	Product	Buyer	/products/agricultural-inputs/	MOVE	Technical data	B2B product sheet	Request info
+07	/product/phan-bon-huu-co-tu-tro-phan-ga-nung/	PK fertilizer + specs + usage	Product	Farm/Buyer	/products/agricultural-inputs/	MOVE	Specs	Product UX	Request info
+
+Các URL sản phẩm hiện tại thực sự chứa khá nhiều technical content — thành phần, công dụng, liều lượng, đặc tính lý-hoá, nguồn gốc/quy trình… — nên mình sẽ không chỉ map chúng vào một /products/ chung. Chúng nên được phân loại lại thành Product Category → Product Detail → Technical/Compliance information.
+
+Ngoài ra, mình sẽ đánh dấu riêng những content không nên bê nguyên sang website mới. Ví dụ bài “5 xu hướng nông nghiệp mới 2025” hiện đang là một bài Market Information nhưng nội dung chủ yếu mang tính tổng hợp xu hướng ngành; nó có thể nằm trong Knowledge / Market & Export Insights, thay vì trở thành một phần của business architecture chính.
+
+
+Đúng, với danh sách sitemap bạn paste thì giờ đã đủ để làm inventory thật của site. Mình đã đối chiếu cấu trúc URL với nội dung Flora đang public và có thể map theo content/business logic, thay vì chỉ đổi tên URL.
+
+Một điểm quan trọng trước khi vào bảng:
+
+Sitemap hiện có 6 ngôn ngữ: /en, /vi, /zh, /ko, /hi, /si.
+Các URL cùng slug ở 6 ngôn ngữ là 6 phiên bản ngôn ngữ của cùng một content, không phải 6 nội dung khác nhau.
+Từ sitemap bạn gửi, có khoảng 70 URL/content entity duy nhất × 6 ngôn ngữ = 420 URL.
+Vì vậy bên dưới mình map 70 content entity, và quy tắc mapping này áp dụng tương ứng cho cả 6 locale.
+Sitemap hiện tại cho thấy Flora đang có 14 service detail pages + 5 news categories + 41 news articles + 4 product detail pages.
+Đây là dấu hiệu rất rõ rằng website hiện tại đang lấy “Services / News / Products” làm taxonomy, trong khi business thực tế của Flora lại xoay quanh Farm → Compliance → Sourcing → Supply Chain → Market.
+
+Search hiện tại cũng xác nhận homepage đang kể câu chuyện “Japanese Foundation → Precision Growing → Total Compliance → Seamless Export”, và định vị Flora như một integrated supply-chain agriculture ecosystem.
+
+1. Sitemap mới mình đề xuất sau khi audit
+
+Mình sẽ giữ 18 page chính, nhưng bổ sung một điểm: Knowledge và Case Studies phải có template detail, vì 41 bài hiện tại không thể nhét vào một page duy nhất.
+
+HOME
+│
+├── SOLUTIONS
+│   ├── Precision Farming
+│   ├── Certification & Compliance
+│   ├── Strategic Sourcing
+│   └── Export & Supply Chain
+│
+├── PRODUCTS
+│   ├── Agricultural Inputs
+│   ├── Agricultural Ingredients
+│   └── Honey No.9
+│
+├── ECOSYSTEM
+│   ├── Integrated Agriculture Ecosystem
+│   ├── Farms & Farm Network
+│   └── Traceability & Quality
+│
+├── KNOWLEDGE
+│   ├── Agriculture Insights
+│   ├── Market & Export Insights
+│   └── [Article Detail]
+│
+├── CASE STUDIES
+│   └── [Case Study Detail]
+│
+├── RESOURCES
+│
+├── ABOUT
+│   ├── About Flora
+│   └── Leadership & Partners
+│
+└── PARTNERSHIP
+
+Điểm thay đổi lớn: VOAC không còn là một nhánh navigation ngang hàng với Flora Services.
+
+Các nội dung VOAC sẽ được absorb vào Solutions / Ecosystem / Knowledge, trừ trường hợp Flora muốn duy trì VOAC như một brand/organization độc lập.
+
+VOAC thực tế đang có một hệ dịch vụ khá rộng: organic farming consulting, certification, organic inputs, testing/legal guidance, sourcing, import/export, training và financial support.
+
+2. CORE PAGES
+Current URL	Nội dung hiện tại	New URL	Action
+/en + 5 locale	Integrated agriculture ecosystem, Japanese inputs, precision growing, compliance, export, Honey No.9	/	REWRITE
+/about-us	Vision, Mission, Values, CEO, Flora story	/about/	SPLIT + REWRITE
+/services	Tổng hợp các service	/solutions/	RESTRUCTURE
+/products	Product catalogue	/products/	RESTRUCTURE
+/news	News / knowledge listing	/knowledge/	RESTRUCTURE
+/contact	Contact + các nhóm nhu cầu B2B	/partnership/	REWRITE
+Quan trọng nhất: /services
+
+Hiện Services đang đóng vai trò business container.
+
+Nhưng sau redesign, không nên giữ:
+
+Services → 14 service pages
+
+Mà thành:
+
+Solutions → 4 business problems
+
+Solutions
+│
+├── Precision Farming
+├── Certification & Compliance
+├── Strategic Sourcing
+└── Export & Supply Chain
+
+Đây chính là cách biến Flora từ một “company có nhiều service” thành một integrated agriculture partner.
+
+3. 14 SERVICE URL → SITEMAP MỚI
+A. Japanese Agricultural Inputs
+Current
+
+/services/premium-agricultural-inputs-the-japanese-foundation
+
+Nội dung hiện tại xoay quanh Japanese-standard agricultural inputs, đặc biệt Japanese fermented / heat-treated chicken manure, dùng như nền tảng cho soil health và high-Brix production. Homepage hiện cũng đang dùng concept “The Japanese Foundation / Elite Inputs”.
+
+Mapping
+
+→ /products/agricultural-inputs/
+
+Action: MOVE + REWRITE
+
+Không nên coi nó là một service.
+
+Nó thực chất là:
+
+Input product / agricultural technology platform
+
+Content nên giữ:
+
+Japanese inputs
+nguồn gốc
+fermentation / heat treatment
+soil vitality
+nutrition
+application
+relationship với Precision Farming
+relationship với Honey No.9
+4. Strategic Sourcing
+Current
+
+/services/strategic-sourcing-procurement-your-bridge-to-vietnam
+
+Mapping
+
+→ /solutions/strategic-sourcing/
+
+Action: KEEP CONCEPT + REWRITE
+
+Đây là một trong những page quan trọng nhất của Flora.
+
+Nội dung nên giữ:
+
+Vietnam farm network
+        ↓
+Raw material sourcing
+        ↓
+Supplier / factory network
+        ↓
+Processing
+        ↓
+Packaging
+        ↓
+Audit
+        ↓
+MRL / compliance
+        ↓
+Traceability
+        ↓
+Export
+
+Không nên viết lại thành một page “Procurement Service” thông thường.
+
+Nó phải trả lời:
+
+“Nếu tôi là buyer quốc tế, Flora có thể giúp tôi source hàng từ Việt Nam đến mức nào?”
+
+5. Export Logistics
+Current
+
+/services/the-export-logistic-chain-precision-velocity-thermal-integrity
+
+Mapping
+
+→ /solutions/export-supply-chain/
+
+Action: MOVE + REWRITE
+
+Đây là capability, không phải blog.
+
+Nên biến thành một visual process:
+
+HARVEST
+ ↓
+QUALITY CHECK
+ ↓
+SORTING / GRADING
+ ↓
+PACKAGING
+ ↓
+COLD CHAIN
+ ↓
+DOCUMENTATION
+ ↓
+INTERNATIONAL FREIGHT
+
+Nó chính là phần “HOW” trong business model của Flora.
+
+6. Precision Farming / Honey No.9
+Current
+
+/services/farming-precision-cultivation-the-honey-no-9-legacy
+
+Mapping
+
+→ /solutions/precision-farming/
+
+Action: MOVE + REWRITE
+
+Nhưng Honey No.9 không nên biến mất.
+
+Nội dung Honey No.9 nên được dùng ở 3 nơi:
+
+Solutions
+└── Precision Farming
+        ↓
+Case Studies
+        ↓
+Products
+└── Honey No.9
+
+Tức là:
+
+Precision Farming = Flora làm thế nào
+Honey No.9 = Flora đã làm gì
+Product = Flora cung cấp cái gì
+
+Đây là một distinction UX rất quan trọng.
+
+7. Organic Certification
+Current
+
+/services/organic-certification-global-compliance-solutions
+
+Mapping
+
+→ /solutions/certification-compliance/
+
+Action: KEEP + REWRITE
+
+Nội dung nên gom:
+
+USDA Organic
+EU Organic
+JAS
+GlobalG.A.P.
+HACCP
+audit
+compliance
+traceability
+MRL
+documentation
+
+Homepage hiện cũng định vị phần này là “Your Global Passport” và nói Flora quản lý auditing cho các tiêu chuẩn như USDA, EU Organic, GlobalG.A.P. và HACCP.
+
+8. VOAC — cần xử lý đặc biệt
+
+Hiện có 9 URL:
+
+Current	New	Action
+voac-dich-vu-cot-loi-cua-voac	/solutions/certification-compliance/ + /ecosystem/	SPLIT
+voac-dich-vu-ho-tro-cua-voac	/ecosystem/	MERGE
+voac-dich-vu-chung-nhan-huu-co	/solutions/certification-compliance/	MERGE
+voac-dich-vu-tim-nguon-san-pham	/solutions/strategic-sourcing/	MERGE
+voac-chung-nhan-huu-co-voac	/solutions/certification-compliance/	MERGE
+voac-chung-nhan-voac-khong-hoa-chat-chem-free	/solutions/certification-compliance/	MERGE
+voac-mo-hinh-nong-trai-khong-hoa-chat-voac	/ecosystem/farms-farm-network/	MERGE
+voac-doi-tac-nong-trai-huu-co-voac	/ecosystem/farms-farm-network/	MERGE
+voac-nguyen-lieu-nong-nghiep-huu-co-voac	/products/agricultural-ingredients/	MOVE
+Vì sao không giữ 9 page VOAC?
+
+Vì chúng đang tạo ra rất nhiều content duplication.
+
+Ví dụ VOAC Organic Certification hiện đã bao gồm:
+
+USDA
+EU
+JAS
+production risk
+traceability
+training
+ICS
+
+Những thứ này về business architecture lại nằm chính xác trong Certification & Compliance.
+
+Còn VOAC Product Sourcing nói về:
+
+kết nối nguồn cung organic Việt Nam với thị trường toàn cầu
+
+→ thực chất trùng với Strategic Sourcing.
+
+9. NEWS CATEGORIES
+
+Hiện có 5 category:
+
+Current	New
+/news/category/canh-tac-huu-co	/knowledge/agriculture-insights/
+/news/category/chung-nhan-tieu-chuan	/knowledge/agriculture-insights/
+/news/category/xuat-khau-logistics	/knowledge/market-export-insights/
+/news/category/thi-truong-xu-huong	/knowledge/market-export-insights/
+/news/category/goc-nhin-flora	/knowledge/
+
+Action: MERGE
+
+Không cần tạo 5 category page ở navigation.
+
+Filter/tag có thể giữ bên trong Knowledge:
+
+Agriculture
+Organic
+Certification
+Traceability
+Logistics
+Export
+Market
+Flora Perspective
+10. 41 NEWS ARTICLE → MAP 1-1
+
+Đây là phần quan trọng nhất.
+
+Nhóm A — Export / Supply Chain
+Current article	New location	Action
+Xuất khẩu không chỉ là bán hàng – xây dựng niềm tin dài hạn	/knowledge/market-export-insights/	KEEP
+Minh bạch chuỗi cung ứng – nhân sinh thái, dấu chân carbon...	/knowledge/market-export-insights/	KEEP
+Truy xuất nguồn gốc trong chuỗi cung ứng nông sản hữu cơ xuất khẩu	/knowledge/agriculture-insights/	KEEP
+Quản lý dư lượng và kiểm nghiệm trước khi xuất khẩu	/knowledge/market-export-insights/	KEEP
+Đóng gói và ghi nhãn nông sản hữu cơ cho EU, Mỹ, Nhật	/knowledge/market-export-insights/	KEEP
+Chứng từ trong xuất khẩu nông sản hữu cơ	/knowledge/market-export-insights/	KEEP
+Chuỗi lạnh cho nông sản hữu cơ xuất khẩu	/knowledge/market-export-insights/	KEEP
+Tách biệt dòng hàng hữu cơ và thông thường trong kho/vận chuyển	/knowledge/market-export-insights/	KEEP
+Nhưng:
+
+Các bài này không chỉ là SEO articles.
+
+Một số nội dung nên được extract thành permanent content cho:
+
+Export & Supply Chain
+
+Ví dụ:
+
+Cold chain
+Export documentation
+Traceability
+Residue testing
+Organic/non-organic segregation
+
+Tức là:
+
+ARTICLE
+  ↓
+Knowledge
+  ↓
+Permanent capability content
+  ↓
+Solutions / Export
+
+Đây là content recycling, không phải duplicate content.
+
+11. Nhóm B — Certification / Compliance
+Current article	New location	Action
+Duy trì chứng nhận hữu cơ – đánh giá định kỳ...	/knowledge/agriculture-insights/	KEEP
+Chứng nhận nhóm cho nông hộ nhỏ & ICS	/knowledge/agriculture-insights/	KEEP
+Quy trình đạt chứng nhận hữu cơ	/knowledge/agriculture-insights/	KEEP
+Tổng quan tiêu chuẩn USDA / EU / JAS	/knowledge/agriculture-insights/	KEEP
+Nhật ký đồng ruộng và hồ sơ truy xuất	/knowledge/agriculture-insights/	KEEP
+Vùng đệm nhiễm chéo & kiểm soát rủi ro	/knowledge/agriculture-insights/	KEEP
+Chuyển đổi sang canh tác hữu cơ	/knowledge/agriculture-insights/	KEEP
+
+Các article này hỗ trợ trực tiếp cho Certification & Compliance.
+
+Vì vậy page:
+
+/solutions/certification-compliance/
+
+nên có block:
+
+Learn about compliance
+
+và link vào các article này.
+
+12. Nhóm C — Organic Farming
+Current article	New location
+Kiểm soát cỏ dại trong canh tác hữu cơ	/knowledge/agriculture-insights/
+Kiên nhẫn trong nông nghiệp hữu cơ – giai đoạn chuyển đổi	/knowledge/agriculture-insights/
+Luân canh và cây che phủ	/knowledge/agriculture-insights/
+Phân bón hữu cơ – phân loại, ủ hoai...	/knowledge/agriculture-insights/
+Nông nghiệp tái tạo và liên hệ với canh tác hữu cơ	/knowledge/agriculture-insights/
+Quản lý dịch hại không dùng hóa chất tổng hợp	/knowledge/agriculture-insights/
+Hữu cơ khác gì với sạch, an toàn và tự nhiên?	/knowledge/agriculture-insights/
+Sức khỏe đất – chất hữu cơ, vi sinh vật...	/knowledge/agriculture-insights/
+
+Action: KEEP
+
+Nhưng về UI, category nên là:
+
+Agriculture Insights
+
+không nên tạo:
+
+Organic Farming → Organic Fertilizer → Organic Pest → Organic Soil...
+
+vì sẽ quay lại vấn đề taxonomy quá sâu.
+
+13. Nhóm D — Precision Farming / Honey No.9
+Current
+
+canh-tac-chinh-xac-va-di-san-mat-ong-so-9-lam-nong-dua-tren-du-lieu
+
+New
+
+→ Case Study: Honey No.9
+
+Action: PROMOTE TO CASE STUDY
+
+Đây là bài không nên chỉ để trong blog.
+
+Nó là proof rằng:
+
+Input
+ ↓
+Precision farming
+ ↓
+Farm management
+ ↓
+Quality
+ ↓
+Brix
+ ↓
+Traceability
+ ↓
+Export
+
+Đây chính là content có khả năng giải thích “Flora khác gì?”
+
+14. Nhóm E — Japanese Inputs
+Current
+
+vi-sao-flora-global-chon-nen-tang-vat-tu-nong-nghiep-nhat-ban
+
+New
+
+→ /products/agricultural-inputs/
+
+và link phụ tới:
+
+→ /solutions/precision-farming/
+
+Action: MOVE + REUSE
+
+Không nên để bài này chỉ tồn tại trong Knowledge.
+
+Nó đang giải thích một phần business philosophy của Flora.
+
+15. Nhóm F — Market / Export Trends
+Article	New
+Nhu cầu thực phẩm hữu cơ toàn cầu – các động lực dài hạn	Market & Export Insights
+Cơ hội cho nông sản nhiệt đới hữu cơ Việt Nam	Market & Export Insights
+Việt Nam thúc đẩy nông nghiệp hữu cơ từ ISOP 2025	Market & Export Insights
+Diện tích nông nghiệp hữu cơ toàn cầu gần 99 triệu ha	Market & Export Insights
+5 xu hướng nông nghiệp mới 2025	Market & Export Insights
+Thị trường thực phẩm hữu cơ toàn cầu tăng trưởng mạnh	Market & Export Insights
+Bắt kịp xu hướng hữu cơ – hướng đi cho nông nghiệp Việt Nam	Market & Export Insights
+Thống kê thực trạng nông nghiệp hữu cơ trên thế giới	Market & Export Insights
+Xuất khẩu nông sản hữu cơ – xu thế, cơ hội, thách thức	Market & Export Insights
+
+Action: KEEP nhưng REVIEW DATE
+
+Các bài này tốt cho SEO, nhưng các bài có số liệu thị trường cần:
+
+UPDATE / REFRESH
+
+trước khi đưa sang site mới.
+
+Đặc biệt các bài:
+
+“5 xu hướng nông nghiệp mới 2025”
+“99 triệu ha”
+“thị trường tăng trưởng mạnh”
+
+không nên giữ nguyên nếu số liệu đã cũ.
+
+16. CEO article
+Current
+
+ceo-le-thi-thuy-hoa-va-khat-vong-cung-nong-dan-hien-thuc-hoa-nong-nghiep-organic
+
+New
+
+→ /about/leadership-partners/
+
+Action: MOVE
+
+Đây không nên nằm dưới Knowledge nữa.
+
+Nó là Founder/Leadership Story.
+
+Có thể trở thành section:
+
+From the Founder
+
+trong About.
+
+17. Product URLs
+
+Hiện có đúng 4 product detail:
+
+Current URL	New URL	Action
+/products/bot-hat-sen-100-nguyen-chat	/products/agricultural-ingredients/bot-hat-sen-100-nguyen-chat/	MOVE
+/products/bot-protein-tu-ca	/products/agricultural-inputs/bot-protein-tu-ca/	MOVE
+/products/phan-bon-huu-co-tu-tro-phan-ga-nung	/products/agricultural-inputs/phan-bon-huu-co-tu-tro-phan-ga-nung/	MOVE
+/products/phan-ga-huu-co-nhat-ban	/products/agricultural-inputs/phan-ga-huu-co-nhat-ban/	MOVE
+Nhưng có một vấn đề UX:
+
+Không nên để:
+
+Products
+├── Bột hạt sen
+├── Fish protein
+├── Chicken manure ash fertilizer
+└── Japanese chicken manure
+
+tất cả ngang hàng.
+
+Nên:
+
+PRODUCTS
+
+Agricultural Inputs
+├── Japanese Organic Chicken Manure
+├── Fish Protein Powder
+└── Chicken Manure Ash Fertilizer
+
+Agricultural Ingredients
+└── 100% Lotus Seed Powder
+
+Agricultural Products
+└── Honey No.9 Passion Fruit
+18. Honey No.9: cần tạo content entity mới
+
+Đây là một điểm mình muốn thay đổi so với sitemap cũ.
+
+Sitemap hiện tại không có product URL Honey No.9, nhưng Honey No.9 xuất hiện xuyên suốt:
+
+Homepage
+Farming service
+CEO/About
+Precision Farming article
+supply-chain narrative
+
+Homepage hiện mô tả Honey No.9 là premium yellow passion fruit và gắn nó với precision growing, 20 hectares và 17–19 Brix.
+
+Vì vậy sitemap mới nên tạo mới:
+
+/products/honey-no-9/
+
+và:
+
+/case-studies/honey-no-9/
+
+Hai page này khác nhau:
+
+Product
+
+Tôi có thể mua/sourcing sản phẩm gì?
+
+Case Study
+
+Flora đã xây dựng chuỗi sản phẩm này như thế nào?
+
+19. Mapping tổng thể
+
+Sau khi gom lại, toàn bộ site cũ thực chất rơi vào 8 business clusters:
+
+Current content	New architecture
+Home	Home
+About	About
+Services	Solutions
+Japanese Inputs	Products / Precision Farming
+Farming	Precision Farming
+Certification	Certification & Compliance
+Strategic Sourcing	Strategic Sourcing
+Export Logistics	Export & Supply Chain
+VOAC Certification	Certification & Compliance
+VOAC Sourcing	Strategic Sourcing
+VOAC Farm	Farms & Farm Network
+VOAC Organic Inputs	Agricultural Inputs
+Products	Products
+Organic Farming articles	Agriculture Insights
+Certification articles	Agriculture Insights
+Export articles	Market & Export Insights
+Market articles	Market & Export Insights
+Honey No.9 articles	Case Studies
+CEO article	Leadership
+News	Knowledge
+Contact	Partnership
+20. Đây mới là cấu trúc UX mình khuyên bạn đưa vào Figma
+
+Thay vì:
+
+SERVICES
+│
+├── Japanese Inputs
+├── Strategic Sourcing
+├── Export Logistics
+├── Farming
+├── Organic Certification
+├── VOAC
+│   ├── Core
+│   ├── Support
+│   ├── Certification
+│   ├── Sourcing
+│   ├── Organic Certification
+│   ├── Chem-Free
+│   ├── Farm Model
+│   ├── Farm Partner
+│   └── Organic Ingredients
+
+Hãy biến thành:
+
+SOLUTIONS
+│
+├── PRECISION FARMING
+│   ├── Japanese Inputs
+│   ├── Data-driven cultivation
+│   └── Honey No.9 methodology
+│
+├── CERTIFICATION & COMPLIANCE
+│   ├── Organic
+│   ├── GlobalG.A.P.
+│   ├── HACCP
+│   ├── MRL
+│   └── Traceability
+│
+├── STRATEGIC SOURCING
+│   ├── Farm Network
+│   ├── Supplier Network
+│   ├── Processing
+│   └── Procurement
+│
+└── EXPORT & SUPPLY CHAIN
+    ├── Quality
+    ├── Packaging
+    ├── Cold Chain
+    ├── Documentation
+    └── International Freight
+
+Đây là nơi business logic của Flora bắt đầu rõ ràng.
+
+21. Và toàn bộ 41 bài Knowledge nên phục vụ Solutions
+
+Đừng để Knowledge là “blog đứng riêng”.
+
+Ví dụ:
+
+/solutions/certification-compliance/
+
+bên dưới có:
+
+Related Knowledge
+
+Quy trình đạt chứng nhận hữu cơ
+USDA / EU / JAS
+ICS
+Nhật ký đồng ruộng
+Vùng đệm
+Quản lý dư lượng
+/solutions/export-supply-chain/
+
+Related Knowledge
+
+Cold chain
+Export documents
+Packaging
+Organic/non-organic segregation
+Traceability
+/solutions/precision-farming/
+
+Related Knowledge
+
+Soil health
+Organic fertilizer
+Pest management
+Weed control
+Precision farming
+Honey No.9
+/solutions/strategic-sourcing/
+
+Related Knowledge
+
+Vietnamese organic market
+Global demand
+Tropical organic products
+Supply chain transparency
+
+Như vậy Knowledge trở thành proof/expertise layer, chứ không phải một cái blog để “nhét bài”.
+
+22. Migration rule cho 420 URL
+
+Vì 6 locale có cùng cấu trúc, mình khuyên không audit 420 dòng riêng biệt.
+
+Làm migration sheet theo 70 content entity, sau đó nhân mapping sang locale:
+
+/vi/services/strategic-sourcing...
+/en/services/strategic-sourcing...
+/zh/services/strategic-sourcing...
+/ko/services/strategic-sourcing...
+/hi/services/strategic-sourcing...
+/si/services/strategic-sourcing...
+
+             ↓
+
+/vi/solutions/strategic-sourcing/
+/en/solutions/strategic-sourcing/
+/zh/solutions/strategic-sourcing/
+/ko/solutions/strategic-sourcing/
+/hi/solutions/strategic-sourcing/
+/si/solutions/strategic-sourcing/
+
+Như vậy developer chỉ cần tạo một content model, sau đó localize.
+
+23. Migration status mình đề xuất
+
+Nếu phân loại toàn bộ sitemap hiện tại:
+
+Action	Ước lượng
+KEEP / REWRITE	~25
+MOVE	~20
+MERGE	~15
+PROMOTE TO CASE STUDY	~2–3
+ARCHIVE / UPDATE	~7–10
+NEW CONTENT	~8–10
+
+Điểm đáng chú ý là không phải Flora đang thiếu content.
+
+Ngược lại, Flora đang có quá nhiều content rời rạc nhưng thiếu hierarchy.
+
+Đó chính là lý do website hiện tại có cảm giác như:
+
+agriculture + fertilizer + organic + certification + VOAC + export + blog
+
+thay vì:
+
+Flora = một đối tác xây dựng chuỗi giá trị nông nghiệp từ Việt Nam đến thị trường toàn cầu.
+
+24. Một thay đổi mình khuyên bạn chốt ngay với client
+
+Trước khi đi wireframe, hãy thống nhất với Flora 3 business entry points:
+
+FARM
+
+Tôi là nông trại / nhà sản xuất.
+
+→ Precision Farming
+→ Certification
+→ Farm Network
+→ Inputs
+
+BUY
+
+Tôi đang tìm nguồn nông sản từ Việt Nam.
+
+→ Products
+→ Strategic Sourcing
+→ Quality
+→ Traceability
+→ Export
+
+PARTNER
+
+Tôi muốn xây dựng một chuỗi cung ứng / hợp tác dài hạn.
+
+→ Ecosystem
+→ Sourcing
+→ Processing
+→ Export
+→ Partnership
+
+Sau đó homepage chỉ cần trả lời:
+
+Flora là ai?
+
+→ Integrated Agriculture Ecosystem
+
+Flora làm gì?
+
+→ Farm / Compliance / Sourcing / Export
+
+Flora khác gì?
+
+→ Integrated + Traceable + Compliance-driven
+
+Tôi nên liên hệ Flora nếu tôi là ai?
+
+→ FARM / BUY / PARTNER
+
+Đây mới là architecture mình nghĩ bạn nên mang vào wireframe desktop đầu tiên, thay vì bắt đầu từ việc vẽ từng page theo sitemap cũ.
+
+Nếu làm bước tiếp theo, mình sẽ chuyển toàn bộ audit trên thành một Migration Spreadsheet chuẩn cho designer + developer + SEO, với các cột: Old URL / Locale / Content Type / Current Topic / Primary Persona / New URL / Action / Content to Keep / Content to Rewrite / CTA / SEO Redirect / Notes.
+
+
+Phong cách trình bài web hàng ngang full web hay card hay thế nào
+
+Với Flora Global, mình không khuyên làm kiểu card-grid dày đặc từ đầu đến cuối. Nó dễ biến website thành cảm giác “catalog sản phẩm / công ty nông nghiệp”.
+
+Mình sẽ đi theo phong cách full-width horizontal storytelling — các section chạy ngang toàn màn hình, xen kẽ card ở những chỗ cần scan thông tin.
+
+Direction mình đề xuất
+6
+
+Tỷ lệ khoảng:
+
+60–70% Full-width / horizontal sections
+20–30% Card / grid
+10% Data / diagram / interaction
+1. Hero → Full width
+
+Không chia card.
+
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│  INTEGRATED AGRICULTURE ECOSYSTEM                           │
+│                                                             │
+│  Từ vùng đất Việt Nam                                       │
+│  đến thị trường toàn cầu.                                  │
+│                                                             │
+│  Flora kết nối...                                           │
+│                                                             │
+│  [Khám phá hệ sinh thái]  [Hợp tác cùng Flora]              │
+│                                                             │
+│                                      FARM / FIELD IMAGE      │
+└─────────────────────────────────────────────────────────────┘
+
+→ Cảm giác premium + global, không giống website bán phân bón.
+
+2. Value Chain → Horizontal
+
+Đây nên là signature section của Flora.
+
+INPUT
+   →
+FARM
+   →
+CERTIFICATION
+   →
+PROCESSING
+   →
+SOURCING
+   →
+LOGISTICS
+   →
+GLOBAL MARKET
+
+Có thể làm dạng horizontal timeline / process, thay vì 7 card độc lập.
+
+Khi hover/scroll từng bước → hình ảnh + thông tin thay đổi.
+
+Đây là chỗ để người dùng hiểu ngay “Flora khác gì”.
+
+3. Solutions → Card
+
+Đến đây mới dùng card.
+
+┌──────────────────┐ ┌──────────────────┐
+│ PRECISION        │ │ CERTIFICATION    │
+│ FARMING          │ │ & COMPLIANCE     │
+│                  │ │                  │
+│ → Explore        │ │ → Explore        │
+└──────────────────┘ └──────────────────┘
+
+┌──────────────────┐ ┌──────────────────┐
+│ SOURCING         │ │ EXPORT &         │
+│ & PROCUREMENT    │ │ SUPPLY CHAIN     │
+└──────────────────┘ └──────────────────┘
+
+Nhưng card nên to, ít chữ, nhiều hình, không phải kiểu:
+
+Icon + title + 3 dòng text + button
+
+4. Products → Horizontal showcase
+
+Không nên grid 12 sản phẩm như ecommerce.
+
+Ví dụ:
+
+                 AGRICULTURAL PRODUCTS
+
+       ┌──────────────────────────────────────┐
+       │                                      │
+       │          PASSION FRUIT               │
+       │                                      │
+       │          Honey No.9                  │
+       │                                      │
+       │          [View product]              │
+       │                                      │
+       └──────────────────────────────────────┘
+
+     ←  Product 01     Product 02     Product 03  →
+
+Hoặc 1 sản phẩm lớn + thumbnail bên cạnh.
+
+Điều này giúp Flora trông giống B2B agriculture company hơn là online shop.
+
+5. “Flora phục vụ ai?” → 3 Cards
+
+Section này card rất hợp.
+
+WHO WE SERVE
+
+┌───────────────┐ ┌───────────────┐ ┌───────────────┐
+│ FARMERS       │ │ GLOBAL BUYERS │ │ PARTNERS      │
+│               │ │               │ │               │
+│ Develop your  │ │ Source from   │ │ Build with    │
+│ farm          │ │ Vietnam       │ │ Flora         │
+└───────────────┘ └───────────────┘ └───────────────┘
+
+Quan trọng: card ở đây là entry point, không phải để trang trí.
+
+6. Honey No.9 → Full-width case study
+
+Đây mình sẽ làm rất editorial.
+
+6
+
+Ví dụ:
+
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│                   HONEY NO.9                                │
+│                                                             │
+│          From farm to global market                         │
+│                                                             │
+│                    [ LARGE IMAGE ]                           │
+│                                                             │
+│   Farming → Certification → Traceability → Export           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+
+Đây là section giúp “nói Flora làm được gì” bằng case thực tế, thay vì chỉ claim.
+
+7. Certification / Traceability → Data layout
+
+Không dùng card quá nhiều.
+
+Có thể dùng:
+
+                 QUALITY YOU CAN TRACE
+
+        ─────────────────────────────────────
+
+        FARM
+          ↓
+        DATA
+          ↓
+        CERTIFICATION
+          ↓
+        PROCESSING
+          ↓
+        EXPORT
+
+        [Traceability system / certification image]
+
+Kết hợp typography lớn + line + data.
+
+8. Case Studies → Editorial cards
+
+Ở đây dùng card nhưng nên giống magazine / project portfolio.
+
+CASE STUDIES
+
+┌──────────────────────────────┐
+│                              │
+│       LARGE IMAGE            │
+│                              │
+│  Passion Fruit               │
+│  Building a traceable        │
+│  export supply chain         │
+└──────────────────────────────┘
+
+                    ┌──────────────┐
+                    │ Smaller case │
+                    └──────────────┘
+
+Không nên 6 card bằng nhau.
+
+Một case chính lớn + 2 case phụ sẽ premium hơn.
+
+Công thức visual mình sẽ dùng cho Flora
+FULL WIDTH HERO
+       ↓
+HORIZONTAL VALUE CHAIN
+       ↓
+4 SOLUTION CARDS
+       ↓
+FULL WIDTH IMAGE + STORY
+       ↓
+PRODUCT SHOWCASE
+       ↓
+3 USER CARDS
+       ↓
+TRACEABILITY / CERTIFICATION
+       ↓
+BIG CASE STUDY
+       ↓
+KNOWLEDGE / INSIGHTS
+       ↓
+FULL WIDTH CTA
+Quan trọng nhất
+
+Nếu làm Flora, mình sẽ chọn “Editorial + Industrial + Agricultural” thay vì “Corporate Card Website”.
+
+Nghĩa là:
+
+Ảnh lớn → typography lớn → khoảng trắng → horizontal storytelling → data → card có chủ đích.
+
+Chứ không phải:
+
+Heading → 4 cards → heading → 4 cards → heading → 3 cards → heading → 6 cards.
+
+Vì business logic của Flora là chuỗi giá trị, nên layout cũng nên khiến người dùng “đi qua một chuỗi”, chứ không phải “đọc một danh sách dịch vụ”.

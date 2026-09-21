@@ -9,8 +9,9 @@
   "nav": {
     "home": "Home",
     "about": "About Us",
-    "services": "Services",
-    "news": "News",
+    "services": "Solutions",
+    "ecosystem": "Ecosystem",
+    "news": "Knowledge",
     "products": "Products",
     "contact": "Contact",
     "getInTouch": "Get in touch"
@@ -39,13 +40,29 @@
     "goc-nhin-flora": "Flora Perspective"
   },
   "home": {
+    "heroEyebrow": "Integrated Agriculture Ecosystem",
+    "heroTitle": "From Vietnamese Soil to Global Markets",
+    "heroSubtitle": "Flora Global integrates farming, certification, sourcing and export to build transparent, traceable agricultural supply chains.",
+    "heroCta1": "Explore Our Ecosystem",
+    "heroCta2": "Find Products",
+    "whoEyebrow": "What Are You Looking For?",
+    "whoTitle": "Who Flora Serves",
+    "whoFarmerTitle": "Farmers & Farm Owners",
+    "whoFarmerBody": "Raise your farm's quality, reach international certification and access Japanese-standard inputs.",
+    "whoFarmerCta": "Explore Farming Solutions",
+    "whoBuyerTitle": "Global Buyers",
+    "whoBuyerBody": "Source compliant, traceable Vietnamese agricultural products with reliable supply.",
+    "whoBuyerCta": "Source From Vietnam",
+    "whoPartnerTitle": "Strategic Partners",
+    "whoPartnerBody": "Build a long-term supply chain with Flora — from input to global market.",
+    "whoPartnerCta": "Partner With Flora",
     "learnMore": "Learn more",
     "aboutCta": "About Us",
     "catalogEyebrow": "Catalog",
     "productsTitle": "Products",
     "allProducts": "All products",
     "blogEyebrow": "Blog",
-    "newsTitle": "News",
+    "newsTitle": "Knowledge",
     "allNews": "All news",
     "ceoCaption": "Ms Lê Thị Thúy Hoa – CEO Flora Global",
     "ecosystemTitle": "The Integrated Supply Chain Agriculture Ecosystem",
@@ -85,8 +102,10 @@
     "contact": "Contact",
     "withUs": "with us",
     "aboutTitle": "About Us",
-    "servicesTitle": "Services",
-    "blogsTitle": "Blogs",
+    "servicesTitle": "Solutions",
+    "productsTitle": "Products",
+    "ecosystemTitle": "Ecosystem",
+    "blogsTitle": "Knowledge",
     "companyTitle": "Flora Global Company Limited",
     "addressLabel": "Headquarters – Ho Chi Minh City",
     "address": "692/31 Doan Van Bo Street, Xom Chieu Ward, Ho Chi Minh City, Vietnam",
@@ -116,11 +135,16 @@
   },
   "servicesPage": {
     "eyebrow": "Vertically Integrated. Vertically Trusted.",
-    "title": "Services"
+    "title": "Solutions"
+  },
+  "ecosystemPage": {
+    "eyebrow": "What runs behind the ecosystem",
+    "title": "VOAC Ecosystem",
+    "intro": "The farm network, in-house certification programmes and consortium services VOAC operates to run the Flora ecosystem."
   },
   "newsPage": {
     "eyebrow": "Blog",
-    "title": "News"
+    "title": "Knowledge"
   },
   "productsPage": {
     "eyebrow": "Catalog",
@@ -131,7 +155,7 @@
   },
   "contact": {
     "eyebrow": "Let’s move beyond the transaction",
-    "title": "Contact Us",
+    "title": "Start a Partnership",
     "sent": "Thank you. Your inquiry has been received — our team will respond shortly.",
     "error": "Please complete all required fields marked with *.",
     "name": "Full Name & Professional Title *",
@@ -139,7 +163,14 @@
     "company": "Company Name *",
     "location": "Headquarters Location *",
     "phone": "Phone",
-    "inquiry": "Nature of Inquiry *",
+    "personaLabel": "I am a... *",
+    "personas": [
+      "Farmer / Farm Owner",
+      "Global Buyer / Importer",
+      "Strategic Partner",
+      "Other"
+    ],
+    "inquiry": "What Are You Looking For? *",
     "message": "Project Details / Message",
     "timeline": "Timeline *",
     "submit": "Initiate Partnership",

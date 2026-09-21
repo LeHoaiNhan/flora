@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post) return { title: "Not found" };
   return pageSeo({
     lang: locale,
-    path: `/news/${slug}`,
+    path: `/knowledge/${slug}`,
     title: post.title,
     description: post.excerpt,
     image: post.cover,
@@ -67,14 +67,14 @@ export default async function NewsPostPage({ params }: Props) {
     ...(post.cover ? { image: [abs(post.cover)] } : {}),
     ...(post.date ? { datePublished: post.date, dateModified: post.date } : {}),
     inLanguage: lang,
-    mainEntityOfPage: abs(withLocale(lang, `/news/${slug}`)),
+    mainEntityOfPage: abs(withLocale(lang, `/knowledge/${slug}`)),
     author: { "@type": "Organization", name: SITE_NAME, "@id": `${SITE_URL}/#organization` },
     publisher: { "@id": `${SITE_URL}/#organization` },
   };
   const crumbs = breadcrumbLd([
     { name: SITE_NAME, path: withLocale(lang, "/") },
-    { name: dict.newsPage.title, path: withLocale(lang, "/news") },
-    { name: post.title, path: withLocale(lang, `/news/${slug}`) },
+    { name: dict.newsPage.title, path: withLocale(lang, "/knowledge") },
+    { name: post.title, path: withLocale(lang, `/knowledge/${slug}`) },
   ]);
 
   return (
@@ -85,7 +85,7 @@ export default async function NewsPostPage({ params }: Props) {
         title={post.title}
         image={post.cover}
         homeHref={withLocale(lang, "/")}
-        crumbs={[{ href: withLocale(lang, "/news"), label: dict.newsPage.title }]}
+        crumbs={[{ href: withLocale(lang, "/knowledge"), label: dict.newsPage.title }]}
       />
 
       <article className="container-page section-y">
@@ -95,7 +95,7 @@ export default async function NewsPostPage({ params }: Props) {
               {cats.map((c) => (
                 <Link
                   key={c.slug}
-                  href={withLocale(lang, `/news/category/${c.slug}`)}
+                  href={withLocale(lang, `/knowledge/category/${c.slug}`)}
                   className="meta rounded-[var(--radius-control)] border border-[var(--line)] px-3 py-1.5 uppercase text-[var(--muted)] transition hover:border-[var(--brand)] hover:text-[var(--brand)]"
                 >
                   {dict.newsCategories[c.slug]}
@@ -117,7 +117,7 @@ export default async function NewsPostPage({ params }: Props) {
                 <ArticleCard
                   key={p.slug}
                   article={p}
-                  href={withLocale(lang, `/news/${p.slug}`)}
+                  href={withLocale(lang, `/knowledge/${p.slug}`)}
                   readMore={dict.common.readMore}
                 />
               ))}

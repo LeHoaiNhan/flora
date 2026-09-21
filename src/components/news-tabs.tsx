@@ -21,13 +21,13 @@ export function NewsTabs({
 
   return (
     <div className="flex flex-wrap gap-2 border-b border-[var(--line)] pb-4">
-      <Link href={withLocale(locale, "/news")} className={`${base} ${active === null ? on : off}`}>
+      <Link href={withLocale(locale, "/knowledge")} className={`${base} ${active === null ? on : off}`}>
         {dict.common.all}
       </Link>
       {NEWS_CATEGORIES.map((c) => (
         <Link
           key={c.slug}
-          href={withLocale(locale, `/news/category/${c.slug}`)}
+          href={withLocale(locale, `/knowledge/category/${c.slug}`)}
           className={`${base} ${active === c.slug ? on : off}`}
         >
           {dict.newsCategories[c.slug]}

@@ -18,11 +18,9 @@ import {
 } from "@/lib/seo";
 import { NEWS_CATEGORIES } from "@/lib/legacy";
 import { getServiceStrings } from "@/lib/services/service-i18n";
-import {
-  FLORA_SERVICE_SLUGS,
-  VOAC_CORE_SERVICE_SLUGS,
-  VOAC_PORTFOLIO_SLUGS,
-} from "@/lib/services/service-theme";
+import { SOLUTION_CLUSTER_ORDER, servicesByCluster } from "@/lib/services/service-theme";
+import { getCategories } from "@/lib/catalog";
+import { localizeCategories } from "@/lib/i18n/localized-catalog";
 
 type Props = {
   children: React.ReactNode;
@@ -89,35 +87,64 @@ export default async function LocaleLayout({ children, params }: Props) {
   const dict = getDictionary(lang);
   const s = getServiceStrings(lang);
 
+  // Business-capability clusters (Precision Farming / Certification / Sourcing /
+  // Export) replace the old Flora-vs-VOAC brand split — see document/REEDIT.txt.
+  // Same 14 service URLs, regrouped by what problem they solve for a visitor
+  // instead of which internal team owns them. The "ecosystem" cluster (VOAC
+  // consortium/farm-network pages) gets its own top-level section below instead
+  // of a heading inside Solutions, now that /ecosystem exists.
+  const SOLUTIONS_ONLY = SOLUTION_CLUSTER_ORDER.filter((c) => c !== "ecosystem");
+  const clusterLabel: Record<(typeof SOLUTION_CLUSTER_ORDER)[number], string> = {
+    "precision-farming": s.clusterPrecisionFarming,
+    certification: s.clusterCertification,
+    sourcing: s.clusterSourcing,
+    export: s.clusterExport,
+    ecosystem: s.clusterEcosystem,
+  };
+  const clusteredServices = servicesByCluster();
+  const productCategories = localizeCategories(await getCategories(), lang);
+
   const nav = [
     { href: withLocale(lang, "/"), label: dict.nav.home },
-    { href: withLocale(lang, "/about-us"), label: dict.nav.about },
     {
-      href: withLocale(lang, "/services"),
+      href: withLocale(lang, "/solutions"),
       label: dict.nav.services,
-      // Ba cụm, giữ đúng ranh giới gốc: dịch vụ Flora · dịch vụ VOAC ·
-      // chương trình & bộ chuẩn của VOAC (menu "Danh mục đầu tư" cũ).
-      children: [
-        { group: s.navGroupFlora, slugs: FLORA_SERVICE_SLUGS },
-        { group: s.navGroupVoac, slugs: VOAC_CORE_SERVICE_SLUGS },
-        { group: s.navGroupPortfolio, slugs: VOAC_PORTFOLIO_SLUGS },
-      ].flatMap(({ group, slugs }) => [
-        { href: `#${group}`, label: group, heading: true },
-        ...slugs.map((slug) => ({
-          href: withLocale(lang, `/services/${slug}`),
+      children: SOLUTIONS_ONLY.flatMap((cluster) => [
+        { href: `#${cluster}`, label: clusterLabel[cluster], heading: true },
+        ...clusteredServices[cluster].map((slug) => ({
+          href: withLocale(lang, `/solutions/${slug}`),
           label: dict.services[slug],
         })),
       ]),
     },
     {
-      href: withLocale(lang, "/news"),
+      href: withLocale(lang, "/products"),
+      label: dict.nav.products,
+      children: [
+        { href: withLocale(lang, "/products"), label: dict.productsPage.all },
+        ...productCategories.map((c) => ({
+          href: withLocale(lang, `/products/${c.slug}`),
+          label: c.name,
+        })),
+      ],
+    },
+    {
+      href: withLocale(lang, "/ecosystem"),
+      label: dict.nav.ecosystem,
+      children: clusteredServices.ecosystem.map((slug) => ({
+        href: withLocale(lang, `/ecosystem/${slug}`),
+        label: dict.services[slug],
+      })),
+    },
+    {
+      href: withLocale(lang, "/knowledge"),
       label: dict.nav.news,
       children: NEWS_CATEGORIES.map((c) => ({
-        href: withLocale(lang, `/news/category/${c.slug}`),
+        href: withLocale(lang, `/knowledge/category/${c.slug}`),
         label: dict.newsCategories[c.slug],
       })),
     },
-    { href: withLocale(lang, "/products"), label: dict.nav.products },
+    { href: withLocale(lang, "/about-us"), label: dict.nav.about },
     { href: withLocale(lang, "/contact"), label: dict.nav.contact },
   ];
 
@@ -137,7 +164,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         getInTouch={dict.nav.getInTouch}
       />
       <main className="flex-1">{children}</main>
-      <SiteFooter locale={lang} dict={dict} />
+      <SiteFooter locale={lang} dict={dict} productCategories={productCategories} />
       <FloatingContact locale={lang} label={dict.floating.contact} />
     </>
   );

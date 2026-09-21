@@ -11,6 +11,11 @@ type Props = {
   searchParams: Promise<{ sent?: string; error?: string; product?: string }>;
 };
 
+// Must match PERSONA_TYPES / INQUIRY_TYPES / TIMELINES in the server action —
+// the localized labels below are cosmetic only, these English values are what
+// actually gets submitted and validated.
+const EN_PERSONAS = ["Farmer / Farm Owner", "Global Buyer / Importer", "Strategic Partner", "Other"];
+
 const EN_INQUIRIES = [
   "Strategic Sourcing & Procurement",
   "Honey No. 9 Export & Supply",
@@ -26,6 +31,38 @@ const MAP_SRC =
 
 const inputClass =
   "w-full rounded-[var(--radius-control)] border border-[var(--line)] bg-white px-4 py-3 text-sm outline-none transition focus:border-[var(--brand)]";
+
+function RadioCards({
+  name,
+  options,
+  labels,
+  columns = 2,
+}: {
+  name: string;
+  options: readonly string[];
+  labels: readonly string[];
+  columns?: 2 | 4;
+}) {
+  return (
+    <div className={`grid gap-2 ${columns === 4 ? "grid-cols-2 sm:grid-cols-4" : "sm:grid-cols-2"}`}>
+      {options.map((value, i) => (
+        <label key={value} className="group cursor-pointer">
+          <input
+            type="radio"
+            name={name}
+            value={value}
+            required
+            defaultChecked={i === 0}
+            className="peer sr-only"
+          />
+          <span className="body-sm block rounded-[var(--radius-control)] border border-[var(--line)] px-4 py-3 text-[var(--ink)] transition peer-checked:border-[var(--brand)] peer-checked:bg-[var(--brand)]/5 peer-checked:font-semibold peer-checked:text-[var(--brand)] peer-focus-visible:ring-2 peer-focus-visible:ring-[var(--brand)]">
+            {labels[i] ?? value}
+          </span>
+        </label>
+      ))}
+    </div>
+  );
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await params;
@@ -82,6 +119,12 @@ export default async function ContactPage({ params, searchParams }: Props) {
             {productName && (
               <input type="hidden" name="product" value={productName} />
             )}
+
+            <div>
+              <span className="mb-1.5 block text-sm text-[var(--muted)]">{c.personaLabel}</span>
+              <RadioCards name="persona" options={EN_PERSONAS} labels={c.personas} columns={4} />
+            </div>
+
             <input name="name" required placeholder={c.name} className={inputClass} />
             <input
               name="email"
@@ -94,21 +137,10 @@ export default async function ContactPage({ params, searchParams }: Props) {
             <input name="location" required placeholder={c.location} className={inputClass} />
             <input name="phone" placeholder={c.phone} className={inputClass} />
 
-            <label className="block">
+            <div>
               <span className="mb-1.5 block text-sm text-[var(--muted)]">{c.inquiry}</span>
-              <select
-                name="inquiry"
-                required
-                defaultValue={EN_INQUIRIES[0]}
-                className={inputClass}
-              >
-                {EN_INQUIRIES.map((value, i) => (
-                  <option key={value} value={value}>
-                    {c.inquiries[i] ?? value}
-                  </option>
-                ))}
-              </select>
-            </label>
+              <RadioCards name="inquiry" options={EN_INQUIRIES} labels={c.inquiries} columns={2} />
+            </div>
 
             <textarea
               name="message"

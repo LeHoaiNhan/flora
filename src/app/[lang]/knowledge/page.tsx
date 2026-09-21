@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const dict = getDictionary(locale);
   return pageSeo({
     lang: locale,
-    path: "/news",
+    path: "/knowledge",
     title: dict.newsPage.title,
     description: dict.meta.description,
     image: "/images/wp/2025_09_banner22.jpg",
@@ -38,7 +38,7 @@ export default async function NewsPage({ params }: Props) {
         title={dict.newsPage.title}
         image="/images/wp/2025_09_banner22.jpg"
         homeHref={withLocale(lang, "/")}
-        crumbs={[{ href: withLocale(lang, "/news"), label: dict.newsPage.title }]}
+        crumbs={[{ href: withLocale(lang, "/knowledge"), label: dict.newsPage.title }]}
       />
       <div className="container-page section-y">
         <NewsTabs active={null} locale={lang} dict={dict} />
@@ -47,7 +47,7 @@ export default async function NewsPage({ params }: Props) {
             <ArticleCard
               key={post.slug}
               article={post}
-              href={withLocale(lang, `/news/${post.slug}`)}
+              href={withLocale(lang, `/knowledge/${post.slug}`)}
               readMore={dict.common.readMore}
             />
           ))}
