@@ -127,7 +127,6 @@
     "initiatePartnership": "Initiate partnership",
     "backProducts": "← Back to products",
     "organic": "Organic",
-    "wholesaleOnly": "Wholesale by the container",
     "wholesaleCta": "Contact us"
   },
   "about": {
@@ -164,6 +163,9 @@
     "highlightsTitle": "Key benefits",
     "descriptionTitle": "Product description",
     "processTitle": "Recommended process",
+    "dosageTitle": "Dosage by crop type",
+    "techniqueTitle": "Application technique",
+    "noteLabel": "Important note",
     "capabilityTitle": "Supply capability",
     "capabilityDesc": "Palletized and container-loaded — ready for large-volume orders.",
     "relatedTitle": "Related products",

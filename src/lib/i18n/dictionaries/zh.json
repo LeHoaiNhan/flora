@@ -127,7 +127,6 @@
     "initiatePartnership": "开启合作",
     "backProducts": "← 返回产品",
     "organic": "有机",
-    "wholesaleOnly": "按整柜批发",
     "wholesaleCta": "联系我们"
   },
   "about": {
@@ -164,6 +163,9 @@
     "highlightsTitle": "主要优点",
     "descriptionTitle": "产品描述",
     "processTitle": "建议施用流程",
+    "dosageTitle": "按作物类型的施用量",
+    "techniqueTitle": "施用技术与流程",
+    "noteLabel": "重要提示",
     "capabilityTitle": "供应能力",
     "capabilityDesc": "托盘装载、整柜出货 — 可满足大批量订单。",
     "relatedTitle": "相关产品",

@@ -127,7 +127,6 @@
     "initiatePartnership": "साझेदारी शुरू करें",
     "backProducts": "← उत्पादों पर वापस",
     "organic": "ऑर्गेनिक",
-    "wholesaleOnly": "कंटेनर के हिसाब से थोक",
     "wholesaleCta": "संपर्क करें"
   },
   "about": {
@@ -164,6 +163,9 @@
     "highlightsTitle": "मुख्य लाभ",
     "descriptionTitle": "उत्पाद विवरण",
     "processTitle": "अनुशंसित प्रक्रिया",
+    "dosageTitle": "फसल के अनुसार मात्रा",
+    "techniqueTitle": "प्रयोग तकनीक और प्रक्रिया",
+    "noteLabel": "महत्वपूर्ण सूचना",
     "capabilityTitle": "आपूर्ति क्षमता",
     "capabilityDesc": "पैलेट पर पैक, कंटेनर द्वारा शिपमेंट — बड़े ऑर्डर के लिए तैयार।",
     "relatedTitle": "संबंधित उत्पाद",

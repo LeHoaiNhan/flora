@@ -127,7 +127,6 @@
     "initiatePartnership": "Bắt đầu hợp tác",
     "backProducts": "← Quay lại sản phẩm",
     "organic": "Hữu cơ",
-    "wholesaleOnly": "Bán sỉ theo container",
     "wholesaleCta": "Liên hệ"
   },
   "about": {
@@ -164,6 +163,9 @@
     "highlightsTitle": "Lợi ích nổi bật",
     "descriptionTitle": "Mô tả sản phẩm",
     "processTitle": "Quy trình khuyến nghị",
+    "dosageTitle": "Liều lượng sử dụng theo loại cây",
+    "techniqueTitle": "Kỹ thuật và quy trình bón",
+    "noteLabel": "Lưu ý quan trọng",
     "capabilityTitle": "Năng lực cung ứng",
     "capabilityDesc": "Đóng pallet, xuất theo container — sẵn sàng đáp ứng đơn hàng số lượng lớn.",
     "relatedTitle": "Sản phẩm liên quan",

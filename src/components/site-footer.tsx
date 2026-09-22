@@ -1,7 +1,6 @@
 import { Fragment } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import type { Category } from "@/lib/data/local";
 import type { Dictionary } from "@/lib/i18n/get-dictionary";
 import { withLocale, type Locale } from "@/lib/i18n/config";
 import { NEWS_CATEGORIES, SERVICE_ORDER } from "@/lib/legacy";
@@ -11,11 +10,9 @@ import { getServiceStrings } from "@/lib/services/service-i18n";
 export function SiteFooter({
   locale,
   dict,
-  productCategories,
 }: {
   locale: Locale;
   dict: Dictionary;
-  productCategories: Category[];
 }) {
   const f = dict.footer;
   const s = getServiceStrings(locale);
@@ -154,16 +151,6 @@ export function SiteFooter({
                     {dict.productsPage.all}
                   </Link>
                 </li>
-                {productCategories.map((c) => (
-                  <li key={c.slug}>
-                    <Link
-                      href={withLocale(locale, `/products/${c.slug}`)}
-                      className="hover:text-[var(--brand)]"
-                    >
-                      {c.name}
-                    </Link>
-                  </li>
-                ))}
               </ul>
             </div>
 

@@ -127,7 +127,6 @@
     "initiatePartnership": "හවුල්කාරිත්වය ආරම්භ කරන්න",
     "backProducts": "← නිෂ්පාදන වෙත ආපසු",
     "organic": "කාබනික",
-    "wholesaleOnly": "කන්ටේනරය අනුව තොග",
     "wholesaleCta": "අප අමතන්න"
   },
   "about": {
@@ -164,6 +163,9 @@
     "highlightsTitle": "ප්‍රධාන ප්‍රතිලාභ",
     "descriptionTitle": "නිෂ්පාදන විස්තරය",
     "processTitle": "නිර්දේශිත ක්‍රියාවලිය",
+    "dosageTitle": "බෝග වර්ගය අනුව ප්‍රමාණය",
+    "techniqueTitle": "යෙදීමේ ක්‍රමවේදය",
+    "noteLabel": "වැදගත් සටහන",
     "capabilityTitle": "සැපයුම් ධාරිතාව",
     "capabilityDesc": "පැලට් මත ඇසුරු කර කන්ටේනර මගින් නැව්ගත කරයි — විශාල ඇණවුම් සඳහා සූදානම්.",
     "relatedTitle": "සම්බන්ධිත නිෂ්පාදන",

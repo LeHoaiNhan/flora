@@ -23,8 +23,12 @@ export type Product = {
   packaging?: string;
   licenseNo?: string;
   storageNote?: string;
-  /** Numbered application steps, e.g. "Bón phân gà" → "Cày xới đất". */
+  /** Dosage guidance per crop group, e.g. "Cây ăn trái" → "500 – 700 kg/ha/lần". */
+  usageDosage?: { group: string; amount: string }[];
+  /** Numbered application steps, e.g. "Rải phân" → "Lấp đất và tưới nước". */
   usageSteps?: { title: string; detail: string }[];
+  /** Caution/warning shown at the end of the application-process tab. */
+  usageNote?: string;
   faqs?: ProductFaq[];
   /** Bullet facts shown in the "supply capability" tab (packing, container, lead time...). */
   capabilityDetails?: string[];
@@ -87,18 +91,41 @@ export const LOCAL_PRODUCTS: Product[] = [
     packaging: "Bao 15kg, đóng pallet — xuất bán theo container",
     licenseNo: "617/QĐ-TTTTV-PB ngày 23/07/2025 (Cục Trồng trọt và Bảo vệ thực vật)",
     storageNote: "Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp; nên sử dụng sớm sau khi mở bao.",
-    usageSteps: [
+    usageDosage: [
       {
-        title: "Bón phân gà",
-        detail:
-          "Rải đều phân gà lên mặt luống hoặc quanh gốc trước khi xuống giống, bổ sung hữu cơ và dưỡng chất nền cho đất.",
+        group: "Cây rau màu và cây lương thực",
+        amount: "300 – 500 kg/ha/vụ, dùng để bón lót hoặc bón thúc sớm",
       },
       {
-        title: "Cày xới đất",
-        detail:
-          "Cày xới để trộn đều phân gà vào đất, giúp đất tơi xốp, giữ ẩm tốt hơn và tạo điều kiện cho vi sinh vật có lợi hoạt động.",
+        group: "Cây ăn trái (cam, quýt, sầu riêng, xoài...)",
+        amount:
+          "500 – 700 kg/ha/lần, bón khoảng 2 lần/năm (giai đoạn sau thu hoạch và giai đoạn nuôi trái)",
+      },
+      {
+        group: "Cây hoa, cây cảnh chậu nhỏ",
+        amount:
+          "Trộn trực tiếp một lượng nhỏ vào đất trồng hoặc rải quanh gốc rồi lấp đất, tránh sát gốc chính",
       },
     ],
+    usageSteps: [
+      {
+        title: "Làm sạch và xới đất",
+        detail:
+          "Xới nhẹ lớp đất xung quanh gốc, theo hình chiếu của tán cây đối với cây lâu năm.",
+      },
+      {
+        title: "Rải phân",
+        detail:
+          "Rải đều phân gà dạng viên nén, viên nở hoặc dạng bột theo vành ngoài của tán cây.",
+      },
+      {
+        title: "Lấp đất và tưới nước",
+        detail:
+          "Lấp một lớp đất mỏng lên trên phân và tưới nước đủ ẩm để vi sinh vật hoạt động tốt, giúp phân tan dần và cây dễ hấp thụ.",
+      },
+    ],
+    usageNote:
+      "Phân gà Nhật Bản có tính chất \"nóng\" do chứa hàm lượng dinh dưỡng hữu cơ cao. Không nên bón quá liều lượng hoặc để phân tiếp xúc trực tiếp với gốc cây non vì dễ gây hiện tượng vàng lá, xót rễ.",
     capabilityDetails: [
       "Đóng bao 15kg, xếp pallet quấn màng chống ẩm trong suốt quá trình vận chuyển",
       "Xuất hàng theo container 20FT/40FT theo số lượng đặt hàng của trang trại, hợp tác xã, đại lý vật tư nông nghiệp",
@@ -156,7 +183,7 @@ export const LOCAL_PRODUCTS: Product[] = [
     currency: "VND",
     sku: null,
     stock_status: "instock",
-    image_url: "/images/products/bot-protein.jpg",
+    image_url: null,
     status: "published",
     category_slugs: ["san-pham-huu-co"],
   },

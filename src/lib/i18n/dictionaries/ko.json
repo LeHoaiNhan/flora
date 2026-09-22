@@ -127,7 +127,6 @@
     "initiatePartnership": "파트너십 시작",
     "backProducts": "← 제품으로 돌아가기",
     "organic": "유기농",
-    "wholesaleOnly": "컨테이너 단위 도매",
     "wholesaleCta": "문의하기"
   },
   "about": {
@@ -164,6 +163,9 @@
     "highlightsTitle": "주요 효과",
     "descriptionTitle": "제품 설명",
     "processTitle": "권장 시비 절차",
+    "dosageTitle": "작물별 시비량",
+    "techniqueTitle": "시비 기술 및 절차",
+    "noteLabel": "중요 안내",
     "capabilityTitle": "공급 역량",
     "capabilityDesc": "팔레트 적재, 컨테이너 단위 출고 — 대량 주문에도 대응 가능합니다.",
     "relatedTitle": "관련 제품",
