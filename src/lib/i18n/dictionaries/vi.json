@@ -128,8 +128,7 @@
     "backProducts": "← Quay lại sản phẩm",
     "organic": "Hữu cơ",
     "wholesaleOnly": "Bán sỉ theo container",
-    "wholesaleTitle": "Chỉ bán sỉ theo container",
-    "wholesaleCta": "Liên hệ mua sỉ"
+    "wholesaleCta": "Liên hệ"
   },
   "about": {
     "eyebrow": "Người dẫn dắt “Hệ sinh thái”",
@@ -154,6 +153,21 @@
     "intro": "Phân bón và nguyên liệu hữu cơ nhập khẩu — cung ứng sỉ theo container. Liên hệ để nhận quy cách và báo giá.",
     "all": "Tất cả",
     "empty": "Không có sản phẩm trong danh mục này."
+  },
+  "productDetail": {
+    "specsTitle": "Thông số sản phẩm",
+    "originLabel": "Xuất xứ",
+    "manufacturerLabel": "Nhà sản xuất",
+    "packagingLabel": "Quy cách đóng gói",
+    "licenseLabel": "Số quyết định lưu hành",
+    "storageLabel": "Bảo quản",
+    "highlightsTitle": "Lợi ích nổi bật",
+    "descriptionTitle": "Mô tả sản phẩm",
+    "processTitle": "Quy trình khuyến nghị",
+    "capabilityTitle": "Năng lực cung ứng",
+    "capabilityDesc": "Đóng pallet, xuất theo container — sẵn sàng đáp ứng đơn hàng số lượng lớn.",
+    "relatedTitle": "Sản phẩm liên quan",
+    "faqTitle": "Câu hỏi thường gặp"
   },
   "contact": {
     "eyebrow": "Hãy vượt qua giao dịch đơn thuần",

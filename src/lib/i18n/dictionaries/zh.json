@@ -128,8 +128,7 @@
     "backProducts": "← 返回产品",
     "organic": "有机",
     "wholesaleOnly": "按整柜批发",
-    "wholesaleTitle": "仅按整柜批发",
-    "wholesaleCta": "联系整柜批发"
+    "wholesaleCta": "联系我们"
   },
   "about": {
     "eyebrow": "“生态系统”引领者",
@@ -154,6 +153,21 @@
     "intro": "进口有机肥料与农业投入品 — 按整柜批发供应。请联系我们获取规格与报价。",
     "all": "全部",
     "empty": "该分类暂无产品。"
+  },
+  "productDetail": {
+    "specsTitle": "产品规格",
+    "originLabel": "产地",
+    "manufacturerLabel": "生产商",
+    "packagingLabel": "包装规格",
+    "licenseLabel": "流通许可决定书编号",
+    "storageLabel": "储存方式",
+    "highlightsTitle": "主要优点",
+    "descriptionTitle": "产品描述",
+    "processTitle": "建议施用流程",
+    "capabilityTitle": "供应能力",
+    "capabilityDesc": "托盘装载、整柜出货 — 可满足大批量订单。",
+    "relatedTitle": "相关产品",
+    "faqTitle": "常见问题"
   },
   "contact": {
     "eyebrow": "让我们超越单纯交易",

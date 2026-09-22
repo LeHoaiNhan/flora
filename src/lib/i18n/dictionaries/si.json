@@ -128,8 +128,7 @@
     "backProducts": "← නිෂ්පාදන වෙත ආපසු",
     "organic": "කාබනික",
     "wholesaleOnly": "කන්ටේනරය අනුව තොග",
-    "wholesaleTitle": "කන්ටේනරය අනුව තොග විකුණුම් පමණයි",
-    "wholesaleCta": "කන්ටේනර තොග සඳහා අප අමතන්න"
+    "wholesaleCta": "අප අමතන්න"
   },
   "about": {
     "eyebrow": "“පරිසර පද්ධති” නායකයා",
@@ -154,6 +153,21 @@
     "intro": "ආනයනික කාබනික පොහොර සහ කෘෂි ආදාන — කන්ටේනරය අනුව තොග වශයෙන් සැපයේ. පිරිවිතර සහ මිල ගණන් සඳහා අප අමතන්න.",
     "all": "සියල්ල",
     "empty": "මෙම කාණ්ඩයේ නිෂ්පාදන නැත."
+  },
+  "productDetail": {
+    "specsTitle": "නිෂ්පාදන විස්තර",
+    "originLabel": "සම්භවය",
+    "manufacturerLabel": "නිෂ්පාදකයා",
+    "packagingLabel": "ඇසුරුම් ක්‍රමය",
+    "licenseLabel": "බලපත්‍ර තීරණ අංකය",
+    "storageLabel": "ගබඩා කිරීම",
+    "highlightsTitle": "ප්‍රධාන ප්‍රතිලාභ",
+    "descriptionTitle": "නිෂ්පාදන විස්තරය",
+    "processTitle": "නිර්දේශිත ක්‍රියාවලිය",
+    "capabilityTitle": "සැපයුම් ධාරිතාව",
+    "capabilityDesc": "පැලට් මත ඇසුරු කර කන්ටේනර මගින් නැව්ගත කරයි — විශාල ඇණවුම් සඳහා සූදානම්.",
+    "relatedTitle": "සම්බන්ධිත නිෂ්පාදන",
+    "faqTitle": "නිතර අසන පැන"
   },
   "contact": {
     "eyebrow": "ගනුදෙනුවෙන් ඔබ්බට යමු",

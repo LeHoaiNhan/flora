@@ -128,8 +128,7 @@
     "backProducts": "← उत्पादों पर वापस",
     "organic": "ऑर्गेनिक",
     "wholesaleOnly": "कंटेनर के हिसाब से थोक",
-    "wholesaleTitle": "केवल कंटेनर के हिसाब से थोक",
-    "wholesaleCta": "कंटेनर थोक हेतु संपर्क करें"
+    "wholesaleCta": "संपर्क करें"
   },
   "about": {
     "eyebrow": "“पारिस्थितिकी तंत्र” के नेता",
@@ -154,6 +153,21 @@
     "intro": "आयातित जैविक उर्वरक एवं कृषि इनपुट — कंटेनर के हिसाब से थोक आपूर्ति। विनिर्देश और कोटेशन हेतु संपर्क करें।",
     "all": "सभी",
     "empty": "इस श्रेणी में कोई उत्पाद नहीं।"
+  },
+  "productDetail": {
+    "specsTitle": "उत्पाद विशेषताएँ",
+    "originLabel": "मूल स्थान",
+    "manufacturerLabel": "निर्माता",
+    "packagingLabel": "पैकेजिंग",
+    "licenseLabel": "प्रचलन स्वीकृति निर्णय संख्या",
+    "storageLabel": "भंडारण",
+    "highlightsTitle": "मुख्य लाभ",
+    "descriptionTitle": "उत्पाद विवरण",
+    "processTitle": "अनुशंसित प्रक्रिया",
+    "capabilityTitle": "आपूर्ति क्षमता",
+    "capabilityDesc": "पैलेट पर पैक, कंटेनर द्वारा शिपमेंट — बड़े ऑर्डर के लिए तैयार।",
+    "relatedTitle": "संबंधित उत्पाद",
+    "faqTitle": "अक्सर पूछे जाने वाले प्रश्न"
   },
   "contact": {
     "eyebrow": "आइए लेन-देन से आगे बढ़ें",

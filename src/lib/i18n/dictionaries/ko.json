@@ -128,8 +128,7 @@
     "backProducts": "← 제품으로 돌아가기",
     "organic": "유기농",
     "wholesaleOnly": "컨테이너 단위 도매",
-    "wholesaleTitle": "컨테이너 단위 도매 전용",
-    "wholesaleCta": "컨테이너 도매 문의"
+    "wholesaleCta": "문의하기"
   },
   "about": {
     "eyebrow": "“생태계” 리더",
@@ -154,6 +153,21 @@
     "intro": "수입 유기질 비료 및 농자재 — 컨테이너 단위 도매 공급. 사양 및 견적은 문의해 주세요.",
     "all": "전체",
     "empty": "이 카테고리에 제품이 없습니다."
+  },
+  "productDetail": {
+    "specsTitle": "제품 사양",
+    "originLabel": "원산지",
+    "manufacturerLabel": "제조사",
+    "packagingLabel": "포장 규격",
+    "licenseLabel": "유통 인정 결정 번호",
+    "storageLabel": "보관 방법",
+    "highlightsTitle": "주요 효과",
+    "descriptionTitle": "제품 설명",
+    "processTitle": "권장 시비 절차",
+    "capabilityTitle": "공급 역량",
+    "capabilityDesc": "팔레트 적재, 컨테이너 단위 출고 — 대량 주문에도 대응 가능합니다.",
+    "relatedTitle": "관련 제품",
+    "faqTitle": "자주 묻는 질문"
   },
   "contact": {
     "eyebrow": "단순한 거래를 넘어",

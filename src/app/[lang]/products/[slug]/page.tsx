@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Reveal } from "@/components/reveal";
 import { PageHero } from "@/components/page-hero";
 import { ProductCard } from "@/components/product-card";
+import { ProductGallery } from "@/components/product-gallery";
+import { ProductTabs, type ProductTab } from "@/components/product-tabs";
 import { getCategories, getProductBySlug, getProducts } from "@/lib/catalog";
 import type { Product } from "@/lib/data/local";
 import { getDictionary, type Dictionary } from "@/lib/i18n/get-dictionary";
@@ -175,6 +176,7 @@ function ProductDetail({
   slug: string;
   product: Product;
 }) {
+  const pd = dict.productDetail;
   const productLd = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -191,55 +193,230 @@ function ProductDetail({
     { name: product.name, path: withLocale(lang, `/products/${slug}`) },
   ]);
 
+  const gallery = product.gallery?.length
+    ? product.gallery
+    : product.image_url
+      ? [product.image_url]
+      : [];
+
+  const specs = [
+    product.origin && { label: pd.originLabel, value: product.origin },
+    product.manufacturer && { label: pd.manufacturerLabel, value: product.manufacturer },
+    product.packaging && { label: pd.packagingLabel, value: product.packaging },
+    product.licenseNo && { label: pd.licenseLabel, value: product.licenseNo },
+    product.storageNote && { label: pd.storageLabel, value: product.storageNote },
+  ].filter(Boolean) as { label: string; value: string }[];
+
+  const tabs: ProductTab[] = [
+    product.description && {
+      key: "description",
+      label: pd.descriptionTitle,
+      content: (
+        <p className="body-base max-w-3xl whitespace-pre-line text-[var(--ink)]/85">
+          {product.description}
+        </p>
+      ),
+    },
+    !!product.usageSteps?.length && {
+      key: "process",
+      label: pd.processTitle,
+      content: (
+        <ol className="max-w-2xl space-y-5">
+          {product.usageSteps!.map((step, i) => (
+            <li key={step.title} className="flex gap-3">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--brand)] text-sm font-bold text-white">
+                {i + 1}
+              </span>
+              <div>
+                <p className="body-base font-semibold text-[var(--ink)]">{step.title}</p>
+                <p className="body-sm mt-1 text-[var(--ink)]/75">{step.detail}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      ),
+    },
+    !!specs.length && {
+      key: "specs",
+      label: pd.specsTitle,
+      content: (
+        <dl className="max-w-3xl divide-y divide-[var(--line)] rounded-[var(--radius-card)] border border-[var(--line)] bg-[var(--surface)]">
+          {specs.map((s) => (
+            <div
+              key={s.label}
+              className="flex flex-col gap-1 px-5 py-3.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6"
+            >
+              <dt className="body-sm shrink-0 text-[var(--muted)] sm:w-56">{s.label}</dt>
+              <dd className="body-sm font-medium text-[var(--ink)] sm:text-right">{s.value}</dd>
+            </div>
+          ))}
+        </dl>
+      ),
+    },
+    !!product.capabilityDetails?.length && {
+      key: "capability",
+      label: pd.capabilityTitle,
+      content: (
+        <div>
+          <p className="body-base max-w-2xl text-[var(--ink)]/85">{pd.capabilityDesc}</p>
+          <ul className="mt-5 grid max-w-3xl gap-2.5 sm:grid-cols-2">
+            {product.capabilityDetails!.map((text) => (
+              <li
+                key={text}
+                className="flex gap-2.5 rounded-[var(--radius-control)] bg-[var(--surface)] p-3"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  className="mt-0.5 h-4 w-4 shrink-0 text-[var(--brand)]"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden
+                >
+                  <path d="m5 13 4 4L19 7" />
+                </svg>
+                <span className="body-sm text-[var(--ink)]">{text}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ),
+    },
+  ].filter(Boolean) as ProductTab[];
+
   return (
     <>
       <JsonLd data={[productLd, crumbs]} />
       <Reveal className="container-page section-y grid gap-10 md:grid-cols-2">
-      <div className="card relative aspect-square bg-[var(--bg-soft)]">
-        {product.image_url ? (
-          <Image
-            src={product.image_url}
-            alt={product.name}
-            fill
-            priority
-            sizes="(max-width:768px) 100vw, 50vw"
-            className="object-cover"
-          />
-        ) : (
-          <div className="absolute inset-0 bg-[linear-gradient(145deg,#dce8d4_0%,#b7c9a5_45%,#6f8f5a_100%)]" />
-        )}
-      </div>
-      <div className="min-w-0">
-        <Link
-          href={withLocale(lang, "/products")}
-          className="body-sm text-[var(--muted)] hover:text-[var(--brand)]"
-        >
-          {dict.common.backProducts}
-        </Link>
-        <h1 className="display-lg mt-4 break-words text-[var(--ink)]">
-          {product.name}
-        </h1>
-        <p className="eyebrow mt-4 text-[var(--brand)]">
-          {dict.common.wholesaleOnly}
-        </p>
-        {(product.description || product.short_description) && (
-          <p className="body-base mt-6 whitespace-pre-line break-words text-[var(--ink)]/85">
-            {product.description || product.short_description}
-          </p>
-        )}
-        <div className="card mt-8 border-[var(--brand)]/25 bg-[var(--brand)]/5 p-5">
-          <p className="display-sm text-[var(--brand)]">
-            {dict.common.wholesaleTitle}
-          </p>
-          <Link
-            href={`${withLocale(lang, "/contact")}?product=${encodeURIComponent(product.name)}#contact-form`}
-            className="mt-5 inline-flex items-center justify-center rounded-[var(--radius-control)] bg-[var(--brand)] px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white shadow-[var(--shadow-soft)] transition hover:bg-[var(--brand-2)]"
-          >
-            {dict.common.wholesaleCta}
-          </Link>
+        <div>
+          <ProductGallery images={gallery} alt={product.name} />
         </div>
-      </div>
+        <div className="min-w-0">
+          <Link
+            href={withLocale(lang, "/products")}
+            className="body-sm text-[var(--muted)] hover:text-[var(--brand)]"
+          >
+            {dict.common.backProducts}
+          </Link>
+          <h1 className="display-lg mt-4 break-words text-[var(--ink)]">{product.name}</h1>
+          <p className="eyebrow mt-4 text-[var(--brand)]">{dict.common.wholesaleOnly}</p>
+          {product.short_description && (
+            <p className="body-base mt-4 text-[var(--ink)]/85">{product.short_description}</p>
+          )}
+
+          {!!product.highlights?.length && (
+            <ul className="mt-6 grid gap-2.5 sm:grid-cols-2">
+              {product.highlights.map((text) => (
+                <li
+                  key={text}
+                  className="flex gap-2.5 rounded-[var(--radius-control)] bg-[var(--bg-soft)] p-3"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="mt-0.5 h-4 w-4 shrink-0 text-[var(--brand)]"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden
+                  >
+                    <path d="m5 13 4 4L19 7" />
+                  </svg>
+                  <span className="body-sm text-[var(--ink)]">{text}</span>
+                </li>
+              ))}
+            </ul>
+          )}
+
+          <div className="card mt-8 border-[var(--brand)]/25 bg-[var(--brand)]/5 p-5">
+            <Link
+              href={`${withLocale(lang, "/contact")}?product=${encodeURIComponent(product.name)}#contact-form`}
+              className="inline-flex items-center justify-center rounded-[var(--radius-control)] bg-[var(--brand)] px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white shadow-[var(--shadow-soft)] transition hover:bg-[var(--brand-2)]"
+            >
+              {dict.common.wholesaleCta}
+            </Link>
+          </div>
+        </div>
       </Reveal>
+
+      {tabs.length > 0 && (
+        <div className="border-t border-[var(--line)] bg-[var(--bg-soft)]">
+          <div className="container-page section-y">
+            <ProductTabs tabs={tabs} />
+          </div>
+        </div>
+      )}
+
+      <RelatedProducts lang={lang} dict={dict} product={product} />
+
+      {!!product.faqs?.length && (
+        <div className="border-t border-[var(--line)]">
+          <div className="container-page section-y max-w-3xl">
+            <p className="display-sm text-[var(--ink)]">{pd.faqTitle}</p>
+            <div className="mt-5 divide-y divide-[var(--line)] rounded-[var(--radius-card)] border border-[var(--line)]">
+              {product.faqs.map((f) => (
+                <details key={f.question} className="group p-5">
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-4 body-base font-medium text-[var(--ink)] marker:content-none">
+                    {f.question}
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="h-5 w-5 shrink-0 text-[var(--brand)] transition group-open:rotate-45"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden
+                    >
+                      <path d="M12 5v14M5 12h14" />
+                    </svg>
+                  </summary>
+                  <p className="body-sm mt-3 text-[var(--ink)]/80">{f.answer}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </>
+  );
+}
+
+async function RelatedProducts({
+  lang,
+  dict,
+  product,
+}: {
+  lang: Locale;
+  dict: Dictionary;
+  product: Product;
+}) {
+  const category = product.category_slugs?.[0];
+  if (!category) return null;
+
+  const rawProducts = await getProducts({ category });
+  const related = localizeProducts(rawProducts, lang).filter((p) => p.id !== product.id);
+  if (related.length === 0) return null;
+
+  return (
+    <div className="border-t border-[var(--line)] bg-[var(--bg-soft)]">
+      <div className="container-page section-y">
+        <p className="display-sm text-[var(--ink)]">{dict.productDetail.relatedTitle}</p>
+        <Reveal className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {related.map((p) => (
+            <ProductCard
+              key={p.id}
+              product={p}
+              href={withLocale(lang, `/products/${p.slug}`)}
+              organicLabel={dict.common.organic}
+              wholesaleLabel={dict.common.wholesaleOnly}
+            />
+          ))}
+        </Reveal>
+      </div>
+    </div>
   );
 }

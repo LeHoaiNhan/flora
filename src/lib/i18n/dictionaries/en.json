@@ -128,8 +128,7 @@
     "backProducts": "← Back to products",
     "organic": "Organic",
     "wholesaleOnly": "Wholesale by the container",
-    "wholesaleTitle": "Wholesale by the container only",
-    "wholesaleCta": "Contact us for container wholesale"
+    "wholesaleCta": "Contact us"
   },
   "about": {
     "eyebrow": "The “Ecosystem” Leader",
@@ -154,6 +153,21 @@
     "intro": "Imported organic fertilizers and agricultural inputs — supplied wholesale by the container. Contact us for specifications and a quote.",
     "all": "All",
     "empty": "No products in this category."
+  },
+  "productDetail": {
+    "specsTitle": "Product specifications",
+    "originLabel": "Origin",
+    "manufacturerLabel": "Manufacturer",
+    "packagingLabel": "Packaging",
+    "licenseLabel": "Registration decision no.",
+    "storageLabel": "Storage",
+    "highlightsTitle": "Key benefits",
+    "descriptionTitle": "Product description",
+    "processTitle": "Recommended process",
+    "capabilityTitle": "Supply capability",
+    "capabilityDesc": "Palletized and container-loaded — ready for large-volume orders.",
+    "relatedTitle": "Related products",
+    "faqTitle": "Frequently asked questions"
   },
   "contact": {
     "eyebrow": "Let’s move beyond the transaction",
